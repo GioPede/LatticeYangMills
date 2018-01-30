@@ -1,9 +1,0 @@
-<map id="tao::operators::field&lt; T, U &gt;" name="tao::operators::field&lt; T, U &gt;">
-<area shape="rect" id="node2" href="$classtao_1_1operators_1_1commutative__ring.html" title="tao::operators::commutative\l_ring\&lt; T, U \&gt;" alt="" coords="239,104,424,145"/>
-<area shape="rect" id="node3" href="$classtao_1_1operators_1_1commutative__addable.html" title="tao::operators::commutative\l_addable\&lt; T, U \&gt;" alt="" coords="5,5,191,47"/>
-<area shape="rect" id="node4" href="$classtao_1_1operators_1_1subtractable.html" title="tao::operators::subtractable\l\&lt; T, U \&gt;" alt="" coords="7,71,189,112"/>
-<area shape="rect" id="node5" href="$classtao_1_1operators_1_1subtractable__left.html" title="tao::operators::subtractable\l_left\&lt; T, U \&gt;" alt="" coords="7,136,189,177"/>
-<area shape="rect" id="node6" href="$classcommutative__multipliable.html" title="commutative_multipliable\l\&lt; T, U \&gt;" alt="" coords="13,201,183,243"/>
-<area shape="rect" id="node7" href="$classdividable.html" title="dividable\&lt; T, U \&gt;" alt="" coords="270,170,393,197"/>
-<area shape="rect" id="node8" href="$classdividable__left.html" title="dividable_left\&lt; T, U \&gt;" alt="" coords="257,221,405,247"/>
-</map>

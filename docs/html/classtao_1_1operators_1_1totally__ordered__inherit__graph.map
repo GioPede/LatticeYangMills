@@ -1,7 +1,0 @@
-<map id="tao::operators::totally_ordered&lt; T, U &gt;" name="tao::operators::totally_ordered&lt; T, U &gt;">
-<area shape="rect" id="node4" href="$classtao_1_1operators_1_1ordered__commutative__ring.html" title="tao::operators::ordered\l_commutative_ring\&lt; T, U \&gt;" alt="" coords="425,5,608,47"/>
-<area shape="rect" id="node5" href="$classtao_1_1operators_1_1ordered__field.html" title="tao::operators::ordered\l_field\&lt; T, U \&gt;" alt="" coords="440,71,593,112"/>
-<area shape="rect" id="node6" href="$classtao_1_1operators_1_1ordered__ring.html" title="tao::operators::ordered\l_ring\&lt; T, U \&gt;" alt="" coords="440,136,593,177"/>
-<area shape="rect" id="node2" href="$classtao_1_1operators_1_1less__than__comparable.html" title="tao::operators::less\l_than_comparable\&lt; T, U \&gt;" alt="" coords="5,37,184,79"/>
-<area shape="rect" id="node3" href="$classtao_1_1operators_1_1equality__comparable.html" title="tao::operators::equality\l_comparable\&lt; T, U \&gt;" alt="" coords="17,103,172,144"/>
-</map>
