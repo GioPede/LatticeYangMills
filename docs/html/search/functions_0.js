@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['qtstyle_5ftest',['QTstyle_Test',['../classQTstyle__Test.html#a14a296ea4e2ad446712f2310bec60766',1,'QTstyle_Test']]]
+  ['computederivative',['computeDerivative',['../classPureGauge.html#a0d9272be98cf62567bbda93a892718eb',1,'PureGauge']]],
+  ['computestaples',['computeStaples',['../classPureGauge.html#a7c78eb206450a209b4154fc936d8aad1',1,'PureGauge']]]
 ];

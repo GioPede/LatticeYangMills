@@ -1,0 +1,10 @@
+<map id="tao::operators::ordered_ring&lt; T, U &gt;" name="tao::operators::ordered_ring&lt; T, U &gt;">
+<area shape="rect" id="node2" href="$classtao_1_1operators_1_1ring.html" title="tao::operators::ring\l\&lt; T, U \&gt;" alt="" coords="239,123,370,164"/>
+<area shape="rect" id="node3" href="$classcommutative__addable.html" title="commutative_addable\l\&lt; T, U \&gt;" alt="" coords="20,5,169,47"/>
+<area shape="rect" id="node4" href="$classsubtractable.html" title="subtractable\&lt; T, U \&gt;" alt="" coords="23,71,166,98"/>
+<area shape="rect" id="node5" href="$classsubtractable__left.html" title="subtractable_left\&lt;\l T, U \&gt;" alt="" coords="31,123,158,164"/>
+<area shape="rect" id="node6" href="$classmultipliable.html" title="multipliable\&lt; T, U \&gt;" alt="" coords="26,189,163,215"/>
+<area shape="rect" id="node7" href="$classtao_1_1operators_1_1totally__ordered.html" title="tao::operators::totally\l_ordered\&lt; T, U \&gt;" alt="" coords="232,240,377,281"/>
+<area shape="rect" id="node8" href="$classtao_1_1operators_1_1less__than__comparable.html" title="tao::operators::less\l_than_comparable\&lt; T, U \&gt;" alt="" coords="5,240,184,281"/>
+<area shape="rect" id="node9" href="$classtao_1_1operators_1_1equality__comparable.html" title="tao::operators::equality\l_comparable\&lt; T, U \&gt;" alt="" coords="17,305,172,347"/>
+</map>
