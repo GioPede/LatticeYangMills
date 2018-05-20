@@ -1,0 +1,48 @@
+\contentsline {chapter}{\numberline {1}Lattice\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Yang\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mills}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Action Class Reference}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Member Function Documentation}{10}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Action(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gluon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Field $\ast $field)}{10}{subsubsection.5.1.1.1}
+\contentsline {section}{\numberline {5.2}App Class Reference}{11}{section.5.2}
+\contentsline {section}{\numberline {5.3}complex Struct Reference}{12}{section.5.3}
+\contentsline {section}{\numberline {5.4}Energy\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Density Class Reference}{13}{section.5.4}
+\contentsline {section}{\numberline {5.5}Field$<$ T, N $>$ Class Template Reference}{14}{section.5.5}
+\contentsline {section}{\numberline {5.6}Gauge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Field\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Factory Class Reference}{15}{section.5.6}
+\contentsline {section}{\numberline {5.7}Gauge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Field\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Reader Class Reference}{16}{section.5.7}
+\contentsline {section}{\numberline {5.8}Lattice\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}IO\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Input\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Conf Class Reference}{18}{section.5.8}
+\contentsline {section}{\numberline {5.9}Lattice$<$ T $>$ Class Template Reference}{18}{section.5.9}
+\contentsline {section}{\numberline {5.10}Lattice\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Units Struct Reference}{20}{section.5.10}
+\contentsline {section}{\numberline {5.11}Observable Class Reference}{21}{section.5.11}
+\contentsline {section}{\numberline {5.12}Lattice\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}IO\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Output\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Conf Class Reference}{22}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{23}{subsection.5.12.1}
+\contentsline {section}{\numberline {5.13}Lattice\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}IO\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Output\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Obs Class Reference}{23}{section.5.13}
+\contentsline {section}{\numberline {5.14}Lattice\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}IO\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Output\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Term Class Reference}{24}{section.5.14}
+\contentsline {section}{\numberline {5.15}Parallel Class Reference}{25}{section.5.15}
+\contentsline {section}{\numberline {5.16}Plaquette Class Reference}{26}{section.5.16}
+\contentsline {section}{\numberline {5.17}Point Class Reference}{28}{section.5.17}
+\contentsline {section}{\numberline {5.18}Pure\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gauge Class Reference}{29}{section.5.18}
+\contentsline {subsection}{\numberline {5.18.1}Detailed Description}{30}{subsection.5.18.1}
+\contentsline {subsection}{\numberline {5.18.2}Constructor \& Destructor Documentation}{30}{subsection.5.18.2}
+\contentsline {subsubsection}{\numberline {5.18.2.1}Pure\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gauge(double beta)}{30}{subsubsection.5.18.2.1}
+\contentsline {subsection}{\numberline {5.18.3}Member Function Documentation}{30}{subsection.5.18.3}
+\contentsline {subsubsection}{\numberline {5.18.3.1}compute\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Derivative(int mu)}{30}{subsubsection.5.18.3.1}
+\contentsline {subsubsection}{\numberline {5.18.3.2}compute\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Staples(int mu)}{30}{subsubsection.5.18.3.2}
+\contentsline {section}{\numberline {5.19}Random Class Reference}{31}{section.5.19}
+\contentsline {section}{\numberline {5.20}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U3 Struct Reference}{32}{section.5.20}
+\contentsline {section}{\numberline {5.21}Super\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Obs Class Reference}{34}{section.5.21}
+\contentsline {section}{\numberline {5.22}Topological\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Charge Class Reference}{36}{section.5.22}
+\contentsline {section}{\numberline {5.23}Wilson\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flow Class Reference}{37}{section.5.23}
+\contentsline {chapter}{\numberline {6}File Documentation}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}lqcd.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{41}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{42}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}outputconf.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{42}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{43}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}outputconf.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{43}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{44}{subsection.6.3.1}
+\contentsline {chapter}{Index}{45}{section*.103}

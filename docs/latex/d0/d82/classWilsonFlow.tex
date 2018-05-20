@@ -1,0 +1,94 @@
+\hypertarget{classWilsonFlow}{}\section{Wilson\+Flow Class Reference}
+\label{classWilsonFlow}\index{Wilson\+Flow@{Wilson\+Flow}}
+
+
+Inheritance diagram for Wilson\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{d3/d84/classWilsonFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wilson\+Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/da6/classWilsonFlow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wilson\+Flow} (double tau\+Final, double epsilon)\hypertarget{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}{}\label{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}
+
+\item 
+void {\bfseries flow\+Configurations} ()\hypertarget{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}{}\label{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}
+
+\item 
+void {\bfseries set\+Action} (\hyperlink{classAction}{Action} $\ast$action)\hypertarget{classWilsonFlow_a6b9ddd40b8165511df3fced3405ed593}{}\label{classWilsonFlow_a6b9ddd40b8165511df3fced3405ed593}
+
+\item 
+void {\bfseries add\+Observable} (\hyperlink{classObservable}{Observable} $\ast$observable)\hypertarget{classWilsonFlow_a0298e3a3e1b963c127abca860b61a4a4}{}\label{classWilsonFlow_a0298e3a3e1b963c127abca860b61a4a4}
+
+\item 
+std\+::array$<$ int, 4 $>$ \& {\bfseries get\+Size} ()\hypertarget{classWilsonFlow_ad00fa2dc5a90ae26bef6cd99ec90edc0}{}\label{classWilsonFlow_ad00fa2dc5a90ae26bef6cd99ec90edc0}
+
+\item 
+std\+::vector$<$ double $>$ \& {\bfseries get\+Obs\+Values} ()\hypertarget{classWilsonFlow_adcdb166df76bbc40c0076f326a431314}{}\label{classWilsonFlow_adcdb166df76bbc40c0076f326a431314}
+
+\item 
+std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \& {\bfseries get\+Obs} ()\hypertarget{classWilsonFlow_a7105cd0a7a50a6775aadf9f717ff3478}{}\label{classWilsonFlow_a7105cd0a7a50a6775aadf9f717ff3478}
+
+\item 
+void {\bfseries create\+Lattice} (std\+::array$<$ int, 4 $>$ lattice\+Size)\hypertarget{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}{}\label{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}
+
+\item 
+void {\bfseries execute} ()\hypertarget{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}{}\label{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}
+
+\item 
+void {\bfseries initialize} ()\hypertarget{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}{}\label{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries compute\+Observables} ()\hypertarget{classWilsonFlow_aa9e371b2e2b8b1a24b372030dea6859b}{}\label{classWilsonFlow_aa9e371b2e2b8b1a24b372030dea6859b}
+
+\item 
+void {\bfseries flow\+Step} (double epsilon)\hypertarget{classWilsonFlow_a0ae15ce6735575690b3617f79e6cb20f}{}\label{classWilsonFlow_a0ae15ce6735575690b3617f79e6cb20f}
+
+\item 
+void {\bfseries apply\+Wilson\+Flow} (int conf\+Num, double epsilon)\hypertarget{classWilsonFlow_a72e7dc884133185d7f5410d212dfe4d5}{}\label{classWilsonFlow_a72e7dc884133185d7f5410d212dfe4d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+Z} = nullptr\hypertarget{classWilsonFlow_ad084fea2d78728ce9f3891c8c6cb475f}{}\label{classWilsonFlow_ad084fea2d78728ce9f3891c8c6cb475f}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries m\+\_\+obs\+Values}\hypertarget{classWilsonFlow_a4c77c1ecf832e6da041ec430cbfec401}{}\label{classWilsonFlow_a4c77c1ecf832e6da041ec430cbfec401}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries m\+\_\+input\+Conf\+List}\hypertarget{classWilsonFlow_a7dadedd9bdec4647e512248d3627d08c}{}\label{classWilsonFlow_a7dadedd9bdec4647e512248d3627d08c}
+
+\item 
+\hyperlink{structSU3}{S\+U3} {\bfseries omega}\hypertarget{classWilsonFlow_a991660c79ba24a305baa7bdf6ea146d8}{}\label{classWilsonFlow_a991660c79ba24a305baa7bdf6ea146d8}
+
+\item 
+double {\bfseries m\+\_\+epsilon}\hypertarget{classWilsonFlow_a83a352e3cb1cc2a39d48dd96d8e7e581}{}\label{classWilsonFlow_a83a352e3cb1cc2a39d48dd96d8e7e581}
+
+\item 
+double {\bfseries m\+\_\+tau\+Final}\hypertarget{classWilsonFlow_abe5e34f28b9bd915a0a39d44df1d8d4a}{}\label{classWilsonFlow_abe5e34f28b9bd915a0a39d44df1d8d4a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+wilsonflow.\+h\item 
+wilsonflow.\+cpp\end{DoxyCompactItemize}

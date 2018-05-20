@@ -1,0 +1,52 @@
+\hypertarget{classLatticeIO_1_1OutputTerm}{}\section{Lattice\+IO\+:\+:Output\+Term Class Reference}
+\label{classLatticeIO_1_1OutputTerm}\index{Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}}
+
+
+Class for standard output.  
+
+
+
+
+{\ttfamily \#include $<$outputterm.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}{print\+Initial\+Conditions} ()\hypertarget{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}{}\label{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}
+
+\begin{DoxyCompactList}\small\item\em Prints basic info about the system. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}{write\+Obs} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)\hypertarget{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}{}\label{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}
+
+\begin{DoxyCompactList}\small\item\em Prints the status of the current object list for a given conf. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}{print\+Therm\+Step} (int step, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, double accept\+Ratio)\hypertarget{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}{}\label{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}
+
+\begin{DoxyCompactList}\small\item\em Prints information about a thermalization step. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}{print\+Gen\+Step} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, double accept\+Ratio)\hypertarget{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}{}\label{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}
+
+\begin{DoxyCompactList}\small\item\em Prints information about a generation step. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}{write\+Flow\+Obs} (double flow\+Time, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)\hypertarget{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}{}\label{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}
+
+\begin{DoxyCompactList}\small\item\em Prints information about a flow time evolution step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for standard output. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+This class handles the standard terminal output dealing with the multi processor nature of the program. It checks on the M\+PI rank in order to decide whether to output or not. It also provides basic tools to print information about the system as it evolves. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{outputterm_8h}{outputterm.\+h}\item 
+outputterm.\+cpp\end{DoxyCompactItemize}

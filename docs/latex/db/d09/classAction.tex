@@ -1,0 +1,93 @@
+\hypertarget{classAction}{}\section{Action Class Reference}
+\label{classAction}\index{Action@{Action}}
+
+
+Prototype for the \hyperlink{classAction}{Action} class group.  
+
+
+
+
+{\ttfamily \#include $<$action.\+h$>$}
+
+
+
+Inheritance diagram for Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{d7/d94/classAction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{d7/dfc/classAction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classAction_ac0ea0d66e3ee4c7bdf0b478e613e5981}{compute} (int x, int y, int z, int t, int mu, \hyperlink{structSU3}{S\+U3} \&new\+Link)=0\hypertarget{classAction_ac0ea0d66e3ee4c7bdf0b478e613e5981}{}\label{classAction_ac0ea0d66e3ee4c7bdf0b478e613e5981}
+
+\begin{DoxyCompactList}\small\item\em Computes the action difference around a given link for a suggested move. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAction_ad6c5003169695d5cba0f69580040db50}{compute\+Staples} (int mu)=0\hypertarget{classAction_ad6c5003169695d5cba0f69580040db50}{}\label{classAction_ad6c5003169695d5cba0f69580040db50}
+
+\begin{DoxyCompactList}\small\item\em Computes the sum of the staples around all links. \end{DoxyCompactList}\item 
+virtual \hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \hyperlink{classAction_a722e4f88dda82440d0c6e19a43972b21}{compute\+Derivative} (int mu)=0\hypertarget{classAction_a722e4f88dda82440d0c6e19a43972b21}{}\label{classAction_a722e4f88dda82440d0c6e19a43972b21}
+
+\begin{DoxyCompactList}\small\item\em Computes the derivative in a given direction around all links. \end{DoxyCompactList}\item 
+void \hyperlink{classAction_a3c4e7cbcf64ae134fa86afd5d156b12b}{init\+Action} (\hyperlink{classField}{Gluon\+Field} $\ast$field)
+\begin{DoxyCompactList}\small\item\em Links the action to a given field and initializes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classField}{Gluon\+Field} $\ast$ \hyperlink{classAction_adfb7bb92099e0a908efaa4715e75fffd}{m\+\_\+lat} = nullptr\hypertarget{classAction_adfb7bb92099e0a908efaa4715e75fffd}{}\label{classAction_adfb7bb92099e0a908efaa4715e75fffd}
+
+\begin{DoxyCompactList}\small\item\em The Gluon\+Field object the action is linked to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Prototype for the \hyperlink{classAction}{Action} class group. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classAction}{Action} class is one of the key elements of the program. It specifies the acceptance of a Metropolis test and the evolution according to flow equations. It is of virtual type, so an implementation is always required. It mainly offers the possibility of retrieving the action around a single link or the derivative of the action around all links. 
+
+\subsection{Member Function Documentation}
+\index{Action@{Action}!init\+Action@{init\+Action}}
+\index{init\+Action@{init\+Action}!Action@{Action}}
+\subsubsection[{\texorpdfstring{init\+Action(\+Gluon\+Field $\ast$field)}{initAction(GluonField *field)}}]{\setlength{\rightskip}{0pt plus 5cm}void Action\+::init\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Gluon\+Field} $\ast$}]{lattice}
+\end{DoxyParamCaption}
+)}\hypertarget{classAction_a3c4e7cbcf64ae134fa86afd5d156b12b}{}\label{classAction_a3c4e7cbcf64ae134fa86afd5d156b12b}
+
+
+Links the action to a given field and initializes. 
+
+Links an action object to a Gluon\+Field object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & The gluonfield to link to the action instance. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{action_8h}{action.\+h}\item 
+action.\+cpp\end{DoxyCompactItemize}

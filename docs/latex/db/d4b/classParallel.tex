@@ -1,0 +1,128 @@
+\hypertarget{classParallel}{}\section{Parallel Class Reference}
+\label{classParallel}\index{Parallel@{Parallel}}
+
+
+Collaboration diagram for Parallel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d7c/classParallel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries initialize} ()\hypertarget{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}{}\label{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}
+
+\item 
+static void {\bfseries create\+Geometry} (std\+::array$<$ int, 4 $>$ lattice\+Size, std\+::array$<$ int, 4 $>$ sub\+Lattice\+Size)\hypertarget{classParallel_a8888fe404de3a3f479fff0796916f851}{}\label{classParallel_a8888fe404de3a3f479fff0796916f851}
+
+\item 
+static void {\bfseries finalize} ()\hypertarget{classParallel_ac81d8fad81830939d9338b2e46d71b60}{}\label{classParallel_ac81d8fad81830939d9338b2e46d71b60}
+
+\item 
+static int {\bfseries rank} ()\hypertarget{classParallel_ad8a436ba61d28a6f7569eec3ac4a929e}{}\label{classParallel_ad8a436ba61d28a6f7569eec3ac4a929e}
+
+\item 
+static int {\bfseries num\+Procs} ()\hypertarget{classParallel_a6af0b709a019dd91b0d3bbd4a2b74e54}{}\label{classParallel_a6af0b709a019dd91b0d3bbd4a2b74e54}
+
+\item 
+static int {\bfseries active\+Procs} ()\hypertarget{classParallel_a9569b920d302407a51a43c125a878b43}{}\label{classParallel_a9569b920d302407a51a43c125a878b43}
+
+\item 
+static bool {\bfseries is\+Active} ()\hypertarget{classParallel_a1402031c4027212fa9cd53cbe86b5b41}{}\label{classParallel_a1402031c4027212fa9cd53cbe86b5b41}
+
+\item 
+static M\+P\+I\+\_\+\+Comm {\bfseries cart\+Coord\+Comm} ()\hypertarget{classParallel_a127b363a07b22186627f532b2ab04c28}{}\label{classParallel_a127b363a07b22186627f532b2ab04c28}
+
+\item 
+static std\+::array$<$ int, 4 $>$ \& {\bfseries sub\+Blocks} ()\hypertarget{classParallel_ad237dc02b7a88cfc454b5a87573588ea}{}\label{classParallel_ad237dc02b7a88cfc454b5a87573588ea}
+
+\item 
+static std\+::array$<$ int, 4 $>$ \& {\bfseries rank\+Coord} ()\hypertarget{classParallel_a64dc2b62abe04ae4eeb2c55f9407b9dd}{}\label{classParallel_a64dc2b62abe04ae4eeb2c55f9407b9dd}
+
+\item 
+static std\+::array$<$ int, 4 $>$ \& {\bfseries lattice\+Sub\+Size} ()\hypertarget{classParallel_addeb93b221ca944c1916033f8ac5144e}{}\label{classParallel_addeb93b221ca944c1916033f8ac5144e}
+
+\item 
+static std\+::array$<$ int, 4 $>$ \& {\bfseries lattice\+Full\+Size} ()\hypertarget{classParallel_a5e2b7f890813ffc45221d92aee3e51bd}{}\label{classParallel_a5e2b7f890813ffc45221d92aee3e51bd}
+
+\item 
+static std\+::array$<$ int, 4 $>$ \& {\bfseries parity} ()\hypertarget{classParallel_ae4d683542868851b8d8229493c0fa412}{}\label{classParallel_ae4d683542868851b8d8229493c0fa412}
+
+\item 
+static int {\bfseries get\+Neighbor} (int direction, int sign)\hypertarget{classParallel_a4e99d3605b17fb51fa8a566cf0730179}{}\label{classParallel_a4e99d3605b17fb51fa8a566cf0730179}
+
+\item 
+static int {\bfseries get\+Second\+Neighbor} (int direction1, int sign1, int direction2, int sign2)\hypertarget{classParallel_afaecf8622c16bb5def671d881821db7d}{}\label{classParallel_afaecf8622c16bb5def671d881821db7d}
+
+\item 
+static void {\bfseries open\+File} (M\+P\+I\+\_\+\+File \&file, const char $\ast$file\+Name)\hypertarget{classParallel_afea26fc4854070b69224b42962b13091}{}\label{classParallel_afea26fc4854070b69224b42962b13091}
+
+\item 
+static void {\bfseries close\+File} (M\+P\+I\+\_\+\+File \&file)\hypertarget{classParallel_ad9ace91bf01fd00c19f7a20efc796285}{}\label{classParallel_ad9ace91bf01fd00c19f7a20efc796285}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries create\+Neighbor\+Lists} ()\hypertarget{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}{}\label{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}
+
+\item 
+static void {\bfseries assign\+Neighbor} (int direction)\hypertarget{classParallel_a246c14b38e3852f2f97458634cd01391}{}\label{classParallel_a246c14b38e3852f2f97458634cd01391}
+
+\item 
+static void {\bfseries assign\+Second\+Neighbor} (int dir1, int dir2)\hypertarget{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}{}\label{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}
+
+\item 
+static void {\bfseries My\+M\+P\+I\+\_\+\+Cart\+\_\+shift2} (M\+P\+I\+\_\+\+Comm comm, int dir1, int shift1, int dir2, int shift2, int \&source, int \&dest)\hypertarget{classParallel_a5a5e5ad59586bb545aa3840991b20af8}{}\label{classParallel_a5a5e5ad59586bb545aa3840991b20af8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries m\+\_\+rank}\hypertarget{classParallel_a5cf373f171edcaedf11030c39bfa6055}{}\label{classParallel_a5cf373f171edcaedf11030c39bfa6055}
+
+\item 
+static int {\bfseries m\+\_\+num\+Procs}\hypertarget{classParallel_ae30eb313e84bf0960335d061594b1669}{}\label{classParallel_ae30eb313e84bf0960335d061594b1669}
+
+\item 
+static int {\bfseries m\+\_\+active\+Procs}\hypertarget{classParallel_ab5fd380bb070f662b13ffadde8dcfbc4}{}\label{classParallel_ab5fd380bb070f662b13ffadde8dcfbc4}
+
+\item 
+static bool {\bfseries m\+\_\+is\+Active}\hypertarget{classParallel_af5ba1dee5fb926c072d216b4d49b0aed}{}\label{classParallel_af5ba1dee5fb926c072d216b4d49b0aed}
+
+\item 
+static M\+P\+I\+\_\+\+Comm {\bfseries m\+\_\+cart\+Coord\+Comm}\hypertarget{classParallel_a886d73b09f26abb0ce4b03ad45b3cb22}{}\label{classParallel_a886d73b09f26abb0ce4b03ad45b3cb22}
+
+\item 
+static std\+::array$<$ int, 4 $>$ {\bfseries m\+\_\+sub\+Blocks}\hypertarget{classParallel_a62fc29796675994cd44a75b8c91f510a}{}\label{classParallel_a62fc29796675994cd44a75b8c91f510a}
+
+\item 
+static std\+::array$<$ int, 4 $>$ {\bfseries m\+\_\+rank\+Coord}\hypertarget{classParallel_ab8c5da042ad34a29239c6c04a907961d}{}\label{classParallel_ab8c5da042ad34a29239c6c04a907961d}
+
+\item 
+static std\+::array$<$ int, 4 $>$ {\bfseries m\+\_\+lattice\+Sub\+Size}\hypertarget{classParallel_a578bef5d3e032b2e8c77e986b35fd1b8}{}\label{classParallel_a578bef5d3e032b2e8c77e986b35fd1b8}
+
+\item 
+static std\+::array$<$ int, 4 $>$ {\bfseries m\+\_\+lattice\+Full\+Size}\hypertarget{classParallel_a66a4636d98efd9b9f85eaf674a4e5c18}{}\label{classParallel_a66a4636d98efd9b9f85eaf674a4e5c18}
+
+\item 
+static std\+::array$<$ int, 4 $>$ {\bfseries m\+\_\+parity}\hypertarget{classParallel_a01f36b6b5f23733bb9e5ef537787f6fa}{}\label{classParallel_a01f36b6b5f23733bb9e5ef537787f6fa}
+
+\item 
+static M\+P\+I\+\_\+\+Comm {\bfseries m\+\_\+cart\+Coords}\hypertarget{classParallel_a522bd2939de7adbb0413bb14352a4172}{}\label{classParallel_a522bd2939de7adbb0413bb14352a4172}
+
+\item 
+static std\+::array$<$ std\+::array$<$ int, 2 $>$, 4 $>$ {\bfseries m\+\_\+neighbor}\hypertarget{classParallel_ac3c55e557814bf2ceff5f0561dfcc2d4}{}\label{classParallel_ac3c55e557814bf2ceff5f0561dfcc2d4}
+
+\item 
+static std\+::array$<$ std\+::array$<$ std\+::array$<$ std\+::array$<$ int, 2 $>$, 4 $>$, 2 $>$, 4 $>$ {\bfseries m\+\_\+second\+Neighbor}\hypertarget{classParallel_af69b636eab0ecd9d4a5066b38bfdc979}{}\label{classParallel_af69b636eab0ecd9d4a5066b38bfdc979}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+parallel.\+h\item 
+parallel.\+cpp\end{DoxyCompactItemize}

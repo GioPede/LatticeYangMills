@@ -1,0 +1,147 @@
+\hypertarget{classPureGauge}{}\section{Pure\+Gauge Class Reference}
+\label{classPureGauge}\index{Pure\+Gauge@{Pure\+Gauge}}
+
+
+Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classAction}{Action} class.  
+
+
+
+
+{\ttfamily \#include $<$puregauge.\+h$>$}
+
+
+
+Inheritance diagram for Pure\+Gauge\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{d8/da5/classPureGauge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pure\+Gauge\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d42/classPureGauge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pure\+Gauge} (\hyperlink{classField}{Gluon\+Field} $\ast$lattice, double beta)\hypertarget{classPureGauge_ae832fd1e6b53f6ca3d22961f4a2f80f7}{}\label{classPureGauge_ae832fd1e6b53f6ca3d22961f4a2f80f7}
+
+\item 
+\hyperlink{classPureGauge_ab219e717e036ee44696ba360a2b3674b}{Pure\+Gauge} (double beta)
+\begin{DoxyCompactList}\small\item\em Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classAction}{Action} class. \end{DoxyCompactList}\item 
+double \hyperlink{classPureGauge_a17facfc54c75a588826c00f8ef185bf0}{compute} (int x, int y, int z, int t, int mu, \hyperlink{structSU3}{S\+U3} \&new\+Link)\hypertarget{classPureGauge_a17facfc54c75a588826c00f8ef185bf0}{}\label{classPureGauge_a17facfc54c75a588826c00f8ef185bf0}
+
+\begin{DoxyCompactList}\small\item\em Computes the action difference around a given link for a suggested move. \end{DoxyCompactList}\item 
+void \hyperlink{classPureGauge_a7c78eb206450a209b4154fc936d8aad1}{compute\+Staples} (int mu)
+\begin{DoxyCompactList}\small\item\em Computes the staples along the given directionfor all links in the given direction. \end{DoxyCompactList}\item 
+\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \hyperlink{classPureGauge_a0d9272be98cf62567bbda93a892718eb}{compute\+Derivative} (int mu)
+\begin{DoxyCompactList}\small\item\em Computes the derivative of all links along the given direction. \end{DoxyCompactList}\item 
+void {\bfseries compute\+Staplez} (\hyperlink{classField}{Gluon\+Field} $\ast$lattice)\hypertarget{classPureGauge_a28706ff95422d3ac6e1dc9d2aabccf1a}{}\label{classPureGauge_a28706ff95422d3ac6e1dc9d2aabccf1a}
+
+\item 
+void {\bfseries compute\+Other\+Staples} (int x, int y, int z, int t, int mu)\hypertarget{classPureGauge_a5722f484c169539471da120aefa97dea}{}\label{classPureGauge_a5722f484c169539471da120aefa97dea}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries m\+\_\+beta}\hypertarget{classPureGauge_afc5d5fd50c90502b1851f7fa7295e68d}{}\label{classPureGauge_afc5d5fd50c90502b1851f7fa7295e68d}
+
+\item 
+\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+staples\+Lattice} = nullptr\hypertarget{classPureGauge_ae2b14c7d0c1e2f5cb070b9d8ed9ab237}{}\label{classPureGauge_ae2b14c7d0c1e2f5cb070b9d8ed9ab237}
+
+\item 
+\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+const\+Part}\hypertarget{classPureGauge_ae120c791a7462c26995eebc902a2ae2a}{}\label{classPureGauge_ae120c791a7462c26995eebc902a2ae2a}
+
+\item 
+\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ {\bfseries m\+\_\+omega}\hypertarget{classPureGauge_a1a70fe500b7f005c0e82da6b7c5f3509}{}\label{classPureGauge_a1a70fe500b7f005c0e82da6b7c5f3509}
+
+\item 
+\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ {\bfseries trace}\hypertarget{classPureGauge_abbe94c552df9ba24ba63377189af9f24}{}\label{classPureGauge_abbe94c552df9ba24ba63377189af9f24}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classAction}{Action} class. 
+
+beta The \$/beta\$ value of the action 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pure\+Gauge@{Pure\+Gauge}!Pure\+Gauge@{Pure\+Gauge}}
+\index{Pure\+Gauge@{Pure\+Gauge}!Pure\+Gauge@{Pure\+Gauge}}
+\subsubsection[{\texorpdfstring{Pure\+Gauge(double beta)}{PureGauge(double beta)}}]{\setlength{\rightskip}{0pt plus 5cm}Pure\+Gauge\+::\+Pure\+Gauge (
+\begin{DoxyParamCaption}
+\item[{double}]{beta}
+\end{DoxyParamCaption}
+)}\hypertarget{classPureGauge_ab219e717e036ee44696ba360a2b3674b}{}\label{classPureGauge_ab219e717e036ee44696ba360a2b3674b}
+
+
+Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classAction}{Action} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em beta} & The \$/beta\$ value of the action \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Pure\+Gauge@{Pure\+Gauge}!compute\+Derivative@{compute\+Derivative}}
+\index{compute\+Derivative@{compute\+Derivative}!Pure\+Gauge@{Pure\+Gauge}}
+\subsubsection[{\texorpdfstring{compute\+Derivative(int mu)}{computeDerivative(int mu)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lattice}$<$ {\bf S\+U3} $>$ Pure\+Gauge\+::compute\+Derivative (
+\begin{DoxyParamCaption}
+\item[{int}]{mu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPureGauge_a0d9272be98cf62567bbda93a892718eb}{}\label{classPureGauge_a0d9272be98cf62567bbda93a892718eb}
+
+
+Computes the derivative of all links along the given direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mu} & The index of the directions to compute the staples of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\+\_\+omega \hyperlink{classLattice}{Lattice$<$\+S\+U3$>$} containing the derivative of the Gluon\+Field 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAction_a722e4f88dda82440d0c6e19a43972b21}{Action}.
+
+\index{Pure\+Gauge@{Pure\+Gauge}!compute\+Staples@{compute\+Staples}}
+\index{compute\+Staples@{compute\+Staples}!Pure\+Gauge@{Pure\+Gauge}}
+\subsubsection[{\texorpdfstring{compute\+Staples(int mu)}{computeStaples(int mu)}}]{\setlength{\rightskip}{0pt plus 5cm}void Pure\+Gauge\+::compute\+Staples (
+\begin{DoxyParamCaption}
+\item[{int}]{mu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPureGauge_a7c78eb206450a209b4154fc936d8aad1}{}\label{classPureGauge_a7c78eb206450a209b4154fc936d8aad1}
+
+
+Computes the staples along the given directionfor all links in the given direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mu} & The index of the directions to compute the staples of \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAction_ad6c5003169695d5cba0f69580040db50}{Action}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+puregauge.\+h\item 
+puregauge.\+cpp\end{DoxyCompactItemize}

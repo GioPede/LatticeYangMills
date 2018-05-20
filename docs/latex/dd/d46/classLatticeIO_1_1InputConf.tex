@@ -1,0 +1,70 @@
+\hypertarget{classLatticeIO_1_1InputConf}{}\section{Lattice\+IO\+:\+:Input\+Conf Class Reference}
+\label{classLatticeIO_1_1InputConf}\index{Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}}
+
+
+Class for reding lattices from binary files.  
+
+
+
+
+{\ttfamily \#include $<$inputconf.\+h$>$}
+
+
+
+Collaboration diagram for Lattice\+IO\+:\+:Input\+Conf\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{d0/d42/classLatticeIO_1_1InputConf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{read\+Conf} (\hyperlink{classField}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{}\label{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}
+
+\begin{DoxyCompactList}\small\item\em Reads a binary file from a int marker for the name. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{read\+Conf} (\hyperlink{classField}{Gluon\+Field} \&lattice, const char $\ast$input\+File)\hypertarget{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{}\label{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}
+
+\begin{DoxyCompactList}\small\item\em Reads a binary file given its path into a lattice object. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{read\+Sub\+Lattice} (\hyperlink{classField}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{}\label{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}
+
+\begin{DoxyCompactList}\small\item\em Reads one binary file for each processor, assuming it is split. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{set\+Input\+Dir} (std\+::string input\+Dir)\hypertarget{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{}\label{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}
+
+\begin{DoxyCompactList}\small\item\em Sets the input directory. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}{get\+Input\+List} (std\+::vector$<$ std\+::string $>$ \&input\+Conf\+List)\hypertarget{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}{}\label{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}
+
+\begin{DoxyCompactList}\small\item\em Returns a list of all valid input files in a the input directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classLatticeIO_1_1InputConf_a1f6a72c39487a0b44cacd27b15a0df0d}{m\+\_\+link\+Size} = 18 $\ast$ sizeof(double)\hypertarget{classLatticeIO_1_1InputConf_a1f6a72c39487a0b44cacd27b15a0df0d}{}\label{classLatticeIO_1_1InputConf_a1f6a72c39487a0b44cacd27b15a0df0d}
+
+\begin{DoxyCompactList}\small\item\em Contains the size in bytes of a 4 links on a lattice site. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classLatticeIO_1_1InputConf_ac2dcaeda7ddb006f1446b53f5ec6f168}{m\+\_\+input\+Dir}\hypertarget{classLatticeIO_1_1InputConf_ac2dcaeda7ddb006f1446b53f5ec6f168}{}\label{classLatticeIO_1_1InputConf_ac2dcaeda7ddb006f1446b53f5ec6f168}
+
+\begin{DoxyCompactList}\small\item\em The path of the input directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for reding lattices from binary files. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+This object allows reading of Gluon\+Field objects as binary files. It uses M\+PI routines for handling a single input file with multiple processors. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{inputconf_8h}{inputconf.\+h}\item 
+inputconf.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+<map id="lqcd.h" name="lqcd.h">
+<area shape="rect" id="node2" href="$d7/d61/action_8h.html" title="Contains the definition of the Action prototype. " alt="" coords="725,237,841,263"/>
+<area shape="rect" id="node6" href="$d4/dca/latticemath_8h_source.html" title="Math/latticemath.h" alt="" coords="313,721,443,748"/>
+<area shape="rect" id="node13" href="$df/d5c/parallel_8h_source.html" title="ParallelTools/parallel.h" alt="" coords="392,871,545,897"/>
+<area shape="rect" id="node19" href="$dd/d0c/actionlist_8h_source.html" title="Actions/actionlist.h" alt="" coords="515,80,649,107"/>
+<area shape="rect" id="node21" href="$d2/dc3/applist_8h_source.html" title="Apps/applist.h" alt="" coords="624,319,729,345"/>
+<area shape="rect" id="node23" href="$d6/d1e/observable_8h_source.html" title="Observables/observable.h" alt="" coords="1375,572,1549,599"/>
+<area shape="rect" id="node28" href="$dc/dac/io_8h.html" title="Main include file for input output related headers. " alt="" coords="1745,80,1859,107"/>
+<area shape="rect" id="node44" href="$da/d46/observablelist_8h_source.html" title="Observables/observablelist.h" alt="" coords="2121,80,2312,107"/>
+<area shape="rect" id="node46" href="$d7/d29/latticeunits_8h_source.html" title="Utils/latticeunits.h" alt="" coords="1877,572,2004,599"/>
+<area shape="rect" id="node3" href="$d5/d5a/field_8h_source.html" title="Math/field.h" alt="" coords="1021,647,1111,673"/>
+<area shape="rect" id="node7" href="$da/de0/lattice_8h_source.html" title="lattice.h" alt="" coords="600,796,668,823"/>
+<area shape="rect" id="node9" href="$d1/df4/su3_8h_source.html" title="su3.h" alt="" coords="261,871,316,897"/>
+<area shape="rect" id="node14" href="$d1/d79/random_8h_source.html" title="random.h" alt="" coords="104,796,180,823"/>
+<area shape="rect" id="node17" href="$d7/d3b/complex_8h_source.html" title="complex.h" alt="" coords="306,796,389,823"/>
+<area shape="rect" id="node18" href="$d2/d91/point_8h_source.html" title="point.h" alt="" coords="413,796,474,823"/>
+<area shape="rect" id="node11" href="$df/d5b/clusterspecifier_8h_source.html" title="Utils/clusterspecifier.h" alt="" coords="365,945,517,972"/>
+<area shape="rect" id="node20" href="$de/d02/puregauge_8h_source.html" title="Actions/puregauge.h" alt="" coords="509,155,650,181"/>
+<area shape="rect" id="node22" href="$d2/d39/app_8h_source.html" title="app.h" alt="" coords="901,490,956,517"/>
+<area shape="rect" id="node25" href="$d6/d5e/gaugefieldfactory_8h_source.html" title="gaugefieldfactory.h" alt="" coords="337,401,469,427"/>
+<area shape="rect" id="node26" href="$d8/d09/gaugefieldreader_8h_source.html" title="gaugefieldreader.h" alt="" coords="613,401,741,427"/>
+<area shape="rect" id="node27" href="$d3/df8/wilsonflow_8h_source.html" title="wilsonflow.h" alt="" coords="493,401,588,427"/>
+<area shape="rect" id="node29" href="$d5/d57/inputconf_8h.html" title="Contains classes for reading lattices from binary files. " alt="" coords="1940,319,2027,345"/>
+<area shape="rect" id="node30" href="$d6/dca/outputconf_8h.html" title="Contains classes for saving lattices to binary files. " alt="" coords="1104,572,1199,599"/>
+<area shape="rect" id="node31" href="$d4/d05/outputobs_8h.html" title="Contains classes for output to file of observables values. " alt="" coords="1595,490,1686,517"/>
+<area shape="rect" id="node32" href="$dc/d00/outputterm_8h.html" title="Contains classes for output to standard command line interface. " alt="" coords="1415,490,1509,517"/>
+<area shape="rect" id="node33" href="$d3/d35/jsoninput_8h_source.html" title="JsonInput/jsoninput.h" alt="" coords="1729,155,1875,181"/>
+<area shape="rect" id="node37" href="$da/df7/jsonitems_8h_source.html" title="InputOutput/JsonInput\l/jsonitems.h" alt="" coords="1527,229,1677,271"/>
+<area shape="rect" id="node38" href="$dc/da0/jsongeneric_8h_source.html" title="JsonGeneric/jsongeneric.h" alt="" coords="1527,319,1703,345"/>
+<area shape="rect" id="node42" href="$db/dfd/jsonaction_8h_source.html" title="JsonAction/jsonaction.h" alt="" coords="917,401,1079,427"/>
+<area shape="rect" id="node43" href="$d2/de0/jsonobservable_8h_source.html" title="JsonObservable/jsonobservable.h" alt="" coords="1103,401,1322,427"/>
+<area shape="rect" id="node39" href="$d9/db0/jsonapp_8h_source.html" title="InputOutput/JsonInput\l/JsonGeneric/jsonapp.h" alt="" coords="1347,393,1505,435"/>
+<area shape="rect" id="node40" href="$da/dc9/jsonlattice_8h_source.html" title="InputOutput/JsonInput\l/JsonGeneric/jsonlattice.h" alt="" coords="1753,393,1926,435"/>
+<area shape="rect" id="node41" href="$d7/d87/jsondirectories_8h_source.html" title="InputOutput/JsonInput\l/JsonGeneric/jsondirectories.h" alt="" coords="1529,393,1728,435"/>
+<area shape="rect" id="node45" href="$d0/df6/superobs_8h_source.html" title="superobs.h" alt="" coords="1711,490,1797,517"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="io.h" name="io.h">
+<area shape="rect" id="node2" href="$d5/d57/inputconf_8h.html" title="Contains classes for reading lattices from binary files. " alt="" coords="80,244,167,271"/>
+<area shape="rect" id="node19" href="$d6/dca/outputconf_8h.html" title="Contains classes for saving lattices to binary files. " alt="" coords="261,497,356,524"/>
+<area shape="rect" id="node20" href="$d4/d05/outputobs_8h.html" title="Contains classes for output to file of observables values. " alt="" coords="969,415,1059,442"/>
+<area shape="rect" id="node23" href="$dc/d00/outputterm_8h.html" title="Contains classes for output to standard command line interface. " alt="" coords="849,415,944,442"/>
+<area shape="rect" id="node24" href="$d3/d35/jsoninput_8h_source.html" title="JsonInput/jsoninput.h" alt="" coords="1027,80,1174,107"/>
+<area shape="rect" id="node28" href="$da/df7/jsonitems_8h_source.html" title="InputOutput/JsonInput\l/jsonitems.h" alt="" coords="877,155,1028,196"/>
+<area shape="rect" id="node3" href="$d5/d5a/field_8h_source.html" title="Math/field.h" alt="" coords="430,572,521,599"/>
+<area shape="rect" id="node6" href="$d4/dca/latticemath_8h_source.html" title="Math/latticemath.h" alt="" coords="393,647,523,673"/>
+<area shape="rect" id="node7" href="$da/de0/lattice_8h_source.html" title="lattice.h" alt="" coords="529,721,597,748"/>
+<area shape="rect" id="node9" href="$d1/df4/su3_8h_source.html" title="su3.h" alt="" coords="245,796,300,823"/>
+<area shape="rect" id="node14" href="$d1/d79/random_8h_source.html" title="random.h" alt="" coords="132,721,208,748"/>
+<area shape="rect" id="node17" href="$d7/d3b/complex_8h_source.html" title="complex.h" alt="" coords="338,721,421,748"/>
+<area shape="rect" id="node18" href="$d2/d91/point_8h_source.html" title="point.h" alt="" coords="245,721,306,748"/>
+<area shape="rect" id="node11" href="$df/d5b/clusterspecifier_8h_source.html" title="Utils/clusterspecifier.h" alt="" coords="471,871,623,897"/>
+<area shape="rect" id="node13" href="$df/d5c/parallel_8h_source.html" title="ParallelTools/parallel.h" alt="" coords="376,796,529,823"/>
+<area shape="rect" id="node22" href="$d6/d1e/observable_8h_source.html" title="Observables/observable.h" alt="" coords="702,497,875,524"/>
+<area shape="rect" id="node29" href="$dc/da0/jsongeneric_8h_source.html" title="JsonGeneric/jsongeneric.h" alt="" coords="865,244,1041,271"/>
+<area shape="rect" id="node34" href="$db/dfd/jsonaction_8h_source.html" title="JsonAction/jsonaction.h" alt="" coords="485,326,647,353"/>
+<area shape="rect" id="node35" href="$d2/de0/jsonobservable_8h_source.html" title="JsonObservable/jsonobservable.h" alt="" coords="242,326,461,353"/>
+<area shape="rect" id="node30" href="$d9/db0/jsonapp_8h_source.html" title="InputOutput/JsonInput\l/JsonGeneric/jsonapp.h" alt="" coords="671,319,829,360"/>
+<area shape="rect" id="node32" href="$da/dc9/jsonlattice_8h_source.html" title="InputOutput/JsonInput\l/JsonGeneric/jsonlattice.h" alt="" coords="1077,319,1250,360"/>
+<area shape="rect" id="node33" href="$d7/d87/jsondirectories_8h_source.html" title="InputOutput/JsonInput\l/JsonGeneric/jsondirectories.h" alt="" coords="853,319,1052,360"/>
+<area shape="rect" id="node31" href="$d2/d39/app_8h_source.html" title="Apps/app.h" alt="" coords="562,415,650,442"/>
+</map>

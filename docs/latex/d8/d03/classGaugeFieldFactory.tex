@@ -1,0 +1,109 @@
+\hypertarget{classGaugeFieldFactory}{}\section{Gauge\+Field\+Factory Class Reference}
+\label{classGaugeFieldFactory}\index{Gauge\+Field\+Factory@{Gauge\+Field\+Factory}}
+
+
+Inheritance diagram for Gauge\+Field\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{da/deb/classGaugeFieldFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gauge\+Field\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd0/classGaugeFieldFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Gauge\+Field\+Factory} (int M\+C\+Steps, int therm\+Steps, int N\+Conf, double epsilon, std\+::string start\+Type)\hypertarget{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}{}\label{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}
+
+\item 
+void {\bfseries generate\+Configurations} ()\hypertarget{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}{}\label{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}
+
+\item 
+std\+::vector$<$ double $>$ \& {\bfseries get\+Obs\+Values} ()\hypertarget{classGaugeFieldFactory_a3455c32bf0d8e97c5b20a6372b108a42}{}\label{classGaugeFieldFactory_a3455c32bf0d8e97c5b20a6372b108a42}
+
+\item 
+void {\bfseries execute} ()\hypertarget{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}{}\label{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries initialize} ()\hypertarget{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}{}\label{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}
+
+\item 
+void {\bfseries M\+C\+Update} ()\hypertarget{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}{}\label{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}
+
+\item 
+void {\bfseries update\+Link} (int x, int y, int z, int t, int mu)\hypertarget{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}{}\label{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}
+
+\item 
+void {\bfseries compute\+Observables} ()\hypertarget{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}{}\label{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}
+
+\item 
+void {\bfseries thermalize} ()\hypertarget{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}{}\label{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}
+
+\item 
+void {\bfseries sample\+Conf} ()\hypertarget{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}{}\label{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}
+
+\item 
+void {\bfseries thermalize\+Time} ()\hypertarget{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}{}\label{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}
+
+\item 
+void {\bfseries sample\+Conf\+Time} ()\hypertarget{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}{}\label{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ {\bfseries m\+\_\+obs\+Values}\hypertarget{classGaugeFieldFactory_ab6d5d1f77e9731709899bf68a13d6b66}{}\label{classGaugeFieldFactory_ab6d5d1f77e9731709899bf68a13d6b66}
+
+\item 
+int {\bfseries m\+\_\+\+M\+C\+Steps}\hypertarget{classGaugeFieldFactory_acdb2e28a0996b989e90507aeaa779358}{}\label{classGaugeFieldFactory_acdb2e28a0996b989e90507aeaa779358}
+
+\item 
+int {\bfseries m\+\_\+correlation\+Steps}\hypertarget{classGaugeFieldFactory_a4766228f02c8e75b98c36d9b3231a13d}{}\label{classGaugeFieldFactory_a4766228f02c8e75b98c36d9b3231a13d}
+
+\item 
+int {\bfseries m\+\_\+therm\+Steps}\hypertarget{classGaugeFieldFactory_aa4426a1d60452c4882556224262ab447}{}\label{classGaugeFieldFactory_aa4426a1d60452c4882556224262ab447}
+
+\item 
+int {\bfseries m\+\_\+confs}\hypertarget{classGaugeFieldFactory_a08f5104224cb00356243d3a7deee1331}{}\label{classGaugeFieldFactory_a08f5104224cb00356243d3a7deee1331}
+
+\item 
+std\+::string {\bfseries m\+\_\+start\+Type}\hypertarget{classGaugeFieldFactory_a270a1a8e7995761b26d41cf2217fd180}{}\label{classGaugeFieldFactory_a270a1a8e7995761b26d41cf2217fd180}
+
+\item 
+double {\bfseries m\+\_\+epsilon}\hypertarget{classGaugeFieldFactory_a615f5d961e3326339a6e39d11c1fffea}{}\label{classGaugeFieldFactory_a615f5d961e3326339a6e39d11c1fffea}
+
+\item 
+long int {\bfseries m\+\_\+accepted} = 0\hypertarget{classGaugeFieldFactory_ae1910e40b9471b9722e6392d1f4665cc}{}\label{classGaugeFieldFactory_ae1910e40b9471b9722e6392d1f4665cc}
+
+\item 
+long int {\bfseries m\+\_\+updates} = 0\hypertarget{classGaugeFieldFactory_a4e1118e49b8ead095c6ceead1a337943}{}\label{classGaugeFieldFactory_a4e1118e49b8ead095c6ceead1a337943}
+
+\item 
+long {\bfseries m\+\_\+seed}\hypertarget{classGaugeFieldFactory_a56f0e062cd0cb3d73b487891ccb67462}{}\label{classGaugeFieldFactory_a56f0e062cd0cb3d73b487891ccb67462}
+
+\item 
+const char $\ast$ {\bfseries m\+\_\+out\+Dir}\hypertarget{classGaugeFieldFactory_ad231575f1bf834b20ff5e948331b748c}{}\label{classGaugeFieldFactory_ad231575f1bf834b20ff5e948331b748c}
+
+\item 
+\hyperlink{structSU3}{S\+U3} {\bfseries new\+Link}\hypertarget{classGaugeFieldFactory_af15971c810e2e4cee7de71e9560b16fc}{}\label{classGaugeFieldFactory_af15971c810e2e4cee7de71e9560b16fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gaugefieldfactory.\+h\item 
+gaugefieldfactory.\+cpp\end{DoxyCompactItemize}

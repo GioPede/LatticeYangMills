@@ -1,0 +1,64 @@
+\hypertarget{classLatticeIO_1_1OutputConf}{}\section{Lattice\+IO\+:\+:Output\+Conf Class Reference}
+\label{classLatticeIO_1_1OutputConf}\index{Lattice\+I\+O\+::\+Output\+Conf@{Lattice\+I\+O\+::\+Output\+Conf}}
+
+
+Class for saving lattices to binary files.  
+
+
+
+
+{\ttfamily \#include $<$outputconf.\+h$>$}
+
+
+
+Collaboration diagram for Lattice\+IO\+:\+:Output\+Conf\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{dd/d13/classLatticeIO_1_1OutputConf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}{write\+Conf} (\hyperlink{classField}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}{}\label{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}
+
+\begin{DoxyCompactList}\small\item\em Saves the given Gluon\+Field object to the ouput directory. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputConf_a1c4247249c03a2ec761cf4eee25a47a1}{write\+Sub\+Lattice} (\hyperlink{classField}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1OutputConf_a1c4247249c03a2ec761cf4eee25a47a1}{}\label{classLatticeIO_1_1OutputConf_a1c4247249c03a2ec761cf4eee25a47a1}
+
+\begin{DoxyCompactList}\small\item\em Saves the Gluon\+Field object in a set of files, one for each core. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}{set\+Output\+Dir} (std\+::string output\+Dir)\hypertarget{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}{}\label{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}
+
+\begin{DoxyCompactList}\small\item\em Sets the output directory path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classLatticeIO_1_1OutputConf_a6866129cf7fe3c5e36034296b2e1bf15}{m\+\_\+link\+Size} = 72 $\ast$ sizeof(double)\hypertarget{classLatticeIO_1_1OutputConf_a6866129cf7fe3c5e36034296b2e1bf15}{}\label{classLatticeIO_1_1OutputConf_a6866129cf7fe3c5e36034296b2e1bf15}
+
+\begin{DoxyCompactList}\small\item\em Contains the size in bytes of a 4 links on a lattice site. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classLatticeIO_1_1OutputConf_a99c20c25ac656605f5d42f5d3bd8b9d4}{m\+\_\+output\+Dir}\hypertarget{classLatticeIO_1_1OutputConf_a99c20c25ac656605f5d42f5d3bd8b9d4}{}\label{classLatticeIO_1_1OutputConf_a99c20c25ac656605f5d42f5d3bd8b9d4}
+
+\begin{DoxyCompactList}\small\item\em The path of the output directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for saving lattices to binary files. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+This object allows saving of Gluon\+Field objects as binary files. It uses M\+PI routines for handling a single output file with multiple processors. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{outputconf_8h}{outputconf.\+h}\item 
+\hyperlink{outputconf_8cpp}{outputconf.\+cpp}\end{DoxyCompactItemize}

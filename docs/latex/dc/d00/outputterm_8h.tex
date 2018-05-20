@@ -1,0 +1,47 @@
+\hypertarget{outputterm_8h}{}\section{outputterm.\+h File Reference}
+\label{outputterm_8h}\index{outputterm.\+h@{outputterm.\+h}}
+
+
+Contains classes for output to standard command line interface.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Math/lattice.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Observables/observable.\+h\char`\"{}}\\*
+Include dependency graph for outputterm.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d4d/outputterm_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d44/outputterm_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classLatticeIO_1_1OutputTerm}{Lattice\+I\+O\+::\+Output\+Term}
+\begin{DoxyCompactList}\small\item\em Class for standard output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains classes for output to standard command line interface. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+This file defines the class needed for ouputting to standard command line interface, handling the multiprocess nature of the code. Namely it only allows one processor to output any data, preventing the others from doing anything. 

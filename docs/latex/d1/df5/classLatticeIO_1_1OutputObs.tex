@@ -1,0 +1,70 @@
+\hypertarget{classLatticeIO_1_1OutputObs}{}\section{Lattice\+IO\+:\+:Output\+Obs Class Reference}
+\label{classLatticeIO_1_1OutputObs}\index{Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}}
+
+
+Class for output to file of observables values.  
+
+
+
+
+{\ttfamily \#include $<$outputobs.\+h$>$}
+
+
+
+Collaboration diagram for Lattice\+IO\+:\+:Output\+Obs\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{dc/d4b/classLatticeIO_1_1OutputObs__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}{initialize} (std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)\hypertarget{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}{}\label{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}
+
+\begin{DoxyCompactList}\small\item\em Opens the files and writes needed headers. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}{write\+Obs} (std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, int M\+C\+Steps)\hypertarget{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}{}\label{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}
+
+\begin{DoxyCompactList}\small\item\em Writes the list of observables to file at given generation point. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}{write\+Flow\+Obs} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&obs\+Matrix)\hypertarget{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}{}\label{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}
+
+\begin{DoxyCompactList}\small\item\em Writes the observables for given flow step. \end{DoxyCompactList}\item 
+static void \hyperlink{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}{set\+Output\+Dir} (std\+::string output\+Dir)\hypertarget{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}{}\label{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}
+
+\begin{DoxyCompactList}\small\item\em Sets the output directory for the file output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static F\+I\+LE $\ast$ \hyperlink{classLatticeIO_1_1OutputObs_ad725efe02bfef0f70ef2a43722ce041d}{m\+\_\+file}\hypertarget{classLatticeIO_1_1OutputObs_ad725efe02bfef0f70ef2a43722ce041d}{}\label{classLatticeIO_1_1OutputObs_ad725efe02bfef0f70ef2a43722ce041d}
+
+\begin{DoxyCompactList}\small\item\em The file object for target output. \end{DoxyCompactList}\item 
+static char \hyperlink{classLatticeIO_1_1OutputObs_a451f0e835e3dfe2fc70cf779b73aae5d}{file\+Name} \mbox{[}1024\mbox{]}\hypertarget{classLatticeIO_1_1OutputObs_a451f0e835e3dfe2fc70cf779b73aae5d}{}\label{classLatticeIO_1_1OutputObs_a451f0e835e3dfe2fc70cf779b73aae5d}
+
+\begin{DoxyCompactList}\small\item\em The name of the output file. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classLatticeIO_1_1OutputObs_a3ec9162c9ca9ddae173a1facbaa64a3a}{m\+\_\+output\+Dir}\hypertarget{classLatticeIO_1_1OutputObs_a3ec9162c9ca9ddae173a1facbaa64a3a}{}\label{classLatticeIO_1_1OutputObs_a3ec9162c9ca9ddae173a1facbaa64a3a}
+
+\begin{DoxyCompactList}\small\item\em The output directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for output to file of observables values. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+This file defines the class needed to file the values of the observables at different steps in the execution. It handles through M\+PI the acces to files depending on rank. Provides output for generation and flow steps. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{outputobs_8h}{outputobs.\+h}\item 
+outputobs.\+cpp\end{DoxyCompactItemize}
