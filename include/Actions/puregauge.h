@@ -36,9 +36,16 @@
 #include "Actions/action.h"
 #include "Math/latticemath.h"
 
-//! Initializer for the PureGauge Action class.
-/*!
- *   beta The $/beta$ value of the action
+/*! \class     PureGauge
+ *  \brief     Implementation of the PureGauge derived Action class
+ *  \author    Giovanni Pederiva
+ *  \version   1.0
+ *  \date      2017-2018
+ *  \copyright MIT License.
+ * 
+ *  The PureGauge class implements the Wilson Plaquette Action in its simplest
+ *  formulation. The action is given by the sum of the plaquettes around a 
+ *  specified link.
  */
 class PureGauge : public Action {
 public:

@@ -1,3 +1,37 @@
+/******************************************************************************
+* 
+* MIT License
+* 
+* Copyright (c) 2018 Giovanni Pederiva
+* 
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in 
+* all copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+******************************************************************************/
+
+/*! \file      gaugefieldreader.cpp
+ *  \brief     Contains the implementation of the GaugeFieldReader class 
+ *             methods
+ *  \author    Giovanni Pederiva
+ *  \version   1.0
+ *  \date      2017-2018
+ *  \copyright MIT License.
+ */
+
 #include "Utils/clusterspecifier.h"
 #ifndef LACONIA
 #include <mpi/mpi.h>
@@ -12,12 +46,18 @@
 #include <random>
 #include "lqcd.h"
 
-
+/*!
+ *   \brief Executes the App code. Perform initialization of subclasses and 
+ *   start the reading of the configuration
+ */  
 void GaugeFieldReader::execute(){
-    LatticeIO::OutputTerm::writeObs(1,m_obs);
+    initGFR();
+    navigateConf();
 }
 
-// CREATE THE LATTICE AND INITIALIZE OBJECTS
+/*!
+ *   \brief Initializes the GluonField based on the size, and the observables
+ */  
 void GaugeFieldReader::initGFR(){
     m_lat = new GluonField(m_size);
     for(int i = 0; i < m_obs.size(); i++){
@@ -25,44 +65,11 @@ void GaugeFieldReader::initGFR(){
     }
 }
 
-// MAIN FUNCTION OF CLASS. GENERATES GAUGE FIELD CONFIGURATION USING METROPILIS'
-// ALGORITHM AND SAVES THEM FOR FUTURE ANALISYS.
-void GaugeFieldReader::sampleConfigurations(){
-    // check that current processor should be active
-    if(Parallel::isActive()){
-        for(int conf = 0; conf < m_inputConfList.size(); conf++){
-            LatticeIO::InputConf::readConf(*m_lat, m_inputConfList[conf].c_str());
-            for(int i = 0; i < m_obs.size(); i++)
-                m_obs[i]->compute();
-            if(Parallel::rank() == 0) {
-                for(int i = 0; i < m_obs.size(); i++){
-                    double temp, value = 0.0;
-                    for(int rank = 1; rank < Parallel::activeProcs() ; rank++){
-                        MPI_Recv(&temp, 1, MPI_DOUBLE, rank, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                        value += temp;
-                    }
-                    value += m_obs[i]-> value();
-                    printf("Conf %i\t Plaq = %f \n", conf, value / Parallel::activeProcs());
-                }
-            }
-
-            else{
-                for(int i = 0; i < m_obs.size(); i++){
-                    double temp = m_obs[i]-> value();
-                    MPI_Send(&temp, 1, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
-                }
-            }
-        }
-    }
-}
-
-/*
-// GETTERS AND SETTERS
-Point& GaugeFieldReader::getLatticeSite(int x, int y, int z, int t){
-    return (*m_lat)(x,y,z,t);
-}
-*/
-void GaugeFieldReader::addObservable(Observable *observable){
-    m_obs.push_back(observable);
-    m_obsValues.push_back(0.0);
+/*!
+ *   \brief reads input link positions then prints information about it
+ */  
+void GaugeFieldReader::navigateConf(){
+    /*
+        to be fixed...
+    */
 }

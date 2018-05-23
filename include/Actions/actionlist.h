@@ -23,8 +23,8 @@
 * SOFTWARE.
 ******************************************************************************/
 
-/*! \file      action.h 
- *  \brief     Main include file for action derived classes
+/*! \file      actionlist.h 
+ *  \brief     Main include file for Action derived classes
  *  \author    Giovanni Pederiva
  *  \version   1.0
  *  \date      2017-2018
