@@ -39,12 +39,12 @@ virtual void \hyperlink{classAction_ad6c5003169695d5cba0f69580040db50}{compute\+
 virtual \hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \hyperlink{classAction_a722e4f88dda82440d0c6e19a43972b21}{compute\+Derivative} (int mu)=0\hypertarget{classAction_a722e4f88dda82440d0c6e19a43972b21}{}\label{classAction_a722e4f88dda82440d0c6e19a43972b21}
 
 \begin{DoxyCompactList}\small\item\em Computes the derivative in a given direction around all links. \end{DoxyCompactList}\item 
-void \hyperlink{classAction_a3c4e7cbcf64ae134fa86afd5d156b12b}{init\+Action} (\hyperlink{classField}{Gluon\+Field} $\ast$field)
+void \hyperlink{classAction_a3c4e7cbcf64ae134fa86afd5d156b12b}{init\+Action} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$field)
 \begin{DoxyCompactList}\small\item\em Links the action to a given field and initializes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ \hyperlink{classAction_adfb7bb92099e0a908efaa4715e75fffd}{m\+\_\+lat} = nullptr\hypertarget{classAction_adfb7bb92099e0a908efaa4715e75fffd}{}\label{classAction_adfb7bb92099e0a908efaa4715e75fffd}
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ \hyperlink{classAction_adfb7bb92099e0a908efaa4715e75fffd}{m\+\_\+lat} = nullptr\hypertarget{classAction_adfb7bb92099e0a908efaa4715e75fffd}{}\label{classAction_adfb7bb92099e0a908efaa4715e75fffd}
 
 \begin{DoxyCompactList}\small\item\em The Gluon\+Field object the action is linked to. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -66,6 +66,10 @@ M\+IT License.
 \end{DoxyCopyright}
 The \hyperlink{classAction}{Action} class is one of the key elements of the program. It specifies the acceptance of a Metropolis test and the evolution according to flow equations. It is of virtual type, so an implementation is always required. It mainly offers the possibility of retrieving the action around a single link or the derivative of the action around all links. 
 
+Definition at line 54 of file action.\+h.
+
+
+
 \subsection{Member Function Documentation}
 \index{Action@{Action}!init\+Action@{init\+Action}}
 \index{init\+Action@{init\+Action}!Action@{Action}}
@@ -85,6 +89,10 @@ Links an action object to a Gluon\+Field object.
 {\em lattice} & The gluonfield to link to the action instance. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 8 of file action.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

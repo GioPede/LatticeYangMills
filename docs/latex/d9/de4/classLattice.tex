@@ -2,6 +2,15 @@
 \label{classLattice}\index{Lattice$<$ T $>$@{Lattice$<$ T $>$}}
 
 
+Template class to store an array with 4 dimensional indices of a given datatype. Includes functionalities for parallel shifts.  
+
+
+
+
+{\ttfamily \#include $<$lattice.\+h$>$}
+
+
+
 Collaboration diagram for Lattice$<$ T $>$\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -125,7 +134,31 @@ int {\bfseries sites}\hypertarget{classLattice_a445869fa94228c717650aefa85d02567
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class Lattice$<$ T $>$}
+
+Template class to store an array with 4 dimensional indices of a given datatype. Includes functionalities for parallel shifts. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classLattice}{Lattice} Template is an object to store an array of a given datatype that is accessible through 4 dimensional indices, mimicking the 4D euclidean indices. Operators for element wise arithmetic are implemented. \hyperlink{classLattice}{Lattice} shifts are defined to allow parallel execution. 
+
+Definition at line 38 of file action.\+h.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{action_8h}{action.\+h}\item 
-lattice.\+h\end{DoxyCompactItemize}
+\hyperlink{lattice_8h}{lattice.\+h}\end{DoxyCompactItemize}

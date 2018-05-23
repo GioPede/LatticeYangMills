@@ -1,0 +1,11 @@
+digraph "JsonGeneric" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_272517f69a54521c398f84aae7a716df {
+    graph [ bgcolor="#ddddee", pencolor="black", label="JsonInput" fontname="Helvetica", fontsize="10", URL="dir_272517f69a54521c398f84aae7a716df.html"]
+  dir_5db7f2cd01cf33ea8c50fa2a67140176 [shape=box, label="JsonGeneric", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5db7f2cd01cf33ea8c50fa2a67140176.html"];
+  }
+  dir_2a07555916b8e053adb13fd7b0e59b23 [shape=box label="Apps" URL="dir_2a07555916b8e053adb13fd7b0e59b23.html"];
+  dir_5db7f2cd01cf33ea8c50fa2a67140176->dir_2a07555916b8e053adb13fd7b0e59b23 [headlabel="1", labeldistance=1.5 headhref="dir_000019_000005.html"];
+}

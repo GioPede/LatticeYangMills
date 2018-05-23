@@ -1,0 +1,22 @@
+digraph "InputOutput" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  subgraph clusterdir_97ec47cdf1cccbfcdcbb0691c6d8a83b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_97ec47cdf1cccbfcdcbb0691c6d8a83b.html"];
+    dir_97ec47cdf1cccbfcdcbb0691c6d8a83b [shape=plaintext label="InputOutput"];
+    dir_272517f69a54521c398f84aae7a716df [shape=box label="JsonInput" color="red" fillcolor="white" style="filled" URL="dir_272517f69a54521c398f84aae7a716df.html"];
+  }
+  }
+  dir_6169d17290d9404be5262c21e04fa2c7 [shape=box label="Math" URL="dir_6169d17290d9404be5262c21e04fa2c7.html"];
+  dir_2a07555916b8e053adb13fd7b0e59b23 [shape=box label="Apps" URL="dir_2a07555916b8e053adb13fd7b0e59b23.html"];
+  dir_0f8d1dc4912f69f42d08f65320dd3b3d [shape=box label="Observables" URL="dir_0f8d1dc4912f69f42d08f65320dd3b3d.html"];
+  dir_2a07555916b8e053adb13fd7b0e59b23->dir_6169d17290d9404be5262c21e04fa2c7 [headlabel="1", labeldistance=1.5 headhref="dir_000005_000010.html"];
+  dir_2a07555916b8e053adb13fd7b0e59b23->dir_0f8d1dc4912f69f42d08f65320dd3b3d [headlabel="1", labeldistance=1.5 headhref="dir_000005_000008.html"];
+  dir_97ec47cdf1cccbfcdcbb0691c6d8a83b->dir_6169d17290d9404be5262c21e04fa2c7 [headlabel="3", labeldistance=1.5 headhref="dir_000013_000010.html"];
+  dir_97ec47cdf1cccbfcdcbb0691c6d8a83b->dir_0f8d1dc4912f69f42d08f65320dd3b3d [headlabel="2", labeldistance=1.5 headhref="dir_000013_000008.html"];
+  dir_0f8d1dc4912f69f42d08f65320dd3b3d->dir_6169d17290d9404be5262c21e04fa2c7 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000010.html"];
+  dir_272517f69a54521c398f84aae7a716df->dir_2a07555916b8e053adb13fd7b0e59b23 [headlabel="3", labeldistance=1.5 headhref="dir_000016_000005.html"];
+}

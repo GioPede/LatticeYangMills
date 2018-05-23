@@ -2,6 +2,15 @@
 \label{classGaugeFieldFactory}\index{Gauge\+Field\+Factory@{Gauge\+Field\+Factory}}
 
 
+Implementation of the \hyperlink{classGaugeFieldFactory}{Gauge\+Field\+Factory} \hyperlink{classApp}{App} class.  
+
+
+
+
+{\ttfamily \#include $<$gaugefieldfactory.\+h$>$}
+
+
+
 Inheritance diagram for Gauge\+Field\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -11,8 +20,7 @@ Inheritance diagram for Gauge\+Field\+Factory\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Gauge\+Field\+Factory\+:
-\nopagebreak
+Collaboration diagram for Gauge\+Field\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,45 +30,45 @@ Collaboration diagram for Gauge\+Field\+Factory\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Gauge\+Field\+Factory} (int M\+C\+Steps, int therm\+Steps, int N\+Conf, double epsilon, std\+::string start\+Type)\hypertarget{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}{}\label{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}
+\hyperlink{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}{Gauge\+Field\+Factory} (int M\+C\+Steps, int therm\+Steps, int N\+Conf, double epsilon, std\+::string start\+Type)\hypertarget{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}{}\label{classGaugeFieldFactory_ab4de95086757f8dad2bb82225990798c}
 
-\item 
-void {\bfseries generate\+Configurations} ()\hypertarget{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}{}\label{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{classGaugeFieldFactory}{Gauge\+Field\+Factory} object. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}{generate\+Configurations} ()\hypertarget{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}{}\label{classGaugeFieldFactory_a44af20883686c17d5cc02b0017981a00}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Run the thermalization first, then the sampling of configurations. \end{DoxyCompactList}\item 
 std\+::vector$<$ double $>$ \& {\bfseries get\+Obs\+Values} ()\hypertarget{classGaugeFieldFactory_a3455c32bf0d8e97c5b20a6372b108a42}{}\label{classGaugeFieldFactory_a3455c32bf0d8e97c5b20a6372b108a42}
 
 \item 
-void {\bfseries execute} ()\hypertarget{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}{}\label{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}
+void \hyperlink{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}{execute} ()\hypertarget{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}{}\label{classGaugeFieldFactory_ae71b983ead390226ddad5d0f13aba0c6}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Executes the \hyperlink{classApp}{App} code. Perform initialization of subclasses and the system, then runst the Monte Carlo algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries initialize} ()\hypertarget{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}{}\label{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}
+void \hyperlink{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}{initialize} ()\hypertarget{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}{}\label{classGaugeFieldFactory_a3b7b0bc33811c149c85b595f5c724ddb}
 
-\item 
-void {\bfseries M\+C\+Update} ()\hypertarget{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}{}\label{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}
+\begin{DoxyCompactList}\small\item\em Initializes the Gluon\+Field based on the initial condition (hot/cold), runs the initializers of the subclasses. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}{M\+C\+Update} ()\hypertarget{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}{}\label{classGaugeFieldFactory_a23a45078029941f5e5dd2d699935d38b}
 
-\item 
-void {\bfseries update\+Link} (int x, int y, int z, int t, int mu)\hypertarget{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}{}\label{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}
+\begin{DoxyCompactList}\small\item\em Loops over all links and tres to update them. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}{update\+Link} (int x, int y, int z, int t, int mu)\hypertarget{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}{}\label{classGaugeFieldFactory_ac58103157c9d39daa4819e2f9e8b7024}
 
-\item 
-void {\bfseries compute\+Observables} ()\hypertarget{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}{}\label{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}
+\begin{DoxyCompactList}\small\item\em Tries to update a single link 30 times (N\+\_\+\+Hits) \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}{compute\+Observables} ()\hypertarget{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}{}\label{classGaugeFieldFactory_a70fc0cc23088b190f35c56885762812a}
 
-\item 
-void {\bfseries thermalize} ()\hypertarget{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}{}\label{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}
+\begin{DoxyCompactList}\small\item\em Computes the \hyperlink{classObservable}{Observable} value for all memebers of the m\+\_\+obs vector. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}{thermalize} ()\hypertarget{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}{}\label{classGaugeFieldFactory_a18bc263a1dac26f0147063c33e33a518}
 
-\item 
-void {\bfseries sample\+Conf} ()\hypertarget{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}{}\label{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}
+\begin{DoxyCompactList}\small\item\em Perform N\+\_\+\+Therm Monte Carlo updates to thermalize the system. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}{sample\+Conf} ()\hypertarget{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}{}\label{classGaugeFieldFactory_a37df236572b4c1adf1a00d3d1374621a}
 
-\item 
-void {\bfseries thermalize\+Time} ()\hypertarget{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}{}\label{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}
+\begin{DoxyCompactList}\small\item\em Performs the Monte Carlo updates, every N\+\_\+\+Corr saves the lattice and computes observables. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}{thermalize\+Time} ()\hypertarget{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}{}\label{classGaugeFieldFactory_aaacc047577bbb5d0fcb790525d8ff958}
 
-\item 
-void {\bfseries sample\+Conf\+Time} ()\hypertarget{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}{}\label{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}
+\begin{DoxyCompactList}\small\item\em Perform N\+\_\+\+Therm Monte Carlo updates to thermalize the system. Prints times of execution. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}{sample\+Conf\+Time} ()\hypertarget{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}{}\label{classGaugeFieldFactory_adc5d83defde9295cdc32c9c4ec59af59}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Performs the Monte Carlo updates, every N\+\_\+\+Corr saves the lattice and computes observables. Prints out times of execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -103,7 +111,28 @@ const char $\ast$ {\bfseries m\+\_\+out\+Dir}\hypertarget{classGaugeFieldFactory
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Implementation of the \hyperlink{classGaugeFieldFactory}{Gauge\+Field\+Factory} \hyperlink{classApp}{App} class. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classGaugeFieldFactory}{Gauge\+Field\+Factory} class implements the Metropolis algorithm to generate an ensemble of gauge field configurations. It requires and \hyperlink{classAction}{Action} to be specified and the length of the Markov-\/\+Chain to simulate. 
+
+Definition at line 51 of file gaugefieldfactory.\+h.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-gaugefieldfactory.\+h\item 
-gaugefieldfactory.\+cpp\end{DoxyCompactItemize}
+\hyperlink{gaugefieldfactory_8h}{gaugefieldfactory.\+h}\item 
+\hyperlink{gaugefieldfactory_8cpp}{gaugefieldfactory.\+cpp}\end{DoxyCompactItemize}

@@ -76,15 +76,15 @@ Collaboration diagram for LatticeIO::InputConf:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a70d70bfdc0252ddaa3d2bcd472590982"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70d70bfdc0252ddaa3d2bcd472590982"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classLatticeIO_1_1InputConf.html#a70d70bfdc0252ddaa3d2bcd472590982">readConf</a> (<a class="el" href="../../d7/d24/classField.html">GluonField</a> &amp;lattice, int confNum)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classLatticeIO_1_1InputConf.html#a70d70bfdc0252ddaa3d2bcd472590982">readConf</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, int confNum)</td></tr>
 <tr class="memdesc:a70d70bfdc0252ddaa3d2bcd472590982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a binary file from a int marker for the name. <br /></td></tr>
 <tr class="separator:a70d70bfdc0252ddaa3d2bcd472590982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed71fc3df1e2a9999e4466b5eefdf723"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed71fc3df1e2a9999e4466b5eefdf723"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classLatticeIO_1_1InputConf.html#aed71fc3df1e2a9999e4466b5eefdf723">readConf</a> (<a class="el" href="../../d7/d24/classField.html">GluonField</a> &amp;lattice, const char *inputFile)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classLatticeIO_1_1InputConf.html#aed71fc3df1e2a9999e4466b5eefdf723">readConf</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, const char *inputFile)</td></tr>
 <tr class="memdesc:aed71fc3df1e2a9999e4466b5eefdf723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a binary file given its path into a lattice object. <br /></td></tr>
 <tr class="separator:aed71fc3df1e2a9999e4466b5eefdf723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea75c17916f8ce880d02a13b127cea8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ea75c17916f8ce880d02a13b127cea8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classLatticeIO_1_1InputConf.html#a0ea75c17916f8ce880d02a13b127cea8">readSubLattice</a> (<a class="el" href="../../d7/d24/classField.html">GluonField</a> &amp;lattice, int confNum)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d46/classLatticeIO_1_1InputConf.html#a0ea75c17916f8ce880d02a13b127cea8">readSubLattice</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, int confNum)</td></tr>
 <tr class="memdesc:a0ea75c17916f8ce880d02a13b127cea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads one binary file for each processor, assuming it is split. <br /></td></tr>
 <tr class="separator:a0ea75c17916f8ce880d02a13b127cea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a84ce29fc32889d6c356c3afd09b71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a84ce29fc32889d6c356c3afd09b71"></a>
@@ -113,10 +113,12 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2017-2018 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>MIT License.</dd></dl>
-<p>This object allows reading of GluonField objects as binary files. It uses MPI routines for handling a single input file with multiple processors. </p>
+<p>This class mainly serves the purpose of providing an interface for reading GluonField objects from binary format. </p>
+
+<p>Definition at line <a class="el" href="../../d5/d57/inputconf_8h_source.html#l00050">50</a> of file <a class="el" href="../../d5/d57/inputconf_8h_source.html">inputconf.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d5/d57/inputconf_8h_source.html">inputconf.h</a></li>
-<li>inputconf.cpp</li>
+<li><a class="el" href="../../d8/d1d/inputconf_8cpp_source.html">inputconf.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

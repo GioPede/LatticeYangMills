@@ -2,6 +2,15 @@
 \label{classField}\index{Field$<$ T, N $>$@{Field$<$ T, N $>$}}
 
 
+Class that represents the Q\+CD field as an array of 4 \hyperlink{structSU3}{S\+U3} lattices.  
+
+
+
+
+{\ttfamily \#include $<$field.\+h$>$}
+
+
+
 Collaboration diagram for Field$<$ T, N $>$\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -35,6 +44,30 @@ std\+::array$<$ \hyperlink{classLattice}{Lattice}$<$ T $>$, N $>$ {\bfseries m\+
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, int N$>$\\*
+class Field$<$ T, N $>$}
+
+Class that represents the Q\+CD field as an array of 4 \hyperlink{structSU3}{S\+U3} lattices. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classField}{Field} class is a convenience object that stores 4 lattices of one dattype, one for each euclidean dimension. It allows indexed access to the individual components via the operator\mbox{[}\mbox{]}. 
+
+Definition at line 53 of file field.\+h.
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-field.\+h\end{DoxyCompactItemize}
+\hyperlink{field_8h}{field.\+h}\end{DoxyCompactItemize}

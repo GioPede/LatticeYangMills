@@ -21,13 +21,13 @@ Collaboration diagram for Lattice\+IO\+:\+:Input\+Conf\+:\nopagebreak
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{read\+Conf} (\hyperlink{classField}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{}\label{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}
+static void \hyperlink{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{read\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{}\label{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}
 
 \begin{DoxyCompactList}\small\item\em Reads a binary file from a int marker for the name. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{read\+Conf} (\hyperlink{classField}{Gluon\+Field} \&lattice, const char $\ast$input\+File)\hypertarget{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{}\label{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}
+static void \hyperlink{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{read\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, const char $\ast$input\+File)\hypertarget{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{}\label{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}
 
 \begin{DoxyCompactList}\small\item\em Reads a binary file given its path into a lattice object. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{read\+Sub\+Lattice} (\hyperlink{classField}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{}\label{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}
+static void \hyperlink{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{read\+Sub\+Lattice} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{}\label{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}
 
 \begin{DoxyCompactList}\small\item\em Reads one binary file for each processor, assuming it is split. \end{DoxyCompactList}\item 
 static void \hyperlink{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{set\+Input\+Dir} (std\+::string input\+Dir)\hypertarget{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{}\label{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}
@@ -62,7 +62,11 @@ Giovanni Pederiva
 \begin{DoxyCopyright}{Copyright}
 M\+IT License.
 \end{DoxyCopyright}
-This object allows reading of Gluon\+Field objects as binary files. It uses M\+PI routines for handling a single input file with multiple processors. 
+This class mainly serves the purpose of providing an interface for reading Gluon\+Field objects from binary format. 
+
+Definition at line 50 of file inputconf.\+h.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

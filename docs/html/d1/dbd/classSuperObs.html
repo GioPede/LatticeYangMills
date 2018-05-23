@@ -59,6 +59,11 @@
 <div class="title">SuperObs Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class to compute the plaquette, the energy density and the topological charge.  
+ <a href="../../d1/dbd/classSuperObs.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/df6/superobs_8h_source.html">superobs.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SuperObs:</div>
 <div class="dyncontent">
@@ -82,7 +87,7 @@ Collaboration diagram for SuperObs:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a292660868f04e6afc8c1300ec6fca5cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a292660868f04e6afc8c1300ec6fca5cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initObservable</b> (<a class="el" href="../../d7/d24/classField.html">GluonField</a> *field)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initObservable</b> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> *field)</td></tr>
 <tr class="separator:a292660868f04e6afc8c1300ec6fca5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e5e240fca5bdab31046fa87805456d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84e5e240fca5bdab31046fa87805456d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>compute</b> ()</td></tr>
@@ -146,7 +151,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>gatherResults</b> ()<
 <tr class="separator:ae42f1c4bf6362dde45f8f6e8042f2ff5 inherit pro_methods_classObservable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classObservable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classObservable')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d9/db4/classObservable.html">Observable</a></td></tr>
 <tr class="memitem:a3f3b97a6ccf3662fc4285e0249fc7e55 inherit pro_attribs_classObservable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f3b97a6ccf3662fc4285e0249fc7e55"></a>
-<a class="el" href="../../d7/d24/classField.html">GluonField</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_field</b> = nullptr</td></tr>
+<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_field</b> = nullptr</td></tr>
 <tr class="separator:a3f3b97a6ccf3662fc4285e0249fc7e55 inherit pro_attribs_classObservable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65689c61e83937902110f9da43b4a327 inherit pro_attribs_classObservable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65689c61e83937902110f9da43b4a327"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></tr>
@@ -155,9 +160,18 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></t
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
 <tr class="separator:ac48d8fce3be9fefa7af3bb3cd4e01e06 inherit pro_attribs_classObservable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class to compute the plaquette, the energy density and the topological charge. </p>
+<dl class="section author"><dt>Author</dt><dd>Giovanni Pederiva </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2017-2018 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License.</dd></dl>
+<p>Currently used observable class. Computes the clover for the <a class="el" href="../../d7/d24/classField.html" title="Class that represents the QCD field as an array of 4 SU3 lattices. ">Field</a> Strength Tensor and uses it to compute the plaquette, the energy density and the topological charge. This should be changed... </p>
+
+<p>Definition at line <a class="el" href="../../d0/df6/superobs_8h_source.html#l00052">52</a> of file <a class="el" href="../../d0/df6/superobs_8h_source.html">superobs.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d0/df6/superobs_8h_source.html">superobs.h</a></li>
-<li>superobs.cpp</li>
+<li><a class="el" href="../../df/d69/superobs_8cpp_source.html">superobs.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

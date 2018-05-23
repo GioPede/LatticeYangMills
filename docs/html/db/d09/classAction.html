@@ -94,14 +94,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual <a class="el" href="../../d9/de4/classLattice.html">Lattice</a>&lt; <a class="el" href="../../d6/d3e/structSU3.html">SU3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classAction.html#a722e4f88dda82440d0c6e19a43972b21">computeDerivative</a> (int mu)=0</td></tr>
 <tr class="memdesc:a722e4f88dda82440d0c6e19a43972b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the derivative in a given direction around all links. <br /></td></tr>
 <tr class="separator:a722e4f88dda82440d0c6e19a43972b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c4e7cbcf64ae134fa86afd5d156b12b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classAction.html#a3c4e7cbcf64ae134fa86afd5d156b12b">initAction</a> (<a class="el" href="../../d7/d24/classField.html">GluonField</a> *field)</td></tr>
+<tr class="memitem:a3c4e7cbcf64ae134fa86afd5d156b12b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classAction.html#a3c4e7cbcf64ae134fa86afd5d156b12b">initAction</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> *field)</td></tr>
 <tr class="memdesc:a3c4e7cbcf64ae134fa86afd5d156b12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links the action to a given field and initializes.  <a href="#a3c4e7cbcf64ae134fa86afd5d156b12b">More...</a><br /></td></tr>
 <tr class="separator:a3c4e7cbcf64ae134fa86afd5d156b12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:adfb7bb92099e0a908efaa4715e75fffd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfb7bb92099e0a908efaa4715e75fffd"></a>
-<a class="el" href="../../d7/d24/classField.html">GluonField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classAction.html#adfb7bb92099e0a908efaa4715e75fffd">m_lat</a> = nullptr</td></tr>
+<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classAction.html#adfb7bb92099e0a908efaa4715e75fffd">m_lat</a> = nullptr</td></tr>
 <tr class="memdesc:adfb7bb92099e0a908efaa4715e75fffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GluonField object the action is linked to. <br /></td></tr>
 <tr class="separator:adfb7bb92099e0a908efaa4715e75fffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -112,6 +112,8 @@ Protected Attributes</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2017-2018 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>MIT License.</dd></dl>
 <p>The <a class="el" href="../../db/d09/classAction.html" title="Prototype for the Action class group. ">Action</a> class is one of the key elements of the program. It specifies the acceptance of a Metropolis test and the evolution according to flow equations. It is of virtual type, so an implementation is always required. It mainly offers the possibility of retrieving the action around a single link or the derivative of the action around all links. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d61/action_8h_source.html#l00054">54</a> of file <a class="el" href="../../d7/d61/action_8h_source.html">action.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3c4e7cbcf64ae134fa86afd5d156b12b"></a>
 <div class="memitem">
@@ -120,7 +122,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Action::initAction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/d24/classField.html">GluonField</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> *&#160;</td>
           <td class="paramname"><em>lattice</em></td><td>)</td>
           <td></td>
         </tr>
@@ -136,11 +138,13 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d1/d83/action_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../d1/d83/action_8cpp_source.html">action.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d7/d61/action_8h_source.html">action.h</a></li>
-<li>action.cpp</li>
+<li><a class="el" href="../../d1/d83/action_8cpp_source.html">action.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,0 +1,30 @@
+\hypertarget{actionlist_8h}{}\section{actionlist.\+h File Reference}
+\label{actionlist_8h}\index{actionlist.\+h@{actionlist.\+h}}
+
+
+Main include file for \hyperlink{classAction}{Action} derived classes.  
+
+
+{\ttfamily \#include \char`\"{}Actions/puregauge.\+h\char`\"{}}\\*
+Include dependency graph for actionlist.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+
+
+\subsection{Detailed Description}
+Main include file for \hyperlink{classAction}{Action} derived classes. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+This file provides a simple access to all of the classes that implement the \hyperlink{classAction}{Action} type 

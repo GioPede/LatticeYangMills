@@ -2,6 +2,15 @@
 \label{classGaugeFieldReader}\index{Gauge\+Field\+Reader@{Gauge\+Field\+Reader}}
 
 
+Implementation of the \hyperlink{classGaugeFieldReader}{Gauge\+Field\+Reader} \hyperlink{classApp}{App} class.  
+
+
+
+
+{\ttfamily \#include $<$gaugefieldreader.\+h$>$}
+
+
+
 Inheritance diagram for Gauge\+Field\+Reader\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -11,8 +20,7 @@ Inheritance diagram for Gauge\+Field\+Reader\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Gauge\+Field\+Reader\+:
-\nopagebreak
+Collaboration diagram for Gauge\+Field\+Reader\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,12 +30,12 @@ Collaboration diagram for Gauge\+Field\+Reader\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries init\+G\+FR} ()\hypertarget{classGaugeFieldReader_aa4eac4656319ffb5d397dc6dd6b4f426}{}\label{classGaugeFieldReader_aa4eac4656319ffb5d397dc6dd6b4f426}
+void \hyperlink{classGaugeFieldReader_aa4eac4656319ffb5d397dc6dd6b4f426}{init\+G\+FR} ()\hypertarget{classGaugeFieldReader_aa4eac4656319ffb5d397dc6dd6b4f426}{}\label{classGaugeFieldReader_aa4eac4656319ffb5d397dc6dd6b4f426}
 
-\item 
-void {\bfseries sample\+Configurations} ()\hypertarget{classGaugeFieldReader_acc45c7e6e91ccb4e1b7f8d1f65104153}{}\label{classGaugeFieldReader_acc45c7e6e91ccb4e1b7f8d1f65104153}
+\begin{DoxyCompactList}\small\item\em Initializes the Gluon\+Field based on the size, and the observables. \end{DoxyCompactList}\item 
+void \hyperlink{classGaugeFieldReader_ae047fbcc24c34482d639028df877687a}{navigate\+Conf} ()\hypertarget{classGaugeFieldReader_ae047fbcc24c34482d639028df877687a}{}\label{classGaugeFieldReader_ae047fbcc24c34482d639028df877687a}
 
-\item 
+\begin{DoxyCompactList}\small\item\em reads input link positions then prints information about it \end{DoxyCompactList}\item 
 void {\bfseries add\+Observable} (\hyperlink{classObservable}{Observable} $\ast$observable)\hypertarget{classGaugeFieldReader_af795e0891c276b0a6c8d8ade159df3b8}{}\label{classGaugeFieldReader_af795e0891c276b0a6c8d8ade159df3b8}
 
 \item 
@@ -43,13 +51,13 @@ std\+::vector$<$ double $>$ \& {\bfseries get\+Obs\+Values} ()\hypertarget{class
 std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \& {\bfseries get\+Obs} ()\hypertarget{classGaugeFieldReader_a3326dd6abb58a608a387e7e91a1ed0cc}{}\label{classGaugeFieldReader_a3326dd6abb58a608a387e7e91a1ed0cc}
 
 \item 
-void {\bfseries execute} ()\hypertarget{classGaugeFieldReader_af410d62a4f0e146db40111d5be672264}{}\label{classGaugeFieldReader_af410d62a4f0e146db40111d5be672264}
+void \hyperlink{classGaugeFieldReader_af410d62a4f0e146db40111d5be672264}{execute} ()\hypertarget{classGaugeFieldReader_af410d62a4f0e146db40111d5be672264}{}\label{classGaugeFieldReader_af410d62a4f0e146db40111d5be672264}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Executes the \hyperlink{classApp}{App} code. Perform initialization of subclasses and start the reading of the configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+lat} = nullptr\hypertarget{classGaugeFieldReader_a5463d397d298c410b7a22d5f5b4a479e}{}\label{classGaugeFieldReader_a5463d397d298c410b7a22d5f5b4a479e}
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+lat} = nullptr\hypertarget{classGaugeFieldReader_a5463d397d298c410b7a22d5f5b4a479e}{}\label{classGaugeFieldReader_a5463d397d298c410b7a22d5f5b4a479e}
 
 \item 
 std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ {\bfseries m\+\_\+obs}\hypertarget{classGaugeFieldReader_a754535c031598fef45833888e9979fe1}{}\label{classGaugeFieldReader_a754535c031598fef45833888e9979fe1}
@@ -70,7 +78,28 @@ const char $\ast$ {\bfseries m\+\_\+out\+Dir}\hypertarget{classGaugeFieldReader_
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Implementation of the \hyperlink{classGaugeFieldReader}{Gauge\+Field\+Reader} \hyperlink{classApp}{App} class. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classGaugeFieldReader}{Gauge\+Field\+Reader} app is a simple program to print individual links of a given gauge field configuration (an input file). 
+
+Definition at line 51 of file gaugefieldreader.\+h.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-gaugefieldreader.\+h\item 
-gaugefieldreader.\+cpp\end{DoxyCompactItemize}
+\hyperlink{gaugefieldreader_8h}{gaugefieldreader.\+h}\item 
+\hyperlink{gaugefieldreader_8cpp}{gaugefieldreader.\+cpp}\end{DoxyCompactItemize}

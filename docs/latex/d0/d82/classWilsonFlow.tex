@@ -2,6 +2,15 @@
 \label{classWilsonFlow}\index{Wilson\+Flow@{Wilson\+Flow}}
 
 
+Implementation of the \hyperlink{classWilsonFlow}{Wilson\+Flow} \hyperlink{classApp}{App} class.  
+
+
+
+
+{\ttfamily \#include $<$wilsonflow.\+h$>$}
+
+
+
 Inheritance diagram for Wilson\+Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -11,8 +20,7 @@ Inheritance diagram for Wilson\+Flow\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Wilson\+Flow\+:
-\nopagebreak
+Collaboration diagram for Wilson\+Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,12 +30,11 @@ Collaboration diagram for Wilson\+Flow\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Wilson\+Flow} (double tau\+Final, double epsilon)\hypertarget{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}{}\label{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}
+\hyperlink{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}{Wilson\+Flow} (double tau\+Final, double epsilon)
+\begin{DoxyCompactList}\small\item\em constructor of the class \end{DoxyCompactList}\item 
+void \hyperlink{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}{flow\+Configurations} ()\hypertarget{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}{}\label{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}
 
-\item 
-void {\bfseries flow\+Configurations} ()\hypertarget{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}{}\label{classWilsonFlow_aff7b61f80cd9d4aa6d19e7281b2016d1}
-
-\item 
+\begin{DoxyCompactList}\small\item\em applies the gradient flow to all the configurations given as input \end{DoxyCompactList}\item 
 void {\bfseries set\+Action} (\hyperlink{classAction}{Action} $\ast$action)\hypertarget{classWilsonFlow_a6b9ddd40b8165511df3fced3405ed593}{}\label{classWilsonFlow_a6b9ddd40b8165511df3fced3405ed593}
 
 \item 
@@ -43,31 +50,30 @@ std\+::vector$<$ double $>$ \& {\bfseries get\+Obs\+Values} ()\hypertarget{class
 std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \& {\bfseries get\+Obs} ()\hypertarget{classWilsonFlow_a7105cd0a7a50a6775aadf9f717ff3478}{}\label{classWilsonFlow_a7105cd0a7a50a6775aadf9f717ff3478}
 
 \item 
-void {\bfseries create\+Lattice} (std\+::array$<$ int, 4 $>$ lattice\+Size)\hypertarget{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}{}\label{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}
+void \hyperlink{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}{create\+Lattice} (std\+::array$<$ int, 4 $>$ lattice\+Size)\hypertarget{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}{}\label{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}
 
-\item 
-void {\bfseries execute} ()\hypertarget{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}{}\label{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}
+\begin{DoxyCompactList}\small\item\em creates the Gluon\+Field object and the temporary lattice for the action derivative. \end{DoxyCompactList}\item 
+void \hyperlink{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}{execute} ()\hypertarget{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}{}\label{classWilsonFlow_a300944faffcb90c69ba9e2b62fd31561}
 
-\item 
-void {\bfseries initialize} ()\hypertarget{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}{}\label{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}
+\begin{DoxyCompactList}\small\item\em Executes the \hyperlink{classApp}{App}. First initializes the system then applies the gradient flow to the configurations. \end{DoxyCompactList}\item 
+void \hyperlink{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}{initialize} ()\hypertarget{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}{}\label{classWilsonFlow_afc84f29eab27e12f9ff51417dd6cf984}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em runs the initializers of the subclasses. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void {\bfseries compute\+Observables} ()\hypertarget{classWilsonFlow_aa9e371b2e2b8b1a24b372030dea6859b}{}\label{classWilsonFlow_aa9e371b2e2b8b1a24b372030dea6859b}
 
 \item 
-void {\bfseries flow\+Step} (double epsilon)\hypertarget{classWilsonFlow_a0ae15ce6735575690b3617f79e6cb20f}{}\label{classWilsonFlow_a0ae15ce6735575690b3617f79e6cb20f}
+void {\bfseries flow\+Step} ()\hypertarget{classWilsonFlow_aee1b088e9560a35e72a79d2cafc433c6}{}\label{classWilsonFlow_aee1b088e9560a35e72a79d2cafc433c6}
 
 \item 
-void {\bfseries apply\+Wilson\+Flow} (int conf\+Num, double epsilon)\hypertarget{classWilsonFlow_a72e7dc884133185d7f5410d212dfe4d5}{}\label{classWilsonFlow_a72e7dc884133185d7f5410d212dfe4d5}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classWilsonFlow_ae24fd21ddd2c6703b1cb02245dd20138}{apply\+Wilson\+Flow} (int conf\+Num)
+\begin{DoxyCompactList}\small\item\em applies the gradient flow to one configuration \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+Z} = nullptr\hypertarget{classWilsonFlow_ad084fea2d78728ce9f3891c8c6cb475f}{}\label{classWilsonFlow_ad084fea2d78728ce9f3891c8c6cb475f}
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+Z} = nullptr\hypertarget{classWilsonFlow_ad084fea2d78728ce9f3891c8c6cb475f}{}\label{classWilsonFlow_ad084fea2d78728ce9f3891c8c6cb475f}
 
 \item 
 std\+::vector$<$ double $>$ {\bfseries m\+\_\+obs\+Values}\hypertarget{classWilsonFlow_a4c77c1ecf832e6da041ec430cbfec401}{}\label{classWilsonFlow_a4c77c1ecf832e6da041ec430cbfec401}
@@ -88,7 +94,77 @@ double {\bfseries m\+\_\+tau\+Final}\hypertarget{classWilsonFlow_abe5e34f28b9bd9
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Implementation of the \hyperlink{classWilsonFlow}{Wilson\+Flow} \hyperlink{classApp}{App} class. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classWilsonFlow}{Wilson\+Flow} class implements Gradiend Flow method as suggested by M.\+Lüscher in the article \href{https://arxiv.org/abs/1006.4518}{\tt https\+://arxiv.\+org/abs/1006.\+4518} The integration scheme is a third order Runge-\/\+Kutta method for Lie algebras, so called Runge-\/\+Kutta Munthe-\/\+Kaas R\+K-\/\+MK method. 
+
+Definition at line 53 of file wilsonflow.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wilson\+Flow@{Wilson\+Flow}!Wilson\+Flow@{Wilson\+Flow}}
+\index{Wilson\+Flow@{Wilson\+Flow}!Wilson\+Flow@{Wilson\+Flow}}
+\subsubsection[{\texorpdfstring{Wilson\+Flow(double tau\+Final, double epsilon)}{WilsonFlow(double tauFinal, double epsilon)}}]{\setlength{\rightskip}{0pt plus 5cm}Wilson\+Flow\+::\+Wilson\+Flow (
+\begin{DoxyParamCaption}
+\item[{double}]{tau\+Final, }
+\item[{double}]{epsilon}
+\end{DoxyParamCaption}
+)}\hypertarget{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}{}\label{classWilsonFlow_a0ab55b82c101e093397192bbfa658609}
+
+
+constructor of the class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tau\+Final} & the final flow time to be reached by the integration \\
+\hline
+{\em epsilon} & the integration step size \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file wilsonflow.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Wilson\+Flow@{Wilson\+Flow}!apply\+Wilson\+Flow@{apply\+Wilson\+Flow}}
+\index{apply\+Wilson\+Flow@{apply\+Wilson\+Flow}!Wilson\+Flow@{Wilson\+Flow}}
+\subsubsection[{\texorpdfstring{apply\+Wilson\+Flow(int conf\+Num)}{applyWilsonFlow(int confNum)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wilson\+Flow\+::apply\+Wilson\+Flow (
+\begin{DoxyParamCaption}
+\item[{int}]{conf\+Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classWilsonFlow_ae24fd21ddd2c6703b1cb02245dd20138}{}\label{classWilsonFlow_ae24fd21ddd2c6703b1cb02245dd20138}
+
+
+applies the gradient flow to one configuration 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conf\+Num} & the numerical label of the configuration to flow \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file wilsonflow.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-wilsonflow.\+h\item 
-wilsonflow.\+cpp\end{DoxyCompactItemize}
+\hyperlink{wilsonflow_8h}{wilsonflow.\+h}\item 
+\hyperlink{wilsonflow_8cpp}{wilsonflow.\+cpp}\end{DoxyCompactItemize}

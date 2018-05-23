@@ -2,6 +2,15 @@
 \label{classSuperObs}\index{Super\+Obs@{Super\+Obs}}
 
 
+Class to compute the plaquette, the energy density and the topological charge.  
+
+
+
+
+{\ttfamily \#include $<$superobs.\+h$>$}
+
+
+
 Inheritance diagram for Super\+Obs\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,7 +30,7 @@ Collaboration diagram for Super\+Obs\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries init\+Observable} (\hyperlink{classField}{Gluon\+Field} $\ast$field)\hypertarget{classSuperObs_a292660868f04e6afc8c1300ec6fca5cc}{}\label{classSuperObs_a292660868f04e6afc8c1300ec6fca5cc}
+void {\bfseries init\+Observable} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$field)\hypertarget{classSuperObs_a292660868f04e6afc8c1300ec6fca5cc}{}\label{classSuperObs_a292660868f04e6afc8c1300ec6fca5cc}
 
 \item 
 void {\bfseries compute} ()\hypertarget{classSuperObs_a84e5e240fca5bdab31046fa87805456d}{}\label{classSuperObs_a84e5e240fca5bdab31046fa87805456d}
@@ -63,7 +72,28 @@ std\+::array$<$ int, 24 $>$ {\bfseries sig}\hypertarget{classSuperObs_a460981ed2
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Class to compute the plaquette, the energy density and the topological charge. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+Currently used observable class. Computes the clover for the \hyperlink{classField}{Field} Strength Tensor and uses it to compute the plaquette, the energy density and the topological charge. This should be changed... 
+
+Definition at line 52 of file superobs.\+h.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-superobs.\+h\item 
+\hyperlink{superobs_8h}{superobs.\+h}\item 
 superobs.\+cpp\end{DoxyCompactItemize}

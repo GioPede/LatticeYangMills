@@ -2,6 +2,15 @@
 \label{classApp}\index{App@{App}}
 
 
+Prototype for the \hyperlink{classApp}{App} class group.  
+
+
+
+
+{\ttfamily \#include $<$app.\+h$>$}
+
+
+
 Inheritance diagram for App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -11,8 +20,7 @@ Inheritance diagram for App\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for App\+:
-\nopagebreak
+Collaboration diagram for App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,36 +30,121 @@ Collaboration diagram for App\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries set\+Action} (\hyperlink{classAction}{Action} $\ast$action)\hypertarget{classApp_a521478e111127d2166d2e897b9900eb5}{}\label{classApp_a521478e111127d2166d2e897b9900eb5}
-
-\item 
-virtual void {\bfseries create\+Lattice} (std\+::array$<$ int, 4 $>$ lattice\+Size)\hypertarget{classApp_a8f35d6814a0306dd31c7c583f6c8d92c}{}\label{classApp_a8f35d6814a0306dd31c7c583f6c8d92c}
-
-\item 
-void {\bfseries add\+Observable} (\hyperlink{classObservable}{Observable} $\ast$observable)\hypertarget{classApp_a4796925a8a54cfe4456419b94160746e}{}\label{classApp_a4796925a8a54cfe4456419b94160746e}
-
-\item 
+void \hyperlink{classApp_a521478e111127d2166d2e897b9900eb5}{set\+Action} (\hyperlink{classAction}{Action} $\ast$action)
+\begin{DoxyCompactList}\small\item\em Initializes the \hyperlink{classAction}{Action} object pointer given an instance of it. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classApp_a8f35d6814a0306dd31c7c583f6c8d92c}{create\+Lattice} (std\+::array$<$ int, 4 $>$ lattice\+Size)
+\begin{DoxyCompactList}\small\item\em Initializes the Gluon\+Field object given a sublattice size. \end{DoxyCompactList}\item 
+void \hyperlink{classApp_a4796925a8a54cfe4456419b94160746e}{add\+Observable} (\hyperlink{classObservable}{Observable} $\ast$observable)
+\begin{DoxyCompactList}\small\item\em Adds a \hyperlink{classObservable}{Observable} class pointer to the vector of observables of the \hyperlink{classApp}{App}. \end{DoxyCompactList}\item 
 virtual void {\bfseries execute} ()=0\hypertarget{classApp_a060dd95f437842171d448ac822dfa983}{}\label{classApp_a060dd95f437842171d448ac822dfa983}
 
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classAction}{Action} $\ast$ {\bfseries m\+\_\+act} = nullptr\hypertarget{classApp_a891ae68e54bb04fcf74579c62a8d5860}{}\label{classApp_a891ae68e54bb04fcf74579c62a8d5860}
+\hyperlink{classAction}{Action} $\ast$ \hyperlink{classApp_a891ae68e54bb04fcf74579c62a8d5860}{m\+\_\+act} = nullptr\hypertarget{classApp_a891ae68e54bb04fcf74579c62a8d5860}{}\label{classApp_a891ae68e54bb04fcf74579c62a8d5860}
 
-\item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+lat} = nullptr\hypertarget{classApp_a58776f77facca2185bf53974b05a7280}{}\label{classApp_a58776f77facca2185bf53974b05a7280}
+\begin{DoxyCompactList}\small\item\em Pointer to the \hyperlink{classAction}{Action} instance. \end{DoxyCompactList}\item 
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ \hyperlink{classApp_a58776f77facca2185bf53974b05a7280}{m\+\_\+lat} = nullptr\hypertarget{classApp_a58776f77facca2185bf53974b05a7280}{}\label{classApp_a58776f77facca2185bf53974b05a7280}
 
-\item 
-std\+::array$<$ int, 4 $>$ {\bfseries m\+\_\+size}\hypertarget{classApp_a8ca118f6637bfd14129ba61f985876d7}{}\label{classApp_a8ca118f6637bfd14129ba61f985876d7}
+\begin{DoxyCompactList}\small\item\em Pointer to the Gluon\+Field instance. \end{DoxyCompactList}\item 
+std\+::array$<$ int, 4 $>$ \hyperlink{classApp_a8ca118f6637bfd14129ba61f985876d7}{m\+\_\+size}\hypertarget{classApp_a8ca118f6637bfd14129ba61f985876d7}{}\label{classApp_a8ca118f6637bfd14129ba61f985876d7}
 
-\item 
-std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ {\bfseries m\+\_\+obs}\hypertarget{classApp_af2803baf8aaf959201b28fb16a46a3d4}{}\label{classApp_af2803baf8aaf959201b28fb16a46a3d4}
+\begin{DoxyCompactList}\small\item\em Size of the sublattice. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \hyperlink{classApp_af2803baf8aaf959201b28fb16a46a3d4}{m\+\_\+obs}\hypertarget{classApp_af2803baf8aaf959201b28fb16a46a3d4}{}\label{classApp_af2803baf8aaf959201b28fb16a46a3d4}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Vector of pointers to \hyperlink{classObservable}{Observable} instances. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Prototype for the \hyperlink{classApp}{App} class group. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classApp}{App} class represents the main user interface of the program. It is initialized by the Json\+Input class when an input file is passed. The app holds the \hyperlink{classAction}{Action} class, the main Gluon\+Field object and the \hyperlink{classObservable}{Observable} vector. The generic execute() method is used to start the execution of the main algorithm. 
+
+Definition at line 59 of file app.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{App@{App}!add\+Observable@{add\+Observable}}
+\index{add\+Observable@{add\+Observable}!App@{App}}
+\subsubsection[{\texorpdfstring{add\+Observable(\+Observable $\ast$observable)}{addObservable(Observable *observable)}}]{\setlength{\rightskip}{0pt plus 5cm}void App\+::add\+Observable (
+\begin{DoxyParamCaption}
+\item[{{\bf Observable} $\ast$}]{observable}
+\end{DoxyParamCaption}
+)}\hypertarget{classApp_a4796925a8a54cfe4456419b94160746e}{}\label{classApp_a4796925a8a54cfe4456419b94160746e}
+
+
+Adds a \hyperlink{classObservable}{Observable} class pointer to the vector of observables of the \hyperlink{classApp}{App}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observable} & a pointer to an \hyperlink{classObservable}{Observable} instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file app.\+cpp.
+
+\index{App@{App}!create\+Lattice@{create\+Lattice}}
+\index{create\+Lattice@{create\+Lattice}!App@{App}}
+\subsubsection[{\texorpdfstring{create\+Lattice(std\+::array$<$ int, 4 $>$ lattice\+Size)}{createLattice(std::array< int, 4 > latticeSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void App\+::create\+Lattice (
+\begin{DoxyParamCaption}
+\item[{std\+::array$<$ int, 4 $>$}]{lattice\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classApp_a8f35d6814a0306dd31c7c583f6c8d92c}{}\label{classApp_a8f35d6814a0306dd31c7c583f6c8d92c}
+
+
+Initializes the Gluon\+Field object given a sublattice size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice\+Size} & 4-\/component int array for the size of the sublattice \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classWilsonFlow_a1ae84f31a7b54b423bbe1d76001468d1}{Wilson\+Flow}.
+
+
+
+Definition at line 41 of file app.\+cpp.
+
+\index{App@{App}!set\+Action@{set\+Action}}
+\index{set\+Action@{set\+Action}!App@{App}}
+\subsubsection[{\texorpdfstring{set\+Action(\+Action $\ast$action)}{setAction(Action *action)}}]{\setlength{\rightskip}{0pt plus 5cm}void App\+::set\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Action} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}\hypertarget{classApp_a521478e111127d2166d2e897b9900eb5}{}\label{classApp_a521478e111127d2166d2e897b9900eb5}
+
+
+Initializes the \hyperlink{classAction}{Action} object pointer given an instance of it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & a pointer to an \hyperlink{classAction}{Action} instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file app.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-app.\+h\item 
-app.\+cpp\end{DoxyCompactItemize}
+\hyperlink{app_8h}{app.\+h}\item 
+\hyperlink{app_8cpp}{app.\+cpp}\end{DoxyCompactItemize}

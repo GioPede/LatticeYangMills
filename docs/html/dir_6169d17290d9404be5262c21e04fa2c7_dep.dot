@@ -1,0 +1,11 @@
+digraph "Math" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  dir_6169d17290d9404be5262c21e04fa2c7 [shape=box, label="Math", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6169d17290d9404be5262c21e04fa2c7.html"];
+  }
+  dir_1cc750c4c0e9a955b7cffcc1eac1b2e2 [shape=box label="ParallelTools" URL="dir_1cc750c4c0e9a955b7cffcc1eac1b2e2.html"];
+  dir_6169d17290d9404be5262c21e04fa2c7->dir_1cc750c4c0e9a955b7cffcc1eac1b2e2 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000023.html"];
+}

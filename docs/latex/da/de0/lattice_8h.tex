@@ -1,0 +1,97 @@
+\hypertarget{lattice_8h}{}\section{lattice.\+h File Reference}
+\label{lattice_8h}\index{lattice.\+h@{lattice.\+h}}
+
+
+Contains the definition of the \hyperlink{classLattice}{Lattice} class.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$array$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include \char`\"{}su3.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Utils/clusterspecifier.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$mpi/mpi.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Parallel\+Tools/parallel.\+h\char`\"{}}\\*
+Include dependency graph for lattice.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classLattice}{Lattice$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Template class to store an array with 4 dimensional indices of a given datatype. Includes functionalities for parallel shifts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries adj} (const \hyperlink{classLattice}{Lattice}$<$ T $>$ \&base)\hypertarget{lattice_8h_a05afa4123548656b402f62ccc413ab1d}{}\label{lattice_8h_a05afa4123548656b402f62ccc413ab1d}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries adj} (\hyperlink{classLattice}{Lattice}$<$ T $>$ \&\&base)\hypertarget{lattice_8h_a383a84b4aee2453591a97e39cbc36570}{}\label{lattice_8h_a383a84b4aee2453591a97e39cbc36570}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries exp} (const \hyperlink{classLattice}{Lattice}$<$ T $>$ \&base)\hypertarget{lattice_8h_ad197d2f28a71e181f799b36c215f02df}{}\label{lattice_8h_ad197d2f28a71e181f799b36c215f02df}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries exp} (\hyperlink{classLattice}{Lattice}$<$ T $>$ \&\&base)\hypertarget{lattice_8h_a6389116ee142f144212ee764720d60b4}{}\label{lattice_8h_a6389116ee142f144212ee764720d60b4}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries sum} (\hyperlink{classLattice}{Lattice}$<$ T $>$ \&base)\hypertarget{lattice_8h_a658434187e97cbc38659bae69ac2131e}{}\label{lattice_8h_a658434187e97cbc38659bae69ac2131e}
+
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{structSU3}{S\+U3} {\bfseries sum} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&base)\hypertarget{lattice_8h_ae78399547c90209cf63a98a56b18e619}{}\label{lattice_8h_ae78399547c90209cf63a98a56b18e619}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries sum} (\hyperlink{classLattice}{Lattice}$<$ T $>$ \&\&base)\hypertarget{lattice_8h_a84d140ceb525bd2cf9c566a4201333c8}{}\label{lattice_8h_a84d140ceb525bd2cf9c566a4201333c8}
+
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{structSU3}{S\+U3} {\bfseries sum} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&\&base)\hypertarget{lattice_8h_a552295d833798f00b9f9d6bfef792f7b}{}\label{lattice_8h_a552295d833798f00b9f9d6bfef792f7b}
+
+\item 
+\hyperlink{classLattice}{Lattice}$<$ double $>$ {\bfseries real\+Trace} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&base)\hypertarget{lattice_8h_a38dbd7db933da29717c74be8c130a1e3}{}\label{lattice_8h_a38dbd7db933da29717c74be8c130a1e3}
+
+\item 
+\hyperlink{classLattice}{Lattice}$<$ double $>$ {\bfseries imag\+Trace} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&base)\hypertarget{lattice_8h_ae6f1cb48b3c7370bcf9e55e4bbea61db}{}\label{lattice_8h_ae6f1cb48b3c7370bcf9e55e4bbea61db}
+
+\item 
+\hyperlink{classLattice}{Lattice}$<$ double $>$ {\bfseries real\+Trace} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&\&base)\hypertarget{lattice_8h_a7678e5c7fd0381d978218253a5fb31e9}{}\label{lattice_8h_a7678e5c7fd0381d978218253a5fb31e9}
+
+\item 
+\hyperlink{classLattice}{Lattice}$<$ double $>$ {\bfseries imag\+Trace} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&\&base)\hypertarget{lattice_8h_a7336d85e24e4f20b77ee191573161752}{}\label{lattice_8h_a7336d85e24e4f20b77ee191573161752}
+
+\item 
+void {\bfseries set\+Lattice\+Imag\+Identity\+Value} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat, const \hyperlink{classLattice}{Lattice}$<$ double $>$ \&lat)\hypertarget{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}{}\label{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}
+
+\item 
+void {\bfseries set\+Lattice\+Imag\+Identity\+Value} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat, \hyperlink{classLattice}{Lattice}$<$ double $>$ \&\&lat)\hypertarget{lattice_8h_aa0b6c693b05ac17313064a8a419ca1e4}{}\label{lattice_8h_aa0b6c693b05ac17313064a8a419ca1e4}
+
+\item 
+void {\bfseries set\+To\+Zero} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat)\hypertarget{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}{}\label{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}
+
+\item 
+void {\bfseries set\+To\+Identity} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat)\hypertarget{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}{}\label{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries shift} (const \hyperlink{classLattice}{Lattice}$<$ T $>$ \&lat, int shift\+Dir, int shift\+Step)\hypertarget{lattice_8h_aa8e188fda775fc8142f9358f39f7e9ab}{}\label{lattice_8h_aa8e188fda775fc8142f9358f39f7e9ab}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries shift} (\hyperlink{classLattice}{Lattice}$<$ T $>$ \&\&lat, int shift\+Dir, int shift\+Step)\hypertarget{lattice_8h_adab76ff240514f99af5d7dabb3ee53c1}{}\label{lattice_8h_adab76ff240514f99af5d7dabb3ee53c1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the definition of the \hyperlink{classLattice}{Lattice} class. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License. 
+\end{DoxyCopyright}

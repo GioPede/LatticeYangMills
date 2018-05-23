@@ -2,6 +2,15 @@
 \label{classObservable}\index{Observable@{Observable}}
 
 
+Prototype for the \hyperlink{classObservable}{Observable} class group.  
+
+
+
+
+{\ttfamily \#include $<$observable.\+h$>$}
+
+
+
 Inheritance diagram for Observable\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -24,7 +33,7 @@ Collaboration diagram for Observable\+:\nopagebreak
 virtual void {\bfseries compute} ()=0\hypertarget{classObservable_a3a8881d961623cddb85416cefa1c5432}{}\label{classObservable_a3a8881d961623cddb85416cefa1c5432}
 
 \item 
-virtual void {\bfseries init\+Observable} (\hyperlink{classField}{Gluon\+Field} $\ast$field)=0\hypertarget{classObservable_a1baf736c771a8a073554286571be8b09}{}\label{classObservable_a1baf736c771a8a073554286571be8b09}
+virtual void {\bfseries init\+Observable} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$field)=0\hypertarget{classObservable_a1baf736c771a8a073554286571be8b09}{}\label{classObservable_a1baf736c771a8a073554286571be8b09}
 
 \item 
 const char $\ast$ {\bfseries get\+Name} ()\hypertarget{classObservable_ad3348c3f40782b5e09bc8dbcb8295a79}{}\label{classObservable_ad3348c3f40782b5e09bc8dbcb8295a79}
@@ -54,7 +63,7 @@ void {\bfseries gather\+Results} ()\hypertarget{classObservable_ae42f1c4bf6362dd
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+field} = nullptr\hypertarget{classObservable_a3f3b97a6ccf3662fc4285e0249fc7e55}{}\label{classObservable_a3f3b97a6ccf3662fc4285e0249fc7e55}
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+field} = nullptr\hypertarget{classObservable_a3f3b97a6ccf3662fc4285e0249fc7e55}{}\label{classObservable_a3f3b97a6ccf3662fc4285e0249fc7e55}
 
 \item 
 double {\bfseries m\+\_\+value}\hypertarget{classObservable_a65689c61e83937902110f9da43b4a327}{}\label{classObservable_a65689c61e83937902110f9da43b4a327}
@@ -65,7 +74,28 @@ std\+::string {\bfseries m\+\_\+name}\hypertarget{classObservable_ac48d8fce3be9f
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+Prototype for the \hyperlink{classObservable}{Observable} class group. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+Prototype for class \hyperlink{classObservable}{Observable}. Every implementation of a physical observable should inherit from this class. Provides an interface for the retreival of the value of the observable and for the computation of in. \hyperlink{classParallel}{Parallel} reduction is also implemented 
+
+Definition at line 52 of file observable.\+h.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-observable.\+h\item 
+\hyperlink{observable_8h}{observable.\+h}\item 
 observable.\+cpp\end{DoxyCompactItemize}

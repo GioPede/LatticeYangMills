@@ -2,7 +2,7 @@
 \label{classPureGauge}\index{Pure\+Gauge@{Pure\+Gauge}}
 
 
-Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classAction}{Action} class.  
+Implementation of the \hyperlink{classPureGauge}{Pure\+Gauge} derived \hyperlink{classAction}{Action} class.  
 
 
 
@@ -11,8 +11,7 @@ Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classActi
 
 
 
-Inheritance diagram for Pure\+Gauge\+:
-\nopagebreak
+Inheritance diagram for Pure\+Gauge\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Pure\+Gauge\+:
 \end{figure}
 
 
-Collaboration diagram for Pure\+Gauge\+:
-\nopagebreak
+Collaboration diagram for Pure\+Gauge\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,7 +30,7 @@ Collaboration diagram for Pure\+Gauge\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Pure\+Gauge} (\hyperlink{classField}{Gluon\+Field} $\ast$lattice, double beta)\hypertarget{classPureGauge_ae832fd1e6b53f6ca3d22961f4a2f80f7}{}\label{classPureGauge_ae832fd1e6b53f6ca3d22961f4a2f80f7}
+{\bfseries Pure\+Gauge} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$lattice, double beta)\hypertarget{classPureGauge_ae832fd1e6b53f6ca3d22961f4a2f80f7}{}\label{classPureGauge_ae832fd1e6b53f6ca3d22961f4a2f80f7}
 
 \item 
 \hyperlink{classPureGauge_ab219e717e036ee44696ba360a2b3674b}{Pure\+Gauge} (double beta)
@@ -44,7 +42,7 @@ void \hyperlink{classPureGauge_a7c78eb206450a209b4154fc936d8aad1}{compute\+Stapl
 \begin{DoxyCompactList}\small\item\em Computes the staples along the given directionfor all links in the given direction. \end{DoxyCompactList}\item 
 \hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \hyperlink{classPureGauge_a0d9272be98cf62567bbda93a892718eb}{compute\+Derivative} (int mu)
 \begin{DoxyCompactList}\small\item\em Computes the derivative of all links along the given direction. \end{DoxyCompactList}\item 
-void {\bfseries compute\+Staplez} (\hyperlink{classField}{Gluon\+Field} $\ast$lattice)\hypertarget{classPureGauge_a28706ff95422d3ac6e1dc9d2aabccf1a}{}\label{classPureGauge_a28706ff95422d3ac6e1dc9d2aabccf1a}
+void {\bfseries compute\+Staplez} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$lattice)\hypertarget{classPureGauge_a28706ff95422d3ac6e1dc9d2aabccf1a}{}\label{classPureGauge_a28706ff95422d3ac6e1dc9d2aabccf1a}
 
 \item 
 void {\bfseries compute\+Other\+Staples} (int x, int y, int z, int t, int mu)\hypertarget{classPureGauge_a5722f484c169539471da120aefa97dea}{}\label{classPureGauge_a5722f484c169539471da120aefa97dea}
@@ -56,10 +54,10 @@ void {\bfseries compute\+Other\+Staples} (int x, int y, int z, int t, int mu)\hy
 double {\bfseries m\+\_\+beta}\hypertarget{classPureGauge_afc5d5fd50c90502b1851f7fa7295e68d}{}\label{classPureGauge_afc5d5fd50c90502b1851f7fa7295e68d}
 
 \item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+staples\+Lattice} = nullptr\hypertarget{classPureGauge_ae2b14c7d0c1e2f5cb070b9d8ed9ab237}{}\label{classPureGauge_ae2b14c7d0c1e2f5cb070b9d8ed9ab237}
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+staples\+Lattice} = nullptr\hypertarget{classPureGauge_ae2b14c7d0c1e2f5cb070b9d8ed9ab237}{}\label{classPureGauge_ae2b14c7d0c1e2f5cb070b9d8ed9ab237}
 
 \item 
-\hyperlink{classField}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+const\+Part}\hypertarget{classPureGauge_ae120c791a7462c26995eebc902a2ae2a}{}\label{classPureGauge_ae120c791a7462c26995eebc902a2ae2a}
+\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} $\ast$ {\bfseries m\+\_\+const\+Part}\hypertarget{classPureGauge_ae120c791a7462c26995eebc902a2ae2a}{}\label{classPureGauge_ae120c791a7462c26995eebc902a2ae2a}
 
 \item 
 \hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ {\bfseries m\+\_\+omega}\hypertarget{classPureGauge_a1a70fe500b7f005c0e82da6b7c5f3509}{}\label{classPureGauge_a1a70fe500b7f005c0e82da6b7c5f3509}
@@ -72,9 +70,25 @@ double {\bfseries m\+\_\+beta}\hypertarget{classPureGauge_afc5d5fd50c90502b1851f
 
 
 \subsection{Detailed Description}
-Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classAction}{Action} class. 
+Implementation of the \hyperlink{classPureGauge}{Pure\+Gauge} derived \hyperlink{classAction}{Action} class. 
 
-beta The \$/beta\$ value of the action 
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License.
+\end{DoxyCopyright}
+The \hyperlink{classPureGauge}{Pure\+Gauge} class implements the Wilson \hyperlink{classPlaquette}{Plaquette} \hyperlink{classAction}{Action} in its simplest formulation. The action is given by the sum of the plaquettes around a specified link. 
+
+Definition at line 50 of file puregauge.\+h.
+
+
 
 \subsection{Constructor \& Destructor Documentation}
 \index{Pure\+Gauge@{Pure\+Gauge}!Pure\+Gauge@{Pure\+Gauge}}
@@ -93,6 +107,10 @@ Initializer for the \hyperlink{classPureGauge}{Pure\+Gauge} \hyperlink{classActi
 {\em beta} & The \$/beta\$ value of the action \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 18 of file puregauge.\+cpp.
+
 
 
 \subsection{Member Function Documentation}
@@ -119,6 +137,10 @@ m\+\_\+omega \hyperlink{classLattice}{Lattice$<$\+S\+U3$>$} containing the deriv
 
 Implements \hyperlink{classAction_a722e4f88dda82440d0c6e19a43972b21}{Action}.
 
+
+
+Definition at line 62 of file puregauge.\+cpp.
+
 \index{Pure\+Gauge@{Pure\+Gauge}!compute\+Staples@{compute\+Staples}}
 \index{compute\+Staples@{compute\+Staples}!Pure\+Gauge@{Pure\+Gauge}}
 \subsubsection[{\texorpdfstring{compute\+Staples(int mu)}{computeStaples(int mu)}}]{\setlength{\rightskip}{0pt plus 5cm}void Pure\+Gauge\+::compute\+Staples (
@@ -141,7 +163,11 @@ Implements \hyperlink{classAction_ad6c5003169695d5cba0f69580040db50}{Action}.
 
 
 
+Definition at line 36 of file puregauge.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-puregauge.\+h\item 
+\hyperlink{puregauge_8h}{puregauge.\+h}\item 
 puregauge.\+cpp\end{DoxyCompactItemize}
