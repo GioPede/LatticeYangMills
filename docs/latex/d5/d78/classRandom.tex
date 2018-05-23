@@ -21,15 +21,14 @@ Collaboration diagram for Random\+:\nopagebreak
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static double {\bfseries rand\+Uniform} ()\hypertarget{classRandom_a85d1fc4b7dd6a2a659c02101a87f7a46}{}\label{classRandom_a85d1fc4b7dd6a2a659c02101a87f7a46}
+static double \hyperlink{classRandom_a85d1fc4b7dd6a2a659c02101a87f7a46}{rand\+Uniform} ()\hypertarget{classRandom_a85d1fc4b7dd6a2a659c02101a87f7a46}{}\label{classRandom_a85d1fc4b7dd6a2a659c02101a87f7a46}
 
-\item 
-static \hyperlink{structSU3}{S\+U3} {\bfseries rand\+S\+U3} ()\hypertarget{classRandom_ac5292fc838c1321ef8657947456a3970}{}\label{classRandom_ac5292fc838c1321ef8657947456a3970}
+\begin{DoxyCompactList}\small\item\em returns a number from a uniform distribution between 0 and 1 \end{DoxyCompactList}\item 
+static \hyperlink{structSU3}{S\+U3} \hyperlink{classRandom_ac5292fc838c1321ef8657947456a3970}{rand\+S\+U3} ()\hypertarget{classRandom_ac5292fc838c1321ef8657947456a3970}{}\label{classRandom_ac5292fc838c1321ef8657947456a3970}
 
-\item 
-static \hyperlink{structSU3}{S\+U3} {\bfseries rand\+S\+U3\+Transf} (double epsilon)\hypertarget{classRandom_a1999be7abe21383e442a5ef96fe836f4}{}\label{classRandom_a1999be7abe21383e442a5ef96fe836f4}
-
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em returns random \hyperlink{structSU3}{S\+U3} matrix, by choosing 2 random complex vectors as the first two columns, orthogonalizing them and taking the outer product as a third column \end{DoxyCompactList}\item 
+static \hyperlink{structSU3}{S\+U3} \hyperlink{classRandom_a1999be7abe21383e442a5ef96fe836f4}{rand\+S\+U3\+Transf} (double epsilon)
+\begin{DoxyCompactList}\small\item\em returns a random \hyperlink{structSU3}{S\+U3} element with controlled spread around the unity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -65,7 +64,30 @@ Definition at line 52 of file random.\+h.
 
 
 
+\subsection{Member Function Documentation}
+\index{Random@{Random}!rand\+S\+U3\+Transf@{rand\+S\+U3\+Transf}}
+\index{rand\+S\+U3\+Transf@{rand\+S\+U3\+Transf}!Random@{Random}}
+\subsubsection[{\texorpdfstring{rand\+S\+U3\+Transf(double epsilon)}{randSU3Transf(double epsilon)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+U3} Random\+::rand\+S\+U3\+Transf (
+\begin{DoxyParamCaption}
+\item[{double}]{epsilon}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classRandom_a1999be7abe21383e442a5ef96fe836f4}{}\label{classRandom_a1999be7abe21383e442a5ef96fe836f4}
+
+
+returns a random \hyperlink{structSU3}{S\+U3} element with controlled spread around the unity matrix. 
+
+Returns a random \hyperlink{structSU3}{S\+U3} element with controlled spread around the unity matrix. as described in Gattringer \& Lang \char`\"{}\+Quantum Chromodynamics on the Lattice\char`\"{}. Three S\+U2 random matrices, constructing using 4 coefficients and the pauli matrices are built and embedded into three \hyperlink{structSU3}{S\+U3} matrices. The product of theses three is returned as the result 
+\begin{DoxyParams}{Parameters}
+{\em epsilon} & the weight of the offdiagonal terms \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file random.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{random_8h}{random.\+h}\item 
-random.\+cpp\end{DoxyCompactItemize}
+\hyperlink{random_8cpp}{random.\+cpp}\end{DoxyCompactItemize}

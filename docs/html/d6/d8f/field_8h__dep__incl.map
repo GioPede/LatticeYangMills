@@ -1,0 +1,50 @@
+<map id="field.h" name="field.h">
+<area shape="rect" id="node2" href="$d7/d61/action_8h.html" title="Contains the definition of the Action prototype. " alt="" coords="69,304,137,331"/>
+<area shape="rect" id="node15" href="$d2/d39/app_8h.html" title="Contains the definition of the App prototype. " alt="" coords="671,155,726,181"/>
+<area shape="rect" id="node31" href="$d5/d57/inputconf_8h.html" title="Contains classes for reading lattices from binary files. " alt="" coords="2119,80,2206,107"/>
+<area shape="rect" id="node33" href="$d6/dca/outputconf_8h.html" title="Contains classes for saving lattices to binary files. " alt="" coords="2331,80,2426,107"/>
+<area shape="rect" id="node35" href="$d6/d1e/observable_8h.html" title="Contains the definition of the Observable prototype. " alt="" coords="1405,80,1501,107"/>
+<area shape="rect" id="node3" href="$d1/d83/action_8cpp.html" title="Details of the Action prototype class. " alt="" coords="5,379,88,405"/>
+<area shape="rect" id="node4" href="$de/d02/puregauge_8h.html" title="Contains the definition of the PureGauge action derived class. " alt="" coords="169,379,263,405"/>
+<area shape="rect" id="node8" href="$d7/de6/lqcd_8h.html" title="Main include file for all headers. " alt="" coords="721,603,778,629"/>
+<area shape="rect" id="node5" href="$d6/dab/puregauge_8cpp.html" title="Details of the PureGauge action class. " alt="" coords="163,453,269,480"/>
+<area shape="rect" id="node6" href="$dd/d0c/actionlist_8h.html" title="Main include file for Action derived classes. " alt="" coords="293,453,379,480"/>
+<area shape="rect" id="node7" href="$da/d65/jsonaction_8cpp_source.html" title="jsonaction.cpp" alt="" coords="459,528,565,555"/>
+<area shape="rect" id="node9" href="$d5/df2/app_8cpp.html" title="Contains the implementation of the App prototype class methods. " alt="" coords="339,677,407,704"/>
+<area shape="rect" id="node10" href="$da/d93/gaugefieldfactory_8cpp.html" title="Contains the implementation of the GaugeFieldFactory class methods. " alt="" coords="432,677,579,704"/>
+<area shape="rect" id="node11" href="$d8/d9a/gaugefieldreader_8cpp.html" title="Contains the implementation of the GaugeFieldReader class methods. " alt="" coords="603,677,746,704"/>
+<area shape="rect" id="node12" href="$db/d0e/wilsonflow_8cpp.html" title="Contains the implementation of the WilsonFlow class methods. " alt="" coords="770,677,878,704"/>
+<area shape="rect" id="node13" href="$da/d6f/jsoninput_8cpp_source.html" title="jsoninput.cpp" alt="" coords="903,677,1001,704"/>
+<area shape="rect" id="node14" href="$dd/dc4/LatticeQCDMain_8cpp.html" title="Main function of the program. " alt="" coords="1025,677,1169,704"/>
+<area shape="rect" id="node16" href="$d1/dd7/jsonapp_8cpp_source.html" title="jsonapp.cpp" alt="" coords="602,528,694,555"/>
+<area shape="rect" id="node17" href="$da/d8d/jsonobservable_8cpp_source.html" title="jsonobservable.cpp" alt="" coords="729,528,863,555"/>
+<area shape="rect" id="node18" href="$d2/dc3/applist_8h.html" title="Main include file for App derived classes. " alt="" coords="393,304,463,331"/>
+<area shape="rect" id="node19" href="$d6/d5e/gaugefieldfactory_8h.html" title="Contains the definition of the GaugeFieldFactory App derived class. " alt="" coords="231,229,363,256"/>
+<area shape="rect" id="node20" href="$d8/d09/gaugefieldreader_8h.html" title="Contains the definition of the GaugeFieldReader App derived class. " alt="" coords="388,229,516,256"/>
+<area shape="rect" id="node21" href="$d3/df8/wilsonflow_8h.html" title="Contains the definition of the WilsonFlow App derived class. " alt="" coords="541,229,635,256"/>
+<area shape="rect" id="node22" href="$db/dfd/jsonaction_8h_source.html" title="jsonaction.h" alt="" coords="657,304,749,331"/>
+<area shape="rect" id="node28" href="$d2/de0/jsonobservable_8h_source.html" title="jsonobservable.h" alt="" coords="824,304,944,331"/>
+<area shape="rect" id="node29" href="$d9/db0/jsonapp_8h_source.html" title="jsonapp.h" alt="" coords="863,229,942,256"/>
+<area shape="rect" id="node23" href="$da/df7/jsonitems_8h_source.html" title="jsonitems.h" alt="" coords="875,379,965,405"/>
+<area shape="rect" id="node24" href="$d3/d35/jsoninput_8h_source.html" title="jsoninput.h" alt="" coords="877,453,963,480"/>
+<area shape="rect" id="node27" href="$dc/dac/io_8h.html" title="Main include file for input output related headers. " alt="" coords="1429,528,1472,555"/>
+<area shape="rect" id="node25" href="$d6/d64/jsondirectories_8cpp_source.html" title="jsondirectories.cpp" alt="" coords="1176,603,1307,629"/>
+<area shape="rect" id="node26" href="$d4/d0b/jsonlattice_8cpp_source.html" title="jsonlattice.cpp" alt="" coords="888,528,995,555"/>
+<area shape="rect" id="node30" href="$dc/da0/jsongeneric_8h_source.html" title="jsongeneric.h" alt="" coords="968,304,1067,331"/>
+<area shape="rect" id="node32" href="$d8/d1d/inputconf_8cpp.html" title="Utilities for opening and reading gauge field configurations from disk in parallel. " alt="" coords="2201,155,2301,181"/>
+<area shape="rect" id="node34" href="$d5/d4c/outputconf_8cpp.html" title="Utilities for writing and saving gauge field configurations from disk in parallel. " alt="" coords="2325,155,2433,181"/>
+<area shape="rect" id="node36" href="$d3/d3b/outputobs_8cpp.html" title="Utilities to write output files containing observables values. " alt="" coords="1573,229,1677,256"/>
+<area shape="rect" id="node37" href="$df/d71/outputterm_8cpp.html" title="Utilities to write output to terminal during execution. " alt="" coords="1389,229,1499,256"/>
+<area shape="rect" id="node38" href="$d7/dfc/energydensity_8cpp.html" title="Details of the energy density observable class (old) " alt="" coords="967,229,1095,256"/>
+<area shape="rect" id="node39" href="$dc/d2a/observable_8cpp.html" title="Base definition of the Observable prototype class. " alt="" coords="1305,155,1415,181"/>
+<area shape="rect" id="node40" href="$df/da9/plaquette_8cpp.html" title="Details of the plaquette observable class (old) " alt="" coords="1991,229,2091,256"/>
+<area shape="rect" id="node41" href="$df/d69/superobs_8cpp.html" title="Details of the SuperObse observable class (to be improved...) " alt="" coords="1170,229,1270,256"/>
+<area shape="rect" id="node42" href="$d7/dee/topologicalcharge_8cpp.html" title="Details of the topological charge observable class (old) " alt="" coords="1786,229,1934,256"/>
+<area shape="rect" id="node43" href="$d4/d05/outputobs_8h.html" title="Contains classes for output to file of observables values. " alt="" coords="1661,155,1752,181"/>
+<area shape="rect" id="node44" href="$dc/d00/outputterm_8h.html" title="Contains classes for output to standard command line interface. " alt="" coords="1491,155,1586,181"/>
+<area shape="rect" id="node45" href="$d0/df6/superobs_8h.html" title="Contains the definition of the SuperObs class. " alt="" coords="1091,155,1178,181"/>
+<area shape="rect" id="node47" href="$dd/d1d/energydensity_8h.html" title="Contains the definition of the EnergyDensity observable. " alt="" coords="952,155,1067,181"/>
+<area shape="rect" id="node48" href="$d8/d06/plaquette_8h.html" title="Contains the definition of the Plaquette observable. " alt="" coords="2038,155,2125,181"/>
+<area shape="rect" id="node49" href="$d3/d49/topologicalcharge_8h.html" title="Contains the definition of the TopologicalCharge observable. " alt="" coords="1827,155,1962,181"/>
+<area shape="rect" id="node46" href="$da/d46/observablelist_8h.html" title="Main include file for Observable derived classes. " alt="" coords="1026,453,1139,480"/>
+</map>

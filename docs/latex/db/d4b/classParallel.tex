@@ -21,15 +21,14 @@ Collaboration diagram for Parallel\+:\nopagebreak
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void {\bfseries initialize} ()\hypertarget{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}{}\label{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}
+static void \hyperlink{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}{initialize} ()\hypertarget{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}{}\label{classParallel_a7cf27d593972dee2d3f6e5319fcf450e}
 
-\item 
-static void {\bfseries create\+Geometry} (std\+::array$<$ int, 4 $>$ lattice\+Size, std\+::array$<$ int, 4 $>$ sub\+Lattice\+Size)\hypertarget{classParallel_a8888fe404de3a3f479fff0796916f851}{}\label{classParallel_a8888fe404de3a3f479fff0796916f851}
+\begin{DoxyCompactList}\small\item\em initializes M\+PI, gets the rank number and the total numer of processors \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_a8888fe404de3a3f479fff0796916f851}{create\+Geometry} (std\+::array$<$ int, 4 $>$ lattice\+Size, std\+::array$<$ int, 4 $>$ sub\+Lattice\+Size)
+\begin{DoxyCompactList}\small\item\em creates the parallel gemometry of the lattice \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_ac81d8fad81830939d9338b2e46d71b60}{finalize} ()\hypertarget{classParallel_ac81d8fad81830939d9338b2e46d71b60}{}\label{classParallel_ac81d8fad81830939d9338b2e46d71b60}
 
-\item 
-static void {\bfseries finalize} ()\hypertarget{classParallel_ac81d8fad81830939d9338b2e46d71b60}{}\label{classParallel_ac81d8fad81830939d9338b2e46d71b60}
-
-\item 
+\begin{DoxyCompactList}\small\item\em finalizes M\+PI \end{DoxyCompactList}\item 
 static int {\bfseries rank} ()\hypertarget{classParallel_ad8a436ba61d28a6f7569eec3ac4a929e}{}\label{classParallel_ad8a436ba61d28a6f7569eec3ac4a929e}
 
 \item 
@@ -60,33 +59,33 @@ static std\+::array$<$ int, 4 $>$ \& {\bfseries lattice\+Full\+Size} ()\hypertar
 static std\+::array$<$ int, 4 $>$ \& {\bfseries parity} ()\hypertarget{classParallel_ae4d683542868851b8d8229493c0fa412}{}\label{classParallel_ae4d683542868851b8d8229493c0fa412}
 
 \item 
-static int {\bfseries get\+Neighbor} (int direction, int sign)\hypertarget{classParallel_a4e99d3605b17fb51fa8a566cf0730179}{}\label{classParallel_a4e99d3605b17fb51fa8a566cf0730179}
+static int \hyperlink{classParallel_a4e99d3605b17fb51fa8a566cf0730179}{get\+Neighbor} (int direction, int sign)\hypertarget{classParallel_a4e99d3605b17fb51fa8a566cf0730179}{}\label{classParallel_a4e99d3605b17fb51fa8a566cf0730179}
 
-\item 
-static int {\bfseries get\+Second\+Neighbor} (int direction1, int sign1, int direction2, int sign2)\hypertarget{classParallel_afaecf8622c16bb5def671d881821db7d}{}\label{classParallel_afaecf8622c16bb5def671d881821db7d}
+\begin{DoxyCompactList}\small\item\em return the rank of the neighbor along the given direction and sign \end{DoxyCompactList}\item 
+static int \hyperlink{classParallel_afaecf8622c16bb5def671d881821db7d}{get\+Second\+Neighbor} (int direction1, int sign1, int direction2, int sign2)\hypertarget{classParallel_afaecf8622c16bb5def671d881821db7d}{}\label{classParallel_afaecf8622c16bb5def671d881821db7d}
 
-\item 
-static void {\bfseries open\+File} (M\+P\+I\+\_\+\+File \&file, const char $\ast$file\+Name)\hypertarget{classParallel_afea26fc4854070b69224b42962b13091}{}\label{classParallel_afea26fc4854070b69224b42962b13091}
+\begin{DoxyCompactList}\small\item\em return the rank of the neighbor along the two given directions and signs \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_afea26fc4854070b69224b42962b13091}{open\+File} (M\+P\+I\+\_\+\+File \&file, const char $\ast$file\+Name)\hypertarget{classParallel_afea26fc4854070b69224b42962b13091}{}\label{classParallel_afea26fc4854070b69224b42962b13091}
 
-\item 
-static void {\bfseries close\+File} (M\+P\+I\+\_\+\+File \&file)\hypertarget{classParallel_ad9ace91bf01fd00c19f7a20efc796285}{}\label{classParallel_ad9ace91bf01fd00c19f7a20efc796285}
+\begin{DoxyCompactList}\small\item\em opens a file with M\+PI \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_ad9ace91bf01fd00c19f7a20efc796285}{close\+File} (M\+P\+I\+\_\+\+File \&file)\hypertarget{classParallel_ad9ace91bf01fd00c19f7a20efc796285}{}\label{classParallel_ad9ace91bf01fd00c19f7a20efc796285}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em closes a file with M\+PI \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void {\bfseries create\+Neighbor\+Lists} ()\hypertarget{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}{}\label{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}
+static void \hyperlink{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}{create\+Neighbor\+Lists} ()\hypertarget{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}{}\label{classParallel_a0bc2faea05d1a899d71fa5a29c13cd4a}
 
-\item 
-static void {\bfseries assign\+Neighbor} (int direction)\hypertarget{classParallel_a246c14b38e3852f2f97458634cd01391}{}\label{classParallel_a246c14b38e3852f2f97458634cd01391}
+\begin{DoxyCompactList}\small\item\em Create castesian coordinates and creates neighbor lists for every processor in every direction. \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_a246c14b38e3852f2f97458634cd01391}{assign\+Neighbor} (int direction)\hypertarget{classParallel_a246c14b38e3852f2f97458634cd01391}{}\label{classParallel_a246c14b38e3852f2f97458634cd01391}
 
-\item 
-static void {\bfseries assign\+Second\+Neighbor} (int dir1, int dir2)\hypertarget{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}{}\label{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}
+\begin{DoxyCompactList}\small\item\em use M\+PI utilities to find the neighbors in one direction \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}{assign\+Second\+Neighbor} (int dir1, int dir2)\hypertarget{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}{}\label{classParallel_a14545f7fc9d73b2a5decd609585ef6ea}
 
-\item 
-static void {\bfseries My\+M\+P\+I\+\_\+\+Cart\+\_\+shift2} (M\+P\+I\+\_\+\+Comm comm, int dir1, int shift1, int dir2, int shift2, int \&source, int \&dest)\hypertarget{classParallel_a5a5e5ad59586bb545aa3840991b20af8}{}\label{classParallel_a5a5e5ad59586bb545aa3840991b20af8}
+\begin{DoxyCompactList}\small\item\em use M\+PI utilities to find the neighbors in two direction \end{DoxyCompactList}\item 
+static void \hyperlink{classParallel_a5a5e5ad59586bb545aa3840991b20af8}{My\+M\+P\+I\+\_\+\+Cart\+\_\+shift2} (M\+P\+I\+\_\+\+Comm comm, int dir1, int shift1, int dir2, int shift2, int \&source, int \&dest)\hypertarget{classParallel_a5a5e5ad59586bb545aa3840991b20af8}{}\label{classParallel_a5a5e5ad59586bb545aa3840991b20af8}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em use M\+PI utilities to find the neighbors in two direction \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -152,7 +151,33 @@ Definition at line 56 of file parallel.\+h.
 
 
 
+\subsection{Member Function Documentation}
+\index{Parallel@{Parallel}!create\+Geometry@{create\+Geometry}}
+\index{create\+Geometry@{create\+Geometry}!Parallel@{Parallel}}
+\subsubsection[{\texorpdfstring{create\+Geometry(std\+::array$<$ int, 4 $>$ lattice\+Size, std\+::array$<$ int, 4 $>$ sub\+Lattice\+Size)}{createGeometry(std::array< int, 4 > latticeSize, std::array< int, 4 > subLatticeSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void Parallel\+::create\+Geometry (
+\begin{DoxyParamCaption}
+\item[{std\+::array$<$ int, 4 $>$}]{lattice\+Size, }
+\item[{std\+::array$<$ int, 4 $>$}]{sub\+Lattice\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classParallel_a8888fe404de3a3f479fff0796916f851}{}\label{classParallel_a8888fe404de3a3f479fff0796916f851}
+
+
+creates the parallel gemometry of the lattice 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice\+Size} & array containing the total size of the lattice \\
+\hline
+{\em lattice\+Size} & array containing the size of each sublattice \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file parallel.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{parallel_8h}{parallel.\+h}\item 
-parallel.\+cpp\end{DoxyCompactItemize}
+\hyperlink{parallel_8cpp}{parallel.\+cpp}\end{DoxyCompactItemize}

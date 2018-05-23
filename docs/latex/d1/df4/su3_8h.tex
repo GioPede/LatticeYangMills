@@ -7,10 +7,20 @@ Basic library to implement \hyperlink{structSU3}{S\+U3} matrix arithmetics and f
 
 {\ttfamily \#include $<$array$>$}\\*
 {\ttfamily \#include \char`\"{}operators.\+hpp\char`\"{}}\\*
-Include dependency graph for su3.\+h\+:
-% FIG 0
-This graph shows which files directly or indirectly include this file\+:
-% FIG 1
+Include dependency graph for su3.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{d1/d6e/su3_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d84/su3_8h__dep__incl}
+\end{center}
+\end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,18 +35,17 @@ class \hyperlink{structSU3}{S\+U3}
 \hyperlink{structSU3}{S\+U3} {\bfseries operator$\sim$} (\hyperlink{structSU3}{S\+U3} \&\&a)\hypertarget{su3_8h_ae2b8c1d619b41a6483baac9ba3cf6177}{}\label{su3_8h_ae2b8c1d619b41a6483baac9ba3cf6177}
 
 \item 
-\hyperlink{structSU3}{S\+U3} {\bfseries exp} (const \hyperlink{structSU3}{S\+U3} \&Q)\hypertarget{su3_8h_a5ab9f40710382d750c145cb417047435}{}\label{su3_8h_a5ab9f40710382d750c145cb417047435}
-
-\item 
+\hyperlink{structSU3}{S\+U3} \hyperlink{su3_8h_a5ab9f40710382d750c145cb417047435}{exp} (const \hyperlink{structSU3}{S\+U3} \&Q)
+\begin{DoxyCompactList}\small\item\em exponential of a \hyperlink{structSU3}{S\+U3} algebra matrix \end{DoxyCompactList}\item 
 \hyperlink{structSU3}{S\+U3} {\bfseries exp} (\hyperlink{structSU3}{S\+U3} \&\&Q)\hypertarget{su3_8h_af6cf0b7f0492cb2bdfee988040f00359}{}\label{su3_8h_af6cf0b7f0492cb2bdfee988040f00359}
 
 \item 
 \hyperlink{structSU3}{S\+U3} {\bfseries get\+Random\+Transformation} (double epsilon)\hypertarget{su3_8h_a3383eff2c13ddeaa74f05145b55bff69}{}\label{su3_8h_a3383eff2c13ddeaa74f05145b55bff69}
 
 \item 
-double {\bfseries get\+Mult\+Sum\+Trace} (\hyperlink{structSU3}{S\+U3} \&a, \hyperlink{structSU3}{S\+U3} \&b)\hypertarget{su3_8h_a93ca48d3b226ce6e4f0c04b21a1d96a5}{}\label{su3_8h_a93ca48d3b226ce6e4f0c04b21a1d96a5}
+double \hyperlink{su3_8h_a93ca48d3b226ce6e4f0c04b21a1d96a5}{get\+Mult\+Sum\+Trace} (\hyperlink{structSU3}{S\+U3} \&a, \hyperlink{structSU3}{S\+U3} \&b)\hypertarget{su3_8h_a93ca48d3b226ce6e4f0c04b21a1d96a5}{}\label{su3_8h_a93ca48d3b226ce6e4f0c04b21a1d96a5}
 
-\item 
+\begin{DoxyCompactList}\small\item\em returns the real trace of the product of two \hyperlink{structSU3}{S\+U3} matrices a and b \end{DoxyCompactList}\item 
 double {\bfseries get\+Mult\+Sum\+Trace} (\hyperlink{structSU3}{S\+U3} \&\&a, \hyperlink{structSU3}{S\+U3} \&b)\hypertarget{su3_8h_a768ca6875c83124f42fd975dc2ce9f4c}{}\label{su3_8h_a768ca6875c83124f42fd975dc2ce9f4c}
 
 \end{DoxyCompactItemize}
@@ -57,3 +66,21 @@ Giovanni Pederiva
 \begin{DoxyCopyright}{Copyright}
 M\+IT License. 
 \end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\index{su3.\+h@{su3.\+h}!exp@{exp}}
+\index{exp@{exp}!su3.\+h@{su3.\+h}}
+\subsubsection[{\texorpdfstring{exp(const S\+U3 \&\+Q)}{exp(const SU3 &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+U3} exp (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+U3} \&}]{Q}
+\end{DoxyParamCaption}
+)}\hypertarget{su3_8h_a5ab9f40710382d750c145cb417047435}{}\label{su3_8h_a5ab9f40710382d750c145cb417047435}
+
+
+exponential of a \hyperlink{structSU3}{S\+U3} algebra matrix 
+
+exponential of a \hyperlink{structSU3}{S\+U3} algebra matrix as described in \href{https://arxiv.org/abs/hep-lat/0311018}{\tt https\+://arxiv.\+org/abs/hep-\/lat/0311018} 
+
+Definition at line 136 of file su3.\+cpp.
+

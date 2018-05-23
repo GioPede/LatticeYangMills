@@ -21,14 +21,12 @@ Collaboration diagram for Lattice\+IO\+:\+:Output\+Conf\+:\nopagebreak
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}{write\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}{}\label{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}
-
+static void \hyperlink{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}{write\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)
 \begin{DoxyCompactList}\small\item\em Saves the given Gluon\+Field object to the ouput directory. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputConf_a1c4247249c03a2ec761cf4eee25a47a1}{write\+Sub\+Lattice} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1OutputConf_a1c4247249c03a2ec761cf4eee25a47a1}{}\label{classLatticeIO_1_1OutputConf_a1c4247249c03a2ec761cf4eee25a47a1}
+static void \hyperlink{classLatticeIO_1_1OutputConf_a5fc3525ce1ce4544968a4307bd102ecf}{write\+Sub\+Lattice} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1OutputConf_a5fc3525ce1ce4544968a4307bd102ecf}{}\label{classLatticeIO_1_1OutputConf_a5fc3525ce1ce4544968a4307bd102ecf}
 
 \begin{DoxyCompactList}\small\item\em Saves the Gluon\+Field object in a set of files, one for each core. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}{set\+Output\+Dir} (std\+::string output\+Dir)\hypertarget{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}{}\label{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}
-
+static void \hyperlink{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}{set\+Output\+Dir} (std\+::string output\+Dir)
 \begin{DoxyCompactList}\small\item\em Sets the output directory path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
@@ -59,6 +57,56 @@ M\+IT License.
 This object allows saving of Gluon\+Field objects as binary files. It uses M\+PI routines for handling a single output file with multiple processors. 
 
 Definition at line 54 of file outputconf.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Lattice\+I\+O\+::\+Output\+Conf@{Lattice\+I\+O\+::\+Output\+Conf}!set\+Output\+Dir@{set\+Output\+Dir}}
+\index{set\+Output\+Dir@{set\+Output\+Dir}!Lattice\+I\+O\+::\+Output\+Conf@{Lattice\+I\+O\+::\+Output\+Conf}}
+\subsubsection[{\texorpdfstring{set\+Output\+Dir(std\+::string output\+Dir)}{setOutputDir(std::string outputDir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Conf\+::set\+Output\+Dir (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{output\+Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}{}\label{classLatticeIO_1_1OutputConf_a6a14c8a578af927a26a48b01f6fb7907}
+
+
+Sets the output directory path. 
+
+sets the output directory static variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Dir} & a string for the path of the output directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file outputconf.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Conf@{Lattice\+I\+O\+::\+Output\+Conf}!write\+Conf@{write\+Conf}}
+\index{write\+Conf@{write\+Conf}!Lattice\+I\+O\+::\+Output\+Conf@{Lattice\+I\+O\+::\+Output\+Conf}}
+\subsubsection[{\texorpdfstring{write\+Conf(\+Gluon\+Field \&lattice, int conf\+Num)}{writeConf(GluonField &lattice, int confNum)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Conf\+::write\+Conf (
+\begin{DoxyParamCaption}
+\item[{{\bf Gluon\+Field} \&}]{lattice, }
+\item[{int}]{conf\+Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}{}\label{classLatticeIO_1_1OutputConf_a11ca0a1237c846e35e7fe3aff8dbb4df}
+
+
+Saves the given Gluon\+Field object to the ouput directory. 
+
+writes a lattice configuration in a given field object and a numerical tag
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & the Gluon\+Field to write in the default output folder \\
+\hline
+{\em conf\+Num} & the numerical tag for the configuration to read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file outputconf.\+cpp.
 
 
 

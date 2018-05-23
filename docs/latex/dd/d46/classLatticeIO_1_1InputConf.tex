@@ -21,20 +21,16 @@ Collaboration diagram for Lattice\+IO\+:\+:Input\+Conf\+:\nopagebreak
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{read\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{}\label{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}
-
+static void \hyperlink{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{read\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)
 \begin{DoxyCompactList}\small\item\em Reads a binary file from a int marker for the name. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{read\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, const char $\ast$input\+File)\hypertarget{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{}\label{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}
-
+static void \hyperlink{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{read\+Conf} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, const char $\ast$input\+File)
 \begin{DoxyCompactList}\small\item\em Reads a binary file given its path into a lattice object. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{read\+Sub\+Lattice} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}{}\label{classLatticeIO_1_1InputConf_a0ea75c17916f8ce880d02a13b127cea8}
+static void \hyperlink{classLatticeIO_1_1InputConf_a9f84f6832fdeb2c6b31a2598c73374b7}{read\+Sub\+Lattice} (\hyperlink{field_8h_afe80b127697eba6d6e7fbd8121c8d4ee}{Gluon\+Field} \&lattice, int conf\+Num)\hypertarget{classLatticeIO_1_1InputConf_a9f84f6832fdeb2c6b31a2598c73374b7}{}\label{classLatticeIO_1_1InputConf_a9f84f6832fdeb2c6b31a2598c73374b7}
 
 \begin{DoxyCompactList}\small\item\em Reads one binary file for each processor, assuming it is split. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{set\+Input\+Dir} (std\+::string input\+Dir)\hypertarget{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{}\label{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}
-
+static void \hyperlink{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{set\+Input\+Dir} (std\+::string input\+Dir)
 \begin{DoxyCompactList}\small\item\em Sets the input directory. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}{get\+Input\+List} (std\+::vector$<$ std\+::string $>$ \&input\+Conf\+List)\hypertarget{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}{}\label{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}
-
+static void \hyperlink{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}{get\+Input\+List} (std\+::vector$<$ std\+::string $>$ \&input\+Conf\+List)
 \begin{DoxyCompactList}\small\item\em Returns a list of all valid input files in a the input directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
@@ -68,7 +64,104 @@ Definition at line 50 of file inputconf.\+h.
 
 
 
+\subsection{Member Function Documentation}
+\index{Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}!get\+Input\+List@{get\+Input\+List}}
+\index{get\+Input\+List@{get\+Input\+List}!Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}}
+\subsubsection[{\texorpdfstring{get\+Input\+List(std\+::vector$<$ std\+::string $>$ \&input\+Conf\+List)}{getInputList(std::vector< std::string > &inputConfList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Input\+Conf\+::get\+Input\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{input\+Conf\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}{}\label{classLatticeIO_1_1InputConf_a16b06fe98129e3c1e80879fa9cad43a9}
+
+
+Returns a list of all valid input files in a the input directory. 
+
+scans the input folder for valid binary files containing lattice field configurations
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Conf\+List} & a vector of string to store the path of the configuration(s) to read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file inputconf.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}!read\+Conf@{read\+Conf}}
+\index{read\+Conf@{read\+Conf}!Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}}
+\subsubsection[{\texorpdfstring{read\+Conf(\+Gluon\+Field \&lattice, int conf\+Num)}{readConf(GluonField &lattice, int confNum)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Input\+Conf\+::read\+Conf (
+\begin{DoxyParamCaption}
+\item[{{\bf Gluon\+Field} \&}]{lattice, }
+\item[{int}]{conf\+Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}{}\label{classLatticeIO_1_1InputConf_a70d70bfdc0252ddaa3d2bcd472590982}
+
+
+Reads a binary file from a int marker for the name. 
+
+reads a lattice configuration in a given field object from a numerical tag
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & the Gluon\+Field to read the lattice field configuration in \\
+\hline
+{\em conf\+Num} & the numerical label of the configuration to read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 136 of file inputconf.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}!read\+Conf@{read\+Conf}}
+\index{read\+Conf@{read\+Conf}!Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}}
+\subsubsection[{\texorpdfstring{read\+Conf(\+Gluon\+Field \&lattice, const char $\ast$input\+File)}{readConf(GluonField &lattice, const char *inputFile)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Input\+Conf\+::read\+Conf (
+\begin{DoxyParamCaption}
+\item[{{\bf Gluon\+Field} \&}]{lattice, }
+\item[{const char $\ast$}]{input\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}{}\label{classLatticeIO_1_1InputConf_aed71fc3df1e2a9999e4466b5eefdf723}
+
+
+Reads a binary file given its path into a lattice object. 
+
+reads a lattice configuration in a given field object given a path
+
+
+\begin{DoxyParams}{Parameters}
+{\em lattice} & the Gluon\+Field to read the lattice field configuration in \\
+\hline
+{\em input\+File} & the path to the configuration to read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file inputconf.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}!set\+Input\+Dir@{set\+Input\+Dir}}
+\index{set\+Input\+Dir@{set\+Input\+Dir}!Lattice\+I\+O\+::\+Input\+Conf@{Lattice\+I\+O\+::\+Input\+Conf}}
+\subsubsection[{\texorpdfstring{set\+Input\+Dir(std\+::string input\+Dir)}{setInputDir(std::string inputDir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Input\+Conf\+::set\+Input\+Dir (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{input\+Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}{}\label{classLatticeIO_1_1InputConf_a49a84ce29fc32889d6c356c3afd09b71}
+
+
+Sets the input directory. 
+
+sets the input directory static variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Dir} & the path of the input directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file inputconf.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{inputconf_8h}{inputconf.\+h}\item 
-inputconf.\+cpp\end{DoxyCompactItemize}
+\hyperlink{inputconf_8cpp}{inputconf.\+cpp}\end{DoxyCompactItemize}

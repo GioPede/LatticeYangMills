@@ -1,1 +1,45 @@
-Suite for generating field configurations in pure YM S\+U(3) theory and compute basic observables on them. 
+Suite for generating field configurations in pure Yang-\/\+Mills S\+U(3) theory and compute basic observables on them. By Giovanni Pederiva.
+
+See \href{https://github.com/GioPede/MasterThesis}{\tt https\+://github.\+com/\+Gio\+Pede/\+Master\+Thesis} for the Master of Science thesis this code has been developed for.
+
+\subsection*{Current Implementation}
+
+\subsubsection*{Algorithms}
+
+
+\begin{DoxyItemize}
+\item Metropolis Algorith for generating ensembles of lattice gauge field configurations
+\item Gradient Flow see \href{https://arxiv.org/abs/1006.4518}{\tt https\+://arxiv.\+org/abs/1006.\+4518} for studying non linear properties of the fields \subsubsection*{Observables}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classPlaquette}{Plaquette}
+\item Energy Density (clover)
+\item Topological Charge (clover) \subsubsection*{Actions}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Wilson Gluon \hyperlink{classAction}{Action}
+\end{DoxyItemize}
+
+\subsection*{Libraries Used}
+
+
+\begin{DoxyItemize}
+\item Open M\+PI \href{https://www.open-mpi.org/}{\tt https\+://www.\+open-\/mpi.\+org/}
+\item nlohman/json \href{https://github.com/nlohmann/json}{\tt https\+://github.\+com/nlohmann/json} by Niels Lohmann
+\item taocpp/operator \href{https://github.com/taocpp/operators}{\tt https\+://github.\+com/taocpp/operators} by Daniel Frey and Colin Hirsch (recent addition, experimental)
+\item C\+Make \href{https://cmake.org/}{\tt https\+://cmake.\+org/}
+\end{DoxyItemize}
+
+\subsection*{Caveats}
+
+
+\begin{DoxyItemize}
+\item The project is under active development
+\item The documentation is still incomplete
+\item Project might not build, current branch is the unstable one.
+\item Use C\+Make to build, only G\+CC 5.\+3 has been tested 
+\end{DoxyItemize}

@@ -75,17 +75,15 @@ Collaboration diagram for LatticeIO::OutputConf:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a11ca0a1237c846e35e7fe3aff8dbb4df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11ca0a1237c846e35e7fe3aff8dbb4df"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daa/classLatticeIO_1_1OutputConf.html#a11ca0a1237c846e35e7fe3aff8dbb4df">writeConf</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, int confNum)</td></tr>
-<tr class="memdesc:a11ca0a1237c846e35e7fe3aff8dbb4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the given GluonField object to the ouput directory. <br /></td></tr>
+<tr class="memitem:a11ca0a1237c846e35e7fe3aff8dbb4df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daa/classLatticeIO_1_1OutputConf.html#a11ca0a1237c846e35e7fe3aff8dbb4df">writeConf</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, int confNum)</td></tr>
+<tr class="memdesc:a11ca0a1237c846e35e7fe3aff8dbb4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the given GluonField object to the ouput directory.  <a href="#a11ca0a1237c846e35e7fe3aff8dbb4df">More...</a><br /></td></tr>
 <tr class="separator:a11ca0a1237c846e35e7fe3aff8dbb4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c4247249c03a2ec761cf4eee25a47a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c4247249c03a2ec761cf4eee25a47a1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daa/classLatticeIO_1_1OutputConf.html#a1c4247249c03a2ec761cf4eee25a47a1">writeSubLattice</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, int confNum)</td></tr>
-<tr class="memdesc:a1c4247249c03a2ec761cf4eee25a47a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the GluonField object in a set of files, one for each core. <br /></td></tr>
-<tr class="separator:a1c4247249c03a2ec761cf4eee25a47a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a14c8a578af927a26a48b01f6fb7907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a14c8a578af927a26a48b01f6fb7907"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daa/classLatticeIO_1_1OutputConf.html#a6a14c8a578af927a26a48b01f6fb7907">setOutputDir</a> (std::string outputDir)</td></tr>
-<tr class="memdesc:a6a14c8a578af927a26a48b01f6fb7907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the output directory path. <br /></td></tr>
+<tr class="memitem:a5fc3525ce1ce4544968a4307bd102ecf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fc3525ce1ce4544968a4307bd102ecf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daa/classLatticeIO_1_1OutputConf.html#a5fc3525ce1ce4544968a4307bd102ecf">writeSubLattice</a> (<a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;lattice, int confNum)</td></tr>
+<tr class="memdesc:a5fc3525ce1ce4544968a4307bd102ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the GluonField object in a set of files, one for each core. <br /></td></tr>
+<tr class="separator:a5fc3525ce1ce4544968a4307bd102ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a14c8a578af927a26a48b01f6fb7907"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daa/classLatticeIO_1_1OutputConf.html#a6a14c8a578af927a26a48b01f6fb7907">setOutputDir</a> (std::string outputDir)</td></tr>
+<tr class="memdesc:a6a14c8a578af927a26a48b01f6fb7907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the output directory path.  <a href="#a6a14c8a578af927a26a48b01f6fb7907">More...</a><br /></td></tr>
 <tr class="separator:a6a14c8a578af927a26a48b01f6fb7907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -108,7 +106,89 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <p>This object allows saving of GluonField objects as binary files. It uses MPI routines for handling a single output file with multiple processors. </p>
 
 <p>Definition at line <a class="el" href="../../d6/dca/outputconf_8h_source.html#l00054">54</a> of file <a class="el" href="../../d6/dca/outputconf_8h_source.html">outputconf.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6a14c8a578af927a26a48b01f6fb7907"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LatticeIO::OutputConf::setOutputDir </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>outputDir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the output directory path. </p>
+<p>sets the output directory static variable</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outputDir</td><td>a string for the path of the output directory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4c/outputconf_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/d4c/outputconf_8cpp_source.html">outputconf.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11ca0a1237c846e35e7fe3aff8dbb4df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LatticeIO::OutputConf::writeConf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d5a/field_8h.html#afe80b127697eba6d6e7fbd8121c8d4ee">GluonField</a> &amp;&#160;</td>
+          <td class="paramname"><em>lattice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>confNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the given GluonField object to the ouput directory. </p>
+<p>writes a lattice configuration in a given field object and a numerical tag</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lattice</td><td>the GluonField to write in the default output folder </td></tr>
+    <tr><td class="paramname">confNum</td><td>the numerical tag for the configuration to read </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4c/outputconf_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d5/d4c/outputconf_8cpp_source.html">outputconf.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d6/dca/outputconf_8h_source.html">outputconf.h</a></li>
 <li><a class="el" href="../../d5/d4c/outputconf_8cpp_source.html">outputconf.cpp</a></li>
 </ul>

@@ -12,20 +12,15 @@ Class for standard output.
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}{print\+Initial\+Conditions} ()\hypertarget{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}{}\label{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}
-
+static void \hyperlink{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}{print\+Initial\+Conditions} ()
 \begin{DoxyCompactList}\small\item\em Prints basic info about the system. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}{write\+Obs} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)\hypertarget{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}{}\label{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}
-
+static void \hyperlink{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}{write\+Obs} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)
 \begin{DoxyCompactList}\small\item\em Prints the status of the current object list for a given conf. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}{print\+Therm\+Step} (int step, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, double accept\+Ratio)\hypertarget{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}{}\label{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}
-
+static void \hyperlink{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}{print\+Therm\+Step} (int step, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, double accept\+Ratio)
 \begin{DoxyCompactList}\small\item\em Prints information about a thermalization step. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}{print\+Gen\+Step} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, double accept\+Ratio)\hypertarget{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}{}\label{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}
-
+static void \hyperlink{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}{print\+Gen\+Step} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, double accept\+Ratio)
 \begin{DoxyCompactList}\small\item\em Prints information about a generation step. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}{write\+Flow\+Obs} (double flow\+Time, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)\hypertarget{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}{}\label{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}
-
+static void \hyperlink{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}{write\+Flow\+Obs} (double flow\+Time, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)
 \begin{DoxyCompactList}\small\item\em Prints information about a flow time evolution step. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -50,7 +45,131 @@ Definition at line 60 of file outputterm.\+h.
 
 
 
+\subsection{Member Function Documentation}
+\index{Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}!print\+Gen\+Step@{print\+Gen\+Step}}
+\index{print\+Gen\+Step@{print\+Gen\+Step}!Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}}
+\subsubsection[{\texorpdfstring{print\+Gen\+Step(int conf\+Num, std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List, double accept\+Ratio)}{printGenStep(int confNum, std::vector< Observable * > &obsList, double acceptRatio)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Term\+::print\+Gen\+Step (
+\begin{DoxyParamCaption}
+\item[{int}]{conf\+Num, }
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List, }
+\item[{double}]{accept\+Ratio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}{}\label{classLatticeIO_1_1OutputTerm_a82d0d8fc4e4922df3c831c32a6802770}
+
+
+Prints information about a generation step. 
+
+print information about the system during the gauge field generation
+
+
+\begin{DoxyParams}{Parameters}
+{\em conf\+Num} & the number of the current configuration that has been generated \\
+\hline
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+{\em accept\+Ratio} & the current acceptance ratio of the Metropolis algorithm \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file outputterm.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}!print\+Initial\+Conditions@{print\+Initial\+Conditions}}
+\index{print\+Initial\+Conditions@{print\+Initial\+Conditions}!Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}}
+\subsubsection[{\texorpdfstring{print\+Initial\+Conditions()}{printInitialConditions()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Term\+::print\+Initial\+Conditions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}{}\label{classLatticeIO_1_1OutputTerm_ab92340daa2c801b5275d67838df1450b}
+
+
+Prints basic info about the system. 
+
+prints basic information about the system to terminal 
+
+Definition at line 45 of file outputterm.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}!print\+Therm\+Step@{print\+Therm\+Step}}
+\index{print\+Therm\+Step@{print\+Therm\+Step}!Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}}
+\subsubsection[{\texorpdfstring{print\+Therm\+Step(int step, std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List, double accept\+Ratio)}{printThermStep(int step, std::vector< Observable * > &obsList, double acceptRatio)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Term\+::print\+Therm\+Step (
+\begin{DoxyParamCaption}
+\item[{int}]{step, }
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List, }
+\item[{double}]{accept\+Ratio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}{}\label{classLatticeIO_1_1OutputTerm_aecda88f4a7724f1869fb40704d39ef58}
+
+
+Prints information about a thermalization step. 
+
+print information about the system during thermalization
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & the curren thermalization step \\
+\hline
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+{\em accept\+Ratio} & the current acceptance ratio of the Metropolis algorithm \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file outputterm.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}!write\+Flow\+Obs@{write\+Flow\+Obs}}
+\index{write\+Flow\+Obs@{write\+Flow\+Obs}!Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}}
+\subsubsection[{\texorpdfstring{write\+Flow\+Obs(double flow\+Time, std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List)}{writeFlowObs(double flowTime, std::vector< Observable * > &obsList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Term\+::write\+Flow\+Obs (
+\begin{DoxyParamCaption}
+\item[{double}]{flow\+Time, }
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}{}\label{classLatticeIO_1_1OutputTerm_a4ba09f68c5cc215b03ca3aec47d76d65}
+
+
+Prints information about a flow time evolution step. 
+
+print information about the system during the gradient flow steps
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow\+Time} & the current flow time of the integration \\
+\hline
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 108 of file outputterm.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}!write\+Obs@{write\+Obs}}
+\index{write\+Obs@{write\+Obs}!Lattice\+I\+O\+::\+Output\+Term@{Lattice\+I\+O\+::\+Output\+Term}}
+\subsubsection[{\texorpdfstring{write\+Obs(int conf\+Num, std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List)}{writeObs(int confNum, std::vector< Observable * > &obsList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Term\+::write\+Obs (
+\begin{DoxyParamCaption}
+\item[{int}]{conf\+Num, }
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}{}\label{classLatticeIO_1_1OutputTerm_ab06002cace5e0450b9e618edfdb00d12}
+
+
+Prints the status of the current object list for a given conf. 
+
+print information about the system of a given configuration
+
+
+\begin{DoxyParams}{Parameters}
+{\em conf\+Num} & the number of the current configuration \\
+\hline
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file outputterm.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{outputterm_8h}{outputterm.\+h}\item 
-outputterm.\+cpp\end{DoxyCompactItemize}
+\hyperlink{outputterm_8cpp}{outputterm.\+cpp}\end{DoxyCompactItemize}

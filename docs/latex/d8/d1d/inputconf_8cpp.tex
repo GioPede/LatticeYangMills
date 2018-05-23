@@ -1,0 +1,89 @@
+\hypertarget{inputconf_8cpp}{}\section{inputconf.\+cpp File Reference}
+\label{inputconf_8cpp}\index{inputconf.\+cpp@{inputconf.\+cpp}}
+
+
+Utilities for opening and reading gauge field configurations from disk in parallel.  
+
+
+{\ttfamily \#include \char`\"{}Utils/clusterspecifier.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$mpi/mpi.\+h$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}Input\+Output/inputconf.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Math/lattice.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Parallel\+Tools/parallel.\+h\char`\"{}}\\*
+Include dependency graph for inputconf.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dbe/inputconf_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{inputconf_8cpp_aee292d5093340ed121095bbc184064eb}{Lattice\+I\+O\+::\+Reverse\+Float} (const double in\+Float)
+\begin{DoxyCompactList}\small\item\em changes the endianess of a float variable \end{DoxyCompactList}\item 
+double \hyperlink{inputconf_8cpp_a4f07f840c6b7a7e360c37d966e0294e6}{Lattice\+I\+O\+::\+Reverse\+Double} (const double in\+Double)
+\begin{DoxyCompactList}\small\item\em changes the endianess of a double variable \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilities for opening and reading gauge field configurations from disk in parallel. 
+
+\begin{DoxyAuthor}{Author}
+Giovanni Pederiva 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2017-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License. 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\index{inputconf.\+cpp@{inputconf.\+cpp}!Reverse\+Double@{Reverse\+Double}}
+\index{Reverse\+Double@{Reverse\+Double}!inputconf.\+cpp@{inputconf.\+cpp}}
+\subsubsection[{\texorpdfstring{Reverse\+Double(const double in\+Double)}{ReverseDouble(const double inDouble)}}]{\setlength{\rightskip}{0pt plus 5cm}double Lattice\+I\+O\+::\+Reverse\+Double (
+\begin{DoxyParamCaption}
+\item[{const double}]{in\+Double}
+\end{DoxyParamCaption}
+)}\hypertarget{inputconf_8cpp_file_a4f07f840c6b7a7e360c37d966e0294e6}{}\label{inputconf_8cpp_file_a4f07f840c6b7a7e360c37d966e0294e6}
+
+
+changes the endianess of a double variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Float} & a double variable \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file inputconf.\+cpp.
+
+\index{inputconf.\+cpp@{inputconf.\+cpp}!Reverse\+Float@{Reverse\+Float}}
+\index{Reverse\+Float@{Reverse\+Float}!inputconf.\+cpp@{inputconf.\+cpp}}
+\subsubsection[{\texorpdfstring{Reverse\+Float(const double in\+Float)}{ReverseFloat(const double inFloat)}}]{\setlength{\rightskip}{0pt plus 5cm}double Lattice\+I\+O\+::\+Reverse\+Float (
+\begin{DoxyParamCaption}
+\item[{const double}]{in\+Float}
+\end{DoxyParamCaption}
+)}\hypertarget{inputconf_8cpp_file_aee292d5093340ed121095bbc184064eb}{}\label{inputconf_8cpp_file_aee292d5093340ed121095bbc184064eb}
+
+
+changes the endianess of a float variable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Float} & a float variable \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file inputconf.\+cpp.
+

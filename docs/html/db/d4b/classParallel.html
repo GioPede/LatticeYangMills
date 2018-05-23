@@ -73,13 +73,15 @@ Collaboration diagram for Parallel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7cf27d593972dee2d3f6e5319fcf450e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cf27d593972dee2d3f6e5319fcf450e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> ()</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a7cf27d593972dee2d3f6e5319fcf450e">initialize</a> ()</td></tr>
+<tr class="memdesc:a7cf27d593972dee2d3f6e5319fcf450e"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes MPI, gets the rank number and the total numer of processors <br /></td></tr>
 <tr class="separator:a7cf27d593972dee2d3f6e5319fcf450e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8888fe404de3a3f479fff0796916f851"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8888fe404de3a3f479fff0796916f851"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>createGeometry</b> (std::array&lt; int, 4 &gt; latticeSize, std::array&lt; int, 4 &gt; subLatticeSize)</td></tr>
+<tr class="memitem:a8888fe404de3a3f479fff0796916f851"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a8888fe404de3a3f479fff0796916f851">createGeometry</a> (std::array&lt; int, 4 &gt; latticeSize, std::array&lt; int, 4 &gt; subLatticeSize)</td></tr>
+<tr class="memdesc:a8888fe404de3a3f479fff0796916f851"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates the parallel gemometry of the lattice  <a href="#a8888fe404de3a3f479fff0796916f851">More...</a><br /></td></tr>
 <tr class="separator:a8888fe404de3a3f479fff0796916f851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac81d8fad81830939d9338b2e46d71b60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac81d8fad81830939d9338b2e46d71b60"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>finalize</b> ()</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#ac81d8fad81830939d9338b2e46d71b60">finalize</a> ()</td></tr>
+<tr class="memdesc:ac81d8fad81830939d9338b2e46d71b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalizes MPI <br /></td></tr>
 <tr class="separator:ac81d8fad81830939d9338b2e46d71b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a436ba61d28a6f7569eec3ac4a929e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a436ba61d28a6f7569eec3ac4a929e"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>rank</b> ()</td></tr>
@@ -112,31 +114,39 @@ static std::array&lt; int, 4 &gt; &amp;&#160;</td><td class="memItemRight" valig
 static std::array&lt; int, 4 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parity</b> ()</td></tr>
 <tr class="separator:ae4d683542868851b8d8229493c0fa412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e99d3605b17fb51fa8a566cf0730179"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e99d3605b17fb51fa8a566cf0730179"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>getNeighbor</b> (int direction, int sign)</td></tr>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a4e99d3605b17fb51fa8a566cf0730179">getNeighbor</a> (int direction, int sign)</td></tr>
+<tr class="memdesc:a4e99d3605b17fb51fa8a566cf0730179"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the rank of the neighbor along the given direction and sign <br /></td></tr>
 <tr class="separator:a4e99d3605b17fb51fa8a566cf0730179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaecf8622c16bb5def671d881821db7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaecf8622c16bb5def671d881821db7d"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>getSecondNeighbor</b> (int direction1, int sign1, int direction2, int sign2)</td></tr>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#afaecf8622c16bb5def671d881821db7d">getSecondNeighbor</a> (int direction1, int sign1, int direction2, int sign2)</td></tr>
+<tr class="memdesc:afaecf8622c16bb5def671d881821db7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the rank of the neighbor along the two given directions and signs <br /></td></tr>
 <tr class="separator:afaecf8622c16bb5def671d881821db7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea26fc4854070b69224b42962b13091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afea26fc4854070b69224b42962b13091"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>openFile</b> (MPI_File &amp;file, const char *fileName)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#afea26fc4854070b69224b42962b13091">openFile</a> (MPI_File &amp;file, const char *fileName)</td></tr>
+<tr class="memdesc:afea26fc4854070b69224b42962b13091"><td class="mdescLeft">&#160;</td><td class="mdescRight">opens a file with MPI <br /></td></tr>
 <tr class="separator:afea26fc4854070b69224b42962b13091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ace91bf01fd00c19f7a20efc796285"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9ace91bf01fd00c19f7a20efc796285"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>closeFile</b> (MPI_File &amp;file)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#ad9ace91bf01fd00c19f7a20efc796285">closeFile</a> (MPI_File &amp;file)</td></tr>
+<tr class="memdesc:ad9ace91bf01fd00c19f7a20efc796285"><td class="mdescLeft">&#160;</td><td class="mdescRight">closes a file with MPI <br /></td></tr>
 <tr class="separator:ad9ace91bf01fd00c19f7a20efc796285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a0bc2faea05d1a899d71fa5a29c13cd4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bc2faea05d1a899d71fa5a29c13cd4a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>createNeighborLists</b> ()</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a0bc2faea05d1a899d71fa5a29c13cd4a">createNeighborLists</a> ()</td></tr>
+<tr class="memdesc:a0bc2faea05d1a899d71fa5a29c13cd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create castesian coordinates and creates neighbor lists for every processor in every direction. <br /></td></tr>
 <tr class="separator:a0bc2faea05d1a899d71fa5a29c13cd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a246c14b38e3852f2f97458634cd01391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a246c14b38e3852f2f97458634cd01391"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>assignNeighbor</b> (int direction)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a246c14b38e3852f2f97458634cd01391">assignNeighbor</a> (int direction)</td></tr>
+<tr class="memdesc:a246c14b38e3852f2f97458634cd01391"><td class="mdescLeft">&#160;</td><td class="mdescRight">use MPI utilities to find the neighbors in one direction <br /></td></tr>
 <tr class="separator:a246c14b38e3852f2f97458634cd01391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14545f7fc9d73b2a5decd609585ef6ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14545f7fc9d73b2a5decd609585ef6ea"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>assignSecondNeighbor</b> (int dir1, int dir2)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a14545f7fc9d73b2a5decd609585ef6ea">assignSecondNeighbor</a> (int dir1, int dir2)</td></tr>
+<tr class="memdesc:a14545f7fc9d73b2a5decd609585ef6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">use MPI utilities to find the neighbors in two direction <br /></td></tr>
 <tr class="separator:a14545f7fc9d73b2a5decd609585ef6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5e5ad59586bb545aa3840991b20af8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a5e5ad59586bb545aa3840991b20af8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>MyMPI_Cart_shift2</b> (MPI_Comm comm, int dir1, int shift1, int dir2, int shift2, int &amp;source, int &amp;dest)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4b/classParallel.html#a5a5e5ad59586bb545aa3840991b20af8">MyMPI_Cart_shift2</a> (MPI_Comm comm, int dir1, int shift1, int dir2, int shift2, int &amp;source, int &amp;dest)</td></tr>
+<tr class="memdesc:a5a5e5ad59586bb545aa3840991b20af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">use MPI utilities to find the neighbors in two direction <br /></td></tr>
 <tr class="separator:a5a5e5ad59586bb545aa3840991b20af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -190,7 +200,53 @@ static std::array&lt; std::array&lt; std::array&lt; std::array&lt; int, 2 &gt;, 
 <p>Utility class to manage the parallel architecture of the program and interface each process with the overall job. Handles local coordinates, nearest neighbors and communicators </p>
 
 <p>Definition at line <a class="el" href="../../df/d5c/parallel_8h_source.html#l00056">56</a> of file <a class="el" href="../../df/d5c/parallel_8h_source.html">parallel.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8888fe404de3a3f479fff0796916f851"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parallel::createGeometry </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; int, 4 &gt;&#160;</td>
+          <td class="paramname"><em>latticeSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; int, 4 &gt;&#160;</td>
+          <td class="paramname"><em>subLatticeSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>creates the parallel gemometry of the lattice </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">latticeSize</td><td>array containing the total size of the lattice </td></tr>
+    <tr><td class="paramname">latticeSize</td><td>array containing the size of each sublattice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../dc/d63/parallel_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../dc/d63/parallel_8cpp_source.html">parallel.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../df/d5c/parallel_8h_source.html">parallel.h</a></li>
 <li><a class="el" href="../../dc/d63/parallel_8cpp_source.html">parallel.cpp</a></li>
 </ul>

@@ -1,4 +1,12 @@
 <map id="inputconf.h" name="inputconf.h">
-<area shape="rect" id="node4" href="$dc/dac/io_8h.html" title="Main include file for input output related headers. " alt="" coords="538,80,581,107"/>
-<area shape="rect" id="node6" href="$d7/de6/lqcd_8h.html" title="Main include file for all headers. " alt="" coords="589,155,647,181"/>
+<area shape="rect" id="node2" href="$d8/d1d/inputconf_8cpp.html" title="Utilities for opening and reading gauge field configurations from disk in parallel. " alt="" coords="209,80,309,107"/>
+<area shape="rect" id="node3" href="$dc/dac/io_8h.html" title="Main include file for input output related headers. " alt="" coords="334,80,377,107"/>
+<area shape="rect" id="node4" href="$d6/d64/jsondirectories_8cpp_source.html" title="jsondirectories.cpp" alt="" coords="231,155,362,181"/>
+<area shape="rect" id="node5" href="$d7/de6/lqcd_8h.html" title="Main include file for all headers. " alt="" coords="387,155,444,181"/>
+<area shape="rect" id="node6" href="$d5/df2/app_8cpp.html" title="Contains the implementation of the App prototype class methods. " alt="" coords="5,229,73,256"/>
+<area shape="rect" id="node7" href="$da/d93/gaugefieldfactory_8cpp.html" title="Contains the implementation of the GaugeFieldFactory class methods. " alt="" coords="98,229,245,256"/>
+<area shape="rect" id="node8" href="$d8/d9a/gaugefieldreader_8cpp.html" title="Contains the implementation of the GaugeFieldReader class methods. " alt="" coords="269,229,412,256"/>
+<area shape="rect" id="node9" href="$db/d0e/wilsonflow_8cpp.html" title="Contains the implementation of the WilsonFlow class methods. " alt="" coords="436,229,544,256"/>
+<area shape="rect" id="node10" href="$da/d6f/jsoninput_8cpp_source.html" title="jsoninput.cpp" alt="" coords="569,229,667,256"/>
+<area shape="rect" id="node11" href="$dd/dc4/LatticeQCDMain_8cpp.html" title="Main function of the program. " alt="" coords="691,229,835,256"/>
 </map>

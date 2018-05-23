@@ -21,17 +21,13 @@ Collaboration diagram for Lattice\+IO\+:\+:Output\+Obs\+:\nopagebreak
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}{initialize} (std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)\hypertarget{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}{}\label{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}
-
+static void \hyperlink{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}{initialize} (std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List)
 \begin{DoxyCompactList}\small\item\em Opens the files and writes needed headers. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}{write\+Obs} (std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, int M\+C\+Steps)\hypertarget{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}{}\label{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}
-
+static void \hyperlink{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}{write\+Obs} (std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, int M\+C\+Steps)
 \begin{DoxyCompactList}\small\item\em Writes the list of observables to file at given generation point. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}{write\+Flow\+Obs} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&obs\+Matrix)\hypertarget{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}{}\label{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}
-
+static void \hyperlink{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}{write\+Flow\+Obs} (int conf\+Num, std\+::vector$<$ \hyperlink{classObservable}{Observable} $\ast$ $>$ \&obs\+List, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&obs\+Matrix)
 \begin{DoxyCompactList}\small\item\em Writes the observables for given flow step. \end{DoxyCompactList}\item 
-static void \hyperlink{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}{set\+Output\+Dir} (std\+::string output\+Dir)\hypertarget{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}{}\label{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}
-
+static void \hyperlink{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}{set\+Output\+Dir} (std\+::string output\+Dir)
 \begin{DoxyCompactList}\small\item\em Sets the output directory for the file output. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
@@ -68,7 +64,107 @@ Definition at line 59 of file outputobs.\+h.
 
 
 
+\subsection{Member Function Documentation}
+\index{Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}!initialize@{initialize}}
+\index{initialize@{initialize}!Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}}
+\subsubsection[{\texorpdfstring{initialize(std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List)}{initialize(std::vector< Observable * > &obsList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Obs\+::initialize (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}{}\label{classLatticeIO_1_1OutputObs_a472ae3b7d294a80a89642b6464ee8f7d}
+
+
+Opens the files and writes needed headers. 
+
+initializes the output file for the observables
+
+
+\begin{DoxyParams}{Parameters}
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file outputobs.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}!set\+Output\+Dir@{set\+Output\+Dir}}
+\index{set\+Output\+Dir@{set\+Output\+Dir}!Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}}
+\subsubsection[{\texorpdfstring{set\+Output\+Dir(std\+::string output\+Dir)}{setOutputDir(std::string outputDir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Obs\+::set\+Output\+Dir (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{output\+Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}{}\label{classLatticeIO_1_1OutputObs_a3adffec5a9f218182a6d45cce7735362}
+
+
+Sets the output directory for the file output. 
+
+sets the output directory static variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Dir} & a string for the path of the output directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file outputobs.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}!write\+Flow\+Obs@{write\+Flow\+Obs}}
+\index{write\+Flow\+Obs@{write\+Flow\+Obs}!Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}}
+\subsubsection[{\texorpdfstring{write\+Flow\+Obs(int conf\+Num, std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&obs\+Matrix)}{writeFlowObs(int confNum, std::vector< Observable * > &obsList, std::vector< std::vector< double >> &obsMatrix)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Obs\+::write\+Flow\+Obs (
+\begin{DoxyParamCaption}
+\item[{int}]{conf\+Num, }
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List, }
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{obs\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}{}\label{classLatticeIO_1_1OutputObs_a29d0eca3206d892a926ecf051c0ecfc3}
+
+
+Writes the observables for given flow step. 
+
+writes the matrix of observables for each flowtime to file, given a numerical tag
+
+
+\begin{DoxyParams}{Parameters}
+{\em conf\+Num} & the tag of the current configuration that\textquotesingle{}s being flowed \\
+\hline
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+{\em obs\+Matrix} & a matrix containing all the observables computed at every flow time \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file outputobs.\+cpp.
+
+\index{Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}!write\+Obs@{write\+Obs}}
+\index{write\+Obs@{write\+Obs}!Lattice\+I\+O\+::\+Output\+Obs@{Lattice\+I\+O\+::\+Output\+Obs}}
+\subsubsection[{\texorpdfstring{write\+Obs(std\+::vector$<$ Observable $\ast$ $>$ \&obs\+List, int M\+C\+Steps)}{writeObs(std::vector< Observable * > &obsList, int MCSteps)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lattice\+I\+O\+::\+Output\+Obs\+::write\+Obs (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Observable} $\ast$ $>$ \&}]{obs\+List, }
+\item[{int}]{M\+C\+Steps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}{}\label{classLatticeIO_1_1OutputObs_a914832abc00b24dc989a3f0b066ff026}
+
+
+Writes the list of observables to file at given generation point. 
+
+writes the current state of the observables to file, given a numerical tag
+
+
+\begin{DoxyParams}{Parameters}
+{\em obs\+List} & a vector of Observables that will be computed and written to file \\
+\hline
+{\em M\+C\+Steps} & the tag of the current Monte Carlo step \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file outputobs.\+cpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \hyperlink{outputobs_8h}{outputobs.\+h}\item 
-outputobs.\+cpp\end{DoxyCompactItemize}
+\hyperlink{outputobs_8cpp}{outputobs.\+cpp}\end{DoxyCompactItemize}

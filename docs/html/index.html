@@ -46,7 +46,38 @@
 <div class="title">LatticeYangMills </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Suite for generating field configurations in pure YM SU(3) theory and compute basic observables on them. </p>
+<div class="textblock"><p>Suite for generating field configurations in pure Yang-Mills SU(3) theory and compute basic observables on them. By Giovanni Pederiva.</p>
+<p>See <a href="https://github.com/GioPede/MasterThesis">https://github.com/GioPede/MasterThesis</a> for the Master of Science thesis this code has been developed for.</p>
+<h2>Current Implementation</h2>
+<h3>Algorithms</h3>
+<ul>
+<li>Metropolis Algorith for generating ensembles of lattice gauge field configurations</li>
+<li>Gradient Flow see <a href="https://arxiv.org/abs/1006.4518">https://arxiv.org/abs/1006.4518</a> for studying non linear properties of the fields <h3>Observables</h3>
+</li>
+</ul>
+<ul>
+<li><a class="el" href="d2/da4/classPlaquette.html" title="Implementation of the Plaquette operator class. ">Plaquette</a></li>
+<li>Energy Density (clover)</li>
+<li>Topological Charge (clover) <h3>Actions</h3>
+</li>
+</ul>
+<ul>
+<li>Wilson Gluon <a class="el" href="db/d09/classAction.html" title="Prototype for the Action class group. ">Action</a></li>
+</ul>
+<h2>Libraries Used</h2>
+<ul>
+<li>Open MPI <a href="https://www.open-mpi.org/">https://www.open-mpi.org/</a></li>
+<li>nlohman/json <a href="https://github.com/nlohmann/json">https://github.com/nlohmann/json</a> by Niels Lohmann</li>
+<li>taocpp/operator <a href="https://github.com/taocpp/operators">https://github.com/taocpp/operators</a> by Daniel Frey and Colin Hirsch (recent addition, experimental)</li>
+<li>CMake <a href="https://cmake.org/">https://cmake.org/</a></li>
+</ul>
+<h2>Caveats</h2>
+<ul>
+<li>The project is under active development</li>
+<li>The documentation is still incomplete</li>
+<li>Project might not build, current branch is the unstable one.</li>
+<li>Use CMake to build, only GCC 5.3 has been tested </li>
+</ul>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

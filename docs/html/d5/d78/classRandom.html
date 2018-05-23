@@ -72,13 +72,15 @@ Collaboration diagram for Random:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a85d1fc4b7dd6a2a659c02101a87f7a46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85d1fc4b7dd6a2a659c02101a87f7a46"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>randUniform</b> ()</td></tr>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d78/classRandom.html#a85d1fc4b7dd6a2a659c02101a87f7a46">randUniform</a> ()</td></tr>
+<tr class="memdesc:a85d1fc4b7dd6a2a659c02101a87f7a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a number from a uniform distribution between 0 and 1 <br /></td></tr>
 <tr class="separator:a85d1fc4b7dd6a2a659c02101a87f7a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5292fc838c1321ef8657947456a3970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5292fc838c1321ef8657947456a3970"></a>
-static <a class="el" href="../../d6/d3e/structSU3.html">SU3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>randSU3</b> ()</td></tr>
+static <a class="el" href="../../d6/d3e/structSU3.html">SU3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d78/classRandom.html#ac5292fc838c1321ef8657947456a3970">randSU3</a> ()</td></tr>
+<tr class="memdesc:ac5292fc838c1321ef8657947456a3970"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns random <a class="el" href="../../d6/d3e/structSU3.html" title="Implementation of a  class to perform arithmetics between links. ">SU3</a> matrix, by choosing 2 random complex vectors as the first two columns, orthogonalizing them and taking the outer product as a third column <br /></td></tr>
 <tr class="separator:ac5292fc838c1321ef8657947456a3970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1999be7abe21383e442a5ef96fe836f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1999be7abe21383e442a5ef96fe836f4"></a>
-static <a class="el" href="../../d6/d3e/structSU3.html">SU3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>randSU3Transf</b> (double epsilon)</td></tr>
+<tr class="memitem:a1999be7abe21383e442a5ef96fe836f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d3e/structSU3.html">SU3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d78/classRandom.html#a1999be7abe21383e442a5ef96fe836f4">randSU3Transf</a> (double epsilon)</td></tr>
+<tr class="memdesc:a1999be7abe21383e442a5ef96fe836f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a random <a class="el" href="../../d6/d3e/structSU3.html" title="Implementation of a  class to perform arithmetics between links. ">SU3</a> element with controlled spread around the unity matrix.  <a href="#a1999be7abe21383e442a5ef96fe836f4">More...</a><br /></td></tr>
 <tr class="separator:a1999be7abe21383e442a5ef96fe836f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -102,7 +104,42 @@ static boost::random::uniform_real_distribution&lt; double &gt;&#160;</td><td cl
 <p>The <a class="el" href="../../d5/d78/classRandom.html" title="Class providing interfaces for the RNG and other utilities. ">Random</a> statice class proides functions to access the RNG giving different distributions, as well as providing an implementation for random \(SU(3)\) group elements </p>
 
 <p>Definition at line <a class="el" href="../../d1/d79/random_8h_source.html#l00052">52</a> of file <a class="el" href="../../d1/d79/random_8h_source.html">random.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1999be7abe21383e442a5ef96fe836f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3e/structSU3.html">SU3</a> Random::randSU3Transf </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns a random <a class="el" href="../../d6/d3e/structSU3.html" title="Implementation of a  class to perform arithmetics between links. ">SU3</a> element with controlled spread around the unity matrix. </p>
+<p>Returns a random <a class="el" href="../../d6/d3e/structSU3.html" title="Implementation of a  class to perform arithmetics between links. ">SU3</a> element with controlled spread around the unity matrix. as described in Gattringer &amp; Lang "Quantum Chromodynamics on the Lattice". Three SU2 random matrices, constructing using 4 coefficients and the pauli matrices are built and embedded into three <a class="el" href="../../d6/d3e/structSU3.html" title="Implementation of a  class to perform arithmetics between links. ">SU3</a> matrices. The product of theses three is returned as the result </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epsilon</td><td>the weight of the offdiagonal terms </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../de/daa/random_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../de/daa/random_8cpp_source.html">random.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d1/d79/random_8h_source.html">random.h</a></li>
 <li><a class="el" href="../../de/daa/random_8cpp_source.html">random.cpp</a></li>
 </ul>

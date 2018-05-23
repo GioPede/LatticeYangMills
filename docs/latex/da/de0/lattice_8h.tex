@@ -12,10 +12,20 @@ Contains the definition of the \hyperlink{classLattice}{Lattice} class.
 {\ttfamily \#include \char`\"{}Utils/clusterspecifier.\+h\char`\"{}}\\*
 {\ttfamily \#include $<$mpi/mpi.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}Parallel\+Tools/parallel.\+h\char`\"{}}\\*
-Include dependency graph for lattice.\+h\+:
-% FIG 0
-This graph shows which files directly or indirectly include this file\+:
-% FIG 1
+Include dependency graph for lattice.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/de5/lattice_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d04/lattice_8h__dep__incl}
+\end{center}
+\end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,18 +70,18 @@ class \hyperlink{classLattice}{Lattice$<$ T $>$}
 \hyperlink{classLattice}{Lattice}$<$ double $>$ {\bfseries imag\+Trace} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&\&base)\hypertarget{lattice_8h_a7336d85e24e4f20b77ee191573161752}{}\label{lattice_8h_a7336d85e24e4f20b77ee191573161752}
 
 \item 
-void {\bfseries set\+Lattice\+Imag\+Identity\+Value} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat, const \hyperlink{classLattice}{Lattice}$<$ double $>$ \&lat)\hypertarget{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}{}\label{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}
+void \hyperlink{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}{set\+Lattice\+Imag\+Identity\+Value} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat, const \hyperlink{classLattice}{Lattice}$<$ double $>$ \&lat)\hypertarget{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}{}\label{lattice_8h_a5def93dbbae6cc4897e9b0db15fbed86}
 
-\item 
+\begin{DoxyCompactList}\small\item\em sets a lattice object to only diagonal matrices with complex values \end{DoxyCompactList}\item 
 void {\bfseries set\+Lattice\+Imag\+Identity\+Value} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat, \hyperlink{classLattice}{Lattice}$<$ double $>$ \&\&lat)\hypertarget{lattice_8h_aa0b6c693b05ac17313064a8a419ca1e4}{}\label{lattice_8h_aa0b6c693b05ac17313064a8a419ca1e4}
 
 \item 
-void {\bfseries set\+To\+Zero} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat)\hypertarget{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}{}\label{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}
+void \hyperlink{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}{set\+To\+Zero} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat)\hypertarget{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}{}\label{lattice_8h_a8de3d17ae9ee16e9636b216f76c910e2}
 
-\item 
-void {\bfseries set\+To\+Identity} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat)\hypertarget{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}{}\label{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}
+\begin{DoxyCompactList}\small\item\em sets a lattice object to all zero matrices \end{DoxyCompactList}\item 
+void \hyperlink{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}{set\+To\+Identity} (\hyperlink{classLattice}{Lattice}$<$ \hyperlink{structSU3}{S\+U3} $>$ \&su3lat)\hypertarget{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}{}\label{lattice_8h_ae4622adb92e4229ea06e6ec7ff60b973}
 
-\item 
+\begin{DoxyCompactList}\small\item\em sets a lattice object to all identity matrices \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\\hyperlink{classLattice}{Lattice}$<$ T $>$ {\bfseries shift} (const \hyperlink{classLattice}{Lattice}$<$ T $>$ \&lat, int shift\+Dir, int shift\+Step)\hypertarget{lattice_8h_aa8e188fda775fc8142f9358f39f7e9ab}{}\label{lattice_8h_aa8e188fda775fc8142f9358f39f7e9ab}
 
 \item 
