@@ -14,6 +14,10 @@
 
 namespace LatticeIO {
 
+/*!
+ *   \brief changes the endianess of a float variable
+ *   \param inFloat a float variable
+ */  
     double ReverseFloat( const double inFloat )
     {
        double retVal;
@@ -31,7 +35,10 @@ namespace LatticeIO {
        returnFloat[7] = floatToConvert[0];
        return retVal;
     }
-
+/*!
+ *   \brief changes the endianess of a double variable
+ *   \param inFloat a double variable
+ */  
     double ReverseDouble( const double inDouble ){
        double retVal;
        char *doubleToConvert = ( char* ) & inDouble;
@@ -54,12 +61,18 @@ namespace LatticeIO {
     int InputConf::m_linkSize = 18 * sizeof(double);
     std::string InputConf::m_inputDir;
 
+/*!
+ *   \brief sets the input directory static variable
+ *   \param inputDir the path of the input directory
+ */  
     void InputConf::setInputDir(std::string inputDir){
         m_inputDir = inputDir;
     }
 
-    //if (boost::filesystem::is_directory(inputPath))
-
+/*!
+ *   \brief scans the input folder for valid binary files containing lattice field configurations
+ *   \param inputConfList a vector of string to store the path of the configuration(s) to read
+ */  
     void InputConf::getInputList(std::vector<std::string>& inputConfList){
         boost::filesystem::path inputPath = m_inputDir;
         for (boost::filesystem::directory_entry& x : boost::filesystem::directory_iterator(inputPath))
@@ -68,28 +81,36 @@ namespace LatticeIO {
 		std::sort(inputConfList.begin(), inputConfList.end());
     }
 
-    // Read a single file for every sublattice (for testing)
-    void InputConf::readSubLattice(GluonField& lattice, int confNum){
-        char fileName [1024];
-        sprintf(fileName, "%s/r%03du%03d", OUT_PREFIX, Parallel::rank(), confNum);
-        FILE* input = fopen(fileName, "rb");
-        for(int t = 0; t < Parallel::latticeSubSize()[3]; t++){
-        for(int z = 0; z < Parallel::latticeSubSize()[2]; z++){
-        for(int y = 0; y < Parallel::latticeSubSize()[1]; y++){
-        for(int x = 0; x < Parallel::latticeSubSize()[0]; x++){
-            //fread(lattice(x,y,z,t).m_links, sizeof(double), 72, input);
-        }}}}
-        fclose(input);
-    }
+    // // Read a single file for every sublattice (for testing)
+    // void InputConf::readSubLattice(GluonField& lattice, int confNum){
+    //     char fileName [1024];
+    //     sprintf(fileName, "%s/r%03du%03d", OUT_PREFIX, Parallel::rank(), confNum);
+    //     FILE* input = fopen(fileName, "rb");
+    //     for(int t = 0; t < Parallel::latticeSubSize()[3]; t++){
+    //     for(int z = 0; z < Parallel::latticeSubSize()[2]; z++){
+    //     for(int y = 0; y < Parallel::latticeSubSize()[1]; y++){
+    //     for(int x = 0; x < Parallel::latticeSubSize()[0]; x++){
+    //         //fread(lattice(x,y,z,t).m_links, sizeof(double), 72, input);
+    //     }}}}
+    //     fclose(input);
+    // }
 
-    // Use MPI to read a file containing the lattice
+/*!
+ *   \brief reads a lattice configuration in a given field object from a numerical tag
+ *   \param lattice the GluonField to read the lattice field configuration in
+ *   \param confNum the numerical label of the configuration to read
+ */ 
     void InputConf::readConf(GluonField& lattice, int confNum){
         char fileName[1024];
         sprintf(fileName, "%s/conf%04d.bin", OUT_PREFIX, confNum);
         readConf(lattice, fileName);
     }
 
-    // Use MPI to read a file containing the lattice
+/*!
+ *   \brief reads a lattice configuration in a given field object given a path
+ *   \param lattice the GluonField to read the lattice field configuration in
+ *   \param inputFile the path to the configuration to read
+ */ 
     void InputConf::readConf(GluonField& lattice, const char* inputFile){
         MPI_File input;
         MPI_Offset startPointT, startPointZ, startPointY, startPointX;

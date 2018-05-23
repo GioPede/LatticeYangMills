@@ -6,6 +6,9 @@
 
 namespace LatticeIO {
 
+/*!
+ *   \brief prints basic information about the system to terminal
+ */ 
     void OutputTerm::printInitialConditions(){
         if(Parallel::rank() == 0){
             printf("Total Lattice Size: %2i %2i %2i %2i\n", Parallel::latticeFullSize()[0],Parallel::latticeFullSize()[1],
@@ -17,6 +20,12 @@ namespace LatticeIO {
         }
     }
 
+/*!
+ *   \brief print information about the system during thermalization
+ *   \param step the curren thermalization step
+ *   \param obsList a vector of Observables that will be computed and written to file
+ *   \param acceptRatio the current acceptance ratio of the Metropolis algorithm
+ */ 
     void OutputTerm::printThermStep(int step, std::vector<Observable*>& obsList, double acceptRatio){
         if(Parallel::rank() == 0){
             printf("Thermalization Step %4i\n", step);
@@ -26,6 +35,12 @@ namespace LatticeIO {
         }
     }
 
+/*!
+ *   \brief print information about the system during the gauge field generation
+ *   \param confNum the number of the current configuration that has been generated 
+ *   \param obsList a vector of Observables that will be computed and written to file
+ *   \param acceptRatio the current acceptance ratio of the Metropolis algorithm
+ */ 
     void OutputTerm::printGenStep(int confNum, std::vector<Observable*>& obsList, double acceptRatio){
         if(Parallel::rank() == 0){
             printf("Configuration Number %4i\n", confNum);
@@ -35,6 +50,11 @@ namespace LatticeIO {
         }
     }
 
+/*!
+ *   \brief print information about the system of a given configuration
+ *   \param confNum the number of the current configuration
+ *   \param obsList a vector of Observables that will be computed and written to file
+ */ 
     void OutputTerm::writeObs(int confNum, std::vector<Observable*>& obsList){
         if(Parallel::rank() == 0){
             printf("Configuration Number %4i\n", confNum);
@@ -47,6 +67,11 @@ namespace LatticeIO {
 
     }
 
+/*!
+ *   \brief print information about the system during the gradient flow steps
+ *   \param flowTime the current flow time of the integration
+ *   \param obsList a vector of Observables that will be computed and written to file
+ */ 
     void OutputTerm::writeFlowObs(double flowTime, std::vector<Observable*>& obsList){
         if(Parallel::rank() == 0){
             printf("Flow Time %2.2lf\n", flowTime);

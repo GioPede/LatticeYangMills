@@ -135,6 +135,9 @@ void WilsonFlow::applyWilsonFlow(int confNum){
     LatticeIO::OutputObs::writeFlowObs(confNum, m_obs, flowObsMatrix);
 }
 
+/*!
+ *   \brief applies one step of the integration scheme, described in paper
+ */  
 void WilsonFlow::flowStep(){
     // compute Z0
     for(int mu = 0; mu < 4; mu++)
@@ -169,23 +172,10 @@ void WilsonFlow::flowStep(){
 }
 
 
-
+/*!
+ *   \brief computes all observables in the Observable vector
+ */  
 void WilsonFlow::computeObservables(){
     for(auto& obs : m_obs)
         obs->compute();
-}
-
-/*
-// GETTERS AND SETTERS
-Point& WilsonFlow::getLatticeSite(int x, int y, int z, int t){
-    return (*m_lat)(x,y,z,t);
-}*/
-
-void WilsonFlow::setAction(Action* action){
-    m_act = action;
-}
-
-void WilsonFlow::addObservable(Observable *observable){
-    m_obs.push_back(observable);
-    m_obsValues.push_back(0.0);
 }

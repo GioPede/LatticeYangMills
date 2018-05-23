@@ -50,27 +50,34 @@ namespace LatticeIO {
     int OutputConf::m_linkSize = 72 * sizeof(double);
     std::string OutputConf::m_outputDir;
 
+/*!
+ *   \brief sets the output directory static variable
+ *   \param outputDir a string for the path of the output directory
+ */ 
     void OutputConf::setOutputDir(std::string outputDir){
         m_outputDir = outputDir;
         boost::filesystem::create_directory(m_outputDir);
     }
 
-    // Write a single file for every sublattice (for testing)
-    void OutputConf::writeSubLattice(GluonField& lattice, int confNum){
-        char fileName [1024];
-        sprintf(fileName, "%s/r%03du%03d", m_outputDir.c_str(), Parallel::rank(), confNum);
-        FILE* output = fopen(fileName, "wb");
-        for(int t = 0; t < Parallel::latticeSubSize()[3]; t++){
-        for(int z = 0; z < Parallel::latticeSubSize()[2]; z++){
-        for(int y = 0; y < Parallel::latticeSubSize()[1]; y++){
-        for(int x = 0; x < Parallel::latticeSubSize()[0]; x++){
-            //fwrite(lattice(x,y,z,t).m_links, sizeof(double), 72, output);
-        }}}}
-        fclose(output);
-    }
+    // // Write a single file for every sublattice (for testing)
+    // void OutputConf::writeSubLattice(GluonField& lattice, int confNum){
+    //     char fileName [1024];
+    //     sprintf(fileName, "%s/r%03du%03d", m_outputDir.c_str(), Parallel::rank(), confNum);
+    //     FILE* output = fopen(fileName, "wb");
+    //     for(int t = 0; t < Parallel::latticeSubSize()[3]; t++){
+    //     for(int z = 0; z < Parallel::latticeSubSize()[2]; z++){
+    //     for(int y = 0; y < Parallel::latticeSubSize()[1]; y++){
+    //     for(int x = 0; x < Parallel::latticeSubSize()[0]; x++){
+    //         //fwrite(lattice(x,y,z,t).m_links, sizeof(double), 72, output);
+    //     }}}}
+    //     fclose(output);
+    // }
 
-    // Use MPI to write a file containing the lattice
-    void OutputConf::writeConf(GluonField& lattice, int confNum){
+/*!
+ *   \brief writes a lattice configuration in a given field object and a numerical tag
+ *   \param lattice the GluonField to write in the default output folder
+ *   \param confNum the numerical tag for the configuration to read
+ */     void OutputConf::writeConf(GluonField& lattice, int confNum){
         MPI_File output;
         MPI_Offset startPointT, startPointZ, startPointY, startPointX;
         int volumeX = 1;

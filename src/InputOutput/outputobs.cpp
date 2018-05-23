@@ -11,12 +11,22 @@ namespace LatticeIO {
     FILE* OutputObs::m_file;
     std::string OutputObs::m_outputDir;
 
+
+/*!
+ *   \brief sets the output directory static variable
+ *   \param outputDir a string for the path of the output directory
+ */ 
     void OutputObs::setOutputDir(std::string outputDir){
         m_outputDir = outputDir;
         boost::filesystem::create_directory(m_outputDir);
         boost::filesystem::create_directory(m_outputDir+"/flow");
     }
 
+
+/*!
+ *   \brief initializes the output file for the observables
+ *   \param obsList a vector of Observables that will be computed and written to file
+ */ 
     void OutputObs::initialize(std::vector<Observable*>& obsList){
         if(Parallel::rank() == 0){
             sprintf(fileName, "%s/observables.dat", m_outputDir.c_str());
@@ -29,6 +39,11 @@ namespace LatticeIO {
         }
     }
 
+/*!
+ *   \brief writes the current state of the observables to file, given a numerical tag
+ *   \param obsList a vector of Observables that will be computed and written to file
+ *   \param MCSteps the tag of the current Monte Carlo step
+ */ 
     void OutputObs::writeObs(std::vector<Observable*>& obsList, int MCSteps){
         if(Parallel::rank() == 0){
             m_file = fopen(fileName, "a");
@@ -40,6 +55,12 @@ namespace LatticeIO {
         }
     }
 
+/*!
+ *   \brief writes the matrix of observables for each flowtime to file, given a numerical tag
+ *   \param confNum the tag of the current configuration that's being flowed
+ *   \param obsList a vector of Observables that will be computed and written to file
+ *   \param obsMatrix a matrix containing all the observables computed at every flow time
+ */ 
     void OutputObs::writeFlowObs(int confNum, std::vector<Observable*>& obsList, std::vector<std::vector<double>>& obsMatrix){
         if(Parallel::rank() == 0){
             char flowFileName [1024];
